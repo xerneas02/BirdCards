@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+<head>
+  <meta charset="UTF-8">
+  <title>Bird Learning App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Options</h2>
+    <!-- Bouton Reset -->
+    <a href="{{ url_for('reset', diff=selected_diff, media=selected_media) }}" class="reset-button" id="resetButton">
+      {% if language == "EN" %}
+        Reset Data
+      {% else %}
+        Réinitialiser les scores
+      {% endif %}
+    </a>
+    <!-- Bouton Toggle Theme -->
+    <button id="themeToggle" onclick="toggleTheme()">Toggle Theme</button>
+    <!-- Formulaire de filtrage -->
+    <form method="GET" action="{{ url_for('index') }}">
+      <label id="diffLabel">
+        {% if language == "EN" %}
+          Select difficulty:
+        {% else %}
+          Sélectionnez la difficulté :
+        {% endif %}
+      </label><br>
+      <input type="checkbox" name="diff" value="1" id="diff1" {% if '1' in selected_diff %} checked {% endif %}>
+      <label for="diff1" id="diff1Label">
+        {% if language == "EN" %}
+          Easy
+        {% else %}
+          Facile
+        {% endif %}
+      </label><br>
+      <input type="checkbox" name="diff" value="2" id="diff2" {% if '2' in selected_diff %} checked {% endif %}>
+      <label for="diff2" id="diff2Label">
+        {% if language == "EN" %}
+          Medium
+        {% else %}
+          Moyen
+        {% endif %}
+      </label><br>
+      <input type="checkbox" name="diff" value="3" id="diff3" {% if '3' in selected_diff %} checked {% endif %}>
+      <label for="diff3" id="diff3Label">
+        {% if language == "EN" %}
+          Difficult
+        {% else %}
+          Difficile
+        {% endif %}
+      </label><br><br>
+      <label id="mediaLabel">
+        {% if language == "EN" %}
+          Select media type:
+        {% else %}
+          Sélectionnez le type de média :
+        {% endif %}
+      </label><br>
+      <input type="checkbox" name="media" value="image" id="mediaImage" {% if 'image' in selected_media %} checked {% endif %}>
+      <label for="mediaImage">Image</label><br>
+      <input type="checkbox" name="media" value="sound" id="mediaSound" {% if 'sound' in selected_media %} checked {% endif %}>
+      <label for="mediaSound" id="mediaSoundLabel">
+        {% if language == "EN" %}
+          Sound
+        {% else %}
+          Son
+        {% endif %}
+      </label><br><br>
+      <input type="submit" id="filterButton" value="{% if language == 'EN' %}Filter{% else %}Filtrer{% endif %}">
+    </form>
+    <!-- Bouton pour changer de langue -->
+    <button id="langButton" onclick="toggleLanguage()">
+      {% if language == "EN" %}
+         Switch to French
+      {% else %}
+         Passer en anglais
+      {% endif %}
+    </button>
+    <input type="hidden" id="currentLanguage" value="{{ language }}">
+  </div>
+  <div class="main-content">
+    <!-- Affichage conditionnel de l'image -->
+    {% if 'image' in selected_media %}
+    <div id="imageContainer">
+      <img id="birdImage" data-src="{{ bird['Image URL'] }}" alt="Image de l'oiseau">
+    </div>
+    {% endif %}
+    <!-- Affichage conditionnel du son -->
+    {% if 'sound' in selected_media and bird['Sound URL']|trim != "" %}
+    <div id="audioContainer">
+      <audio controls>
+        <source src="{{ bird['Sound URL'] }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    {% endif %}
+    <div>
+      <p id="birdName" style="font-size:20px; font-weight:bold;"></p>
+    </div>
+    <button id="revealButton" onclick="revealName()">
+      {% if language == "EN" %}
+        Reveal Name
+      {% else %}
+        Révéler le nom
+      {% endif %}
+    </button>
+    <br><br>
+    <!-- Boutons de score -->
+    <div class="score-buttons">
+      <form action="{{ url_for('update_score', diff=selected_diff, media=selected_media) }}" method="post" style="display:inline;">
+          <button id="wrongButton" type="submit" name="change" value="-1" class="btn-wrong">
+            {% if language == "EN" %}
+              Got it Wrong
+            {% else %}
+              Faux
+            {% endif %}
+          </button>
+      </form>
+      <form action="{{ url_for('update_score', diff=selected_diff, media=selected_media) }}" method="post" style="display:inline;">
+          <button id="inbetweenButton" type="submit" name="change" value="0" class="btn-inbetween">
+            {% if language == "EN" %}
+              In Between
+            {% else %}
+              Neutre
+            {% endif %}
+          </button>
+      </form>
+      <form action="{{ url_for('update_score', diff=selected_diff, media=selected_media) }}" method="post" style="display:inline;">
+          <button id="rightButton" type="submit" name="change" value="1" class="btn-right">
+            {% if language == "EN" %}
+              Got it Right
+            {% else %}
+              Correct
+            {% endif %}
+          </button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

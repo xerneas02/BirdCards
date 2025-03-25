@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Vérification des traductions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      text-align: center;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #fff;
+      position: relative;
+    }
+    /* Bouton de navigation pour Reset Data en haut à gauche */
+    #resetButton {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 8px 16px;
+      background-color: #e74c3c;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    #resetButton:hover {
+      background-color: #c0392b;
+    }
+    /* Bouton de thème en haut à droite */
+    #themeToggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 8px 16px;
+      background-color: #2F8894;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #themeToggle:hover {
+      background-color: #246d7a;
+    }
+    img {
+      max-width: 400px;
+      border: 2px solid #2F8894;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .nav-buttons a button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn-prev {
+      background-color: #3498db;
+      color: #fff;
+    }
+    .btn-prev:hover {
+      background-color: #2980b9;
+    }
+    .btn-next {
+      background-color: #27ae60;
+      color: #fff;
+    }
+    .btn-next:hover {
+      background-color: #1e8449;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"] {
+      width: 80%;
+      padding: 8px;
+      font-size: 16px;
+    }
+    /* Styles des boutons de difficulté */
+    .difficulty-buttons {
+      margin-top: 10px;
+    }
+    .difficulty-buttons button {
+      margin: 0 5px;
+      padding: 8px 16px;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #fff;
+    }
+    .difficulty-buttons button:hover {
+      opacity: 0.9;
+    }
+    .btn-diff1 {
+      background-color: #2ecc71; /* Facile */
+    }
+    .btn-diff2 {
+      background-color: #f1c40f; /* Moyen */
+      color: #000;
+    }
+    .btn-diff3 {
+      background-color: #e67e22; /* Difficile */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Boutons de navigation -->
+    <div class="nav-buttons">
+      <a href="{{ url_for('previous', index=index) }}"><button class="btn-prev">Précédent</button></a>
+      <span>{{ index + 1 }} / {{ total }}</span>
+      <a href="{{ url_for('next_record', index=index) }}"><button class="btn-next">Suivant</button></a>
+    </div>
+
+    <!-- Image de l'oiseau -->
+    <div>
+      <img src="{{ bird['Image URL'] }}" alt="Image de l'oiseau">
+    </div>
+
+    <!-- Nom en anglais -->
+    <div class="form-group">
+      <label>Nom en anglais :</label>
+      <p>{{ bird['Bird Name'] }}</p>
+    </div>
+
+    <!-- Indication de la difficulté actuelle -->
+    <div class="form-group">
+      <label>Difficulté actuelle :</label>
+      <p>{{ bird['Difficulty'] }}</p>
+    </div>
+
+    <!-- Formulaire pour mettre à jour le nom français et la difficulté -->
+    <form action="{{ url_for('update', index=index) }}" method="post">
+      <div class="form-group">
+         <label>Nom en français :</label>
+         <input type="text" name="french_name" value="{{ bird['French Name'] or '' }}">
+      </div>
+      <div class="form-group difficulty-buttons">
+        <label>Attribuer une difficulté :</label><br>
+        <button type="submit" name="difficulty" value="1" class="btn-diff1">Facile</button>
+        <button type="submit" name="difficulty" value="2" class="btn-diff2">Moyen</button>
+        <button type="submit" name="difficulty" value="3" class="btn-diff3">Difficile</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

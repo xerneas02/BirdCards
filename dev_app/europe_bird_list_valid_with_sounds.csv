@@ -1,0 +1,950 @@
+Bird Name,French Name,Image URL,Score,Difficulty,Sound URL
+White-faced Whistling-Duck,Dendrocygne veuf,https://upload.wikimedia.org/wikipedia/commons/3/39/Dendrocygna_viduata_upright.jpg,0,2,
+Fulvous Whistling-Duck,Dendrocygne fauve,https://upload.wikimedia.org/wikipedia/commons/3/3e/Fulvous_Whistling_Duck_JG.jpg,0,2,
+Bar-headed Goose,Oie tigrée,https://upload.wikimedia.org/wikipedia/commons/1/1b/Bar-headed_Goose_-_St_James%27s_Park%2C_London_-_Nov_2006.jpg,0,2,https://xeno-canto.org/960229/download
+Snow Goose,Oie des neiges,https://upload.wikimedia.org/wikipedia/commons/1/1f/Snow_goose_in_Central_Park_%2833138%29.jpg,0,2,https://xeno-canto.org/540212/download
+Ross's Goose,Oie de Ross,https://upload.wikimedia.org/wikipedia/commons/4/4b/Ross%27s_Goose_%28Chen_rossii%29_%2823321411711%29.jpg,0,2,https://xeno-canto.org/452083/download
+Graylag Goose,oie cendrée,https://upload.wikimedia.org/wikipedia/commons/5/57/Greylag_Goose_-_St_James%27s_Park%2C_London_-_Nov_2006.jpg,0,1,
+Greater White-fronted Goose,Oie rieuse,https://upload.wikimedia.org/wikipedia/commons/0/0f/Greater_white-fronted_goose_in_flight-1045.jpg,0,1,https://xeno-canto.org/981587/download
+Lesser White-fronted Goose,Oie naine,https://upload.wikimedia.org/wikipedia/commons/9/97/Anser_erythropus.jpg,0,2,https://xeno-canto.org/981361/download
+Taiga Bean-Goose,Oie des moissons,https://upload.wikimedia.org/wikipedia/commons/0/07/Anser_fabalis_fabalis%2C_Kurortny_District%2C_St_Petersburg%2C_Russia_1.jpg,0,1,
+Tundra Bean-Goose,Oie de la toundra,https://upload.wikimedia.org/wikipedia/commons/5/50/101777_%E8%B1%86%E9%9B%81%E4%BE%86%E8%87%A8.jpg,0,2,
+Pink-footed Goose,oie à bec court,https://upload.wikimedia.org/wikipedia/commons/5/5b/2019-03-25_Anser_brachyrhynchus%2C_Killingworth_Lake%2C_Northumberland_1.jpg,0,2,https://xeno-canto.org/982624/download
+Barnacle Goose,Bernache nonnette,https://upload.wikimedia.org/wikipedia/commons/f/f5/Barnacle-Goose.jpg,0,2,https://xeno-canto.org/982259/download
+Cackling Goose,Bernache de Hutchins,https://upload.wikimedia.org/wikipedia/commons/b/b4/AleutianCanadaGoose2.jpg,0,2,https://xeno-canto.org/530560/download
+Canada Goose,Bernache du Canada,https://upload.wikimedia.org/wikipedia/commons/4/40/Canada_goose_on_Seedskadee_NWR_%2827826185489%29.jpg,0,1,https://xeno-canto.org/981815/download
+Red-breasted Goose,Bernache à cou roux,https://upload.wikimedia.org/wikipedia/commons/7/70/Red-breasted_goose_arp.jpg,0,2,https://xeno-canto.org/872113/download
+Mute Swan,Cygne tuberculé,https://upload.wikimedia.org/wikipedia/commons/a/a2/CygneVaires.jpg,0,1,https://xeno-canto.org/925704/download
+Tundra Swan,Cygne siffleur,https://upload.wikimedia.org/wikipedia/commons/4/4a/Cygnus_bewickii_01.jpg,0,1,https://xeno-canto.org/976455/download
+Whooper Swan,Cygne chanteur,https://upload.wikimedia.org/wikipedia/commons/1/1c/Cygnus_cygnus_Singschwan.jpg,0,1,https://xeno-canto.org/982355/download
+Egyptian Goose,Ouette d'Égypte,https://upload.wikimedia.org/wikipedia/commons/1/15/Egyptian_Goose_JG.jpg,0,2,https://xeno-canto.org/980649/download
+Ruddy Shelduck,Tadorne casarca,https://upload.wikimedia.org/wikipedia/commons/d/d0/A_couple_of_Tadorna_ferruginea.jpg,0,2,https://xeno-canto.org/960252/download
+Common Shelduck,Tadorne de Belon,https://upload.wikimedia.org/wikipedia/commons/e/ea/Common_Shelduck_%28Tadorna_tadorna%29_at_Sylvan_Heights.jpg,0,2,https://xeno-canto.org/975210/download
+Wood Duck,Canard branchu,https://upload.wikimedia.org/wikipedia/commons/e/e7/Wood_Duck_Wissahickon_Creek.png,0,2,https://xeno-canto.org/872894/download
+Mandarin Duck,Canard mandarin,https://upload.wikimedia.org/wikipedia/commons/4/43/Pair_of_mandarin_ducks.jpg,0,1,https://xeno-canto.org/974788/download
+Baikal Teal,Sarcelle élégante,https://upload.wikimedia.org/wikipedia/commons/2/21/Anas.formosa.4.jpg,0,3,https://xeno-canto.org/674861/download
+Garganey,Sarcelle d'été,https://upload.wikimedia.org/wikipedia/commons/9/92/Garganey%2C_Israel.jpg,0,3,https://xeno-canto.org/925169/download
+Blue-winged Teal,Spatula discors,https://upload.wikimedia.org/wikipedia/commons/6/65/Blue-Winged_Teal.jpg,0,3,https://xeno-canto.org/341821/download
+Northern Shoveler,Canard souchet,https://upload.wikimedia.org/wikipedia/commons/a/a7/Northern_shoveler_Steve_Sinclair_outreach_use_only_%2819838806616%29.jpg,0,2,https://xeno-canto.org/982014/download
+Gadwall,Canard chipeau,https://upload.wikimedia.org/wikipedia/commons/9/9a/Gadwall-Anas-strepera.jpg,0,2,https://xeno-canto.org/980288/download
+Falcated Duck,Mareca falcata,https://upload.wikimedia.org/wikipedia/commons/6/62/Falcated_duck_1.jpg,0,3,https://xeno-canto.org/821120/download
+Eurasian Wigeon,Canard siffleur,https://upload.wikimedia.org/wikipedia/commons/5/53/Mareca_penelope_kuribo_cropped.jpg,0,2,https://xeno-canto.org/981814/download
+American Wigeon,Canard d'Amérique,https://upload.wikimedia.org/wikipedia/commons/b/b5/Anas_americana_-_drake.jpg,0,1,https://xeno-canto.org/857365/download
+Eastern Spot-billed Duck,Canard de Chine,https://upload.wikimedia.org/wikipedia/commons/e/ec/Anas_zonorhyncha_swimming.jpg,0,1,https://xeno-canto.org/920581/download
+Mallard,Canard colvert,https://upload.wikimedia.org/wikipedia/commons/b/bf/Anas_platyrhynchos_male_female_quadrat.jpg,0,1,https://xeno-canto.org/980458/download
+American Black Duck,Canard noir,https://upload.wikimedia.org/wikipedia/commons/c/c7/Blackduck.jpg,0,1,https://xeno-canto.org/838360/download
+Northern Pintail,Canard pilet,https://upload.wikimedia.org/wikipedia/commons/0/0b/Northern_Pintails_%28Male_%26_Female%29_I_IMG_0911.jpg,0,2,https://xeno-canto.org/981846/download
+Green-winged Teal,Sarcelle à ailes vertes,https://upload.wikimedia.org/wikipedia/commons/0/07/Green-winged_Teal%2C_Port_Aransas%2C_Texas.jpg,0,2,https://xeno-canto.org/919829/download
+Marbled Duck,Marmaronette marbrée,https://upload.wikimedia.org/wikipedia/commons/d/d4/Marmaronetta_angustirostris%2C_London_Wetland_Centre%2C_UK_-_Diliff.jpg,0,3,https://xeno-canto.org/781142/download
+Red-crested Pochard,Nette rousse,https://upload.wikimedia.org/wikipedia/commons/5/50/Netta_rufina_%28Red-crested_Pochard%29_Male%2C_London_Wetland_Centre_-_Diliff.jpg,0,3,https://xeno-canto.org/982110/download
+Canvasback,Fuligule à dos blanc,https://upload.wikimedia.org/wikipedia/commons/e/e1/Aythya_valisineria_at_Las_Gallinas_Wildlife_Ponds.jpg,0,3,https://xeno-canto.org/371522/download
+Redhead (bird),Fuligule à tête rouge,https://upload.wikimedia.org/wikipedia/commons/5/52/Redhead_-_Aythya_americana%2C_Oakley_Street%2C_Cambridge%2C_Maryland.jpg,0,3,
+Common Pochard,fuligule milouin,https://upload.wikimedia.org/wikipedia/commons/5/5c/Aythya_ferina_Sandwell_2.jpg,0,3,https://xeno-canto.org/918474/download
+Ring-necked Duck,Fuligule à collier,https://upload.wikimedia.org/wikipedia/commons/9/9a/Aythya-collaris-001.jpg,0,2,https://xeno-canto.org/941129/download
+Ferruginous Duck,Fuligule nyroca,https://upload.wikimedia.org/wikipedia/commons/a/a2/Aythya_nyroca_at_Martin_Mere_1.jpg,0,3,https://xeno-canto.org/712563/download
+Tufted Duck,Fuligule morillon,https://upload.wikimedia.org/wikipedia/commons/e/eb/Tufted-Duck-male-female.jpg,0,2,https://xeno-canto.org/972509/download
+Greater Scaup,Fuligule milouinan,https://upload.wikimedia.org/wikipedia/commons/6/6c/Greater_Scaup_Drake_LBI.jpg,0,3,https://xeno-canto.org/576900/download
+Lesser Scaup,Petit Fuligule,https://upload.wikimedia.org/wikipedia/commons/d/d6/Lesser_Scaup_Male_JG.jpg,0,3,https://xeno-canto.org/871073/download
+Steller's Eider,Eider de Steller,https://upload.wikimedia.org/wikipedia/commons/5/51/Steller%27s_Eider_%28Polysticta_stelleri%29_%2813667966664%29.jpg,0,3,https://xeno-canto.org/203480/download
+Spectacled Eider,Eider à lunettes,https://upload.wikimedia.org/wikipedia/commons/f/f8/Spectacled_Eider_pair.jpg,0,2,https://xeno-canto.org/917231/download
+King Eider,Eider à tête grise,https://upload.wikimedia.org/wikipedia/commons/8/86/King_Eider_%28Somateria_spectabilis%29_%2813667616745%29.jpg,0,2,https://xeno-canto.org/964739/download
+Common Eider,Eider à duvet,https://upload.wikimedia.org/wikipedia/commons/1/15/%D0%9F%D1%83%D1%85%D1%96%D0%B2%D0%BA%D0%B0_%D0%BD%D0%B0_%D0%9A%D1%96%D0%BD%D0%B1%D1%83%D1%80%D0%BD%D1%81%D1%8C%D0%BA%D1%96%D0%B9_%D0%BA%D0%BE%D1%81%D1%96.jpg,0,2,https://xeno-canto.org/955136/download
+Harlequin Duck,Arlequin plongeur,https://upload.wikimedia.org/wikipedia/commons/7/7c/Drake_Harlequin_Perched_LBI.jpg,0,2,https://xeno-canto.org/651347/download
+Surf Scoter,Macreuse à front blanc,https://upload.wikimedia.org/wikipedia/commons/4/49/Surf_Scoter_Drake_LBI.png,0,3,https://xeno-canto.org/452395/download
+Velvet Scoter,Macreuse brune,https://upload.wikimedia.org/wikipedia/commons/3/35/Velvet_Scoter%2C_Eyebrook_Reservoir%2C_Leics.jpg,0,3,https://xeno-canto.org/817948/download
+White-winged Scoter,Macreuse à ailes blanches,https://upload.wikimedia.org/wikipedia/commons/9/9e/Melanitta_deglandi_%28White-winged_Scoter%29.jpg,0,3,https://xeno-canto.org/181618/download
+Stejneger's Scoter,Melanitta stejnegeri,https://upload.wikimedia.org/wikipedia/commons/4/45/Melanitta_stejnegeri_223375338_%28cropped%29_3.jpg,0,3,https://xeno-canto.org/833157/download
+Common Scoter,Macreuse noire,https://upload.wikimedia.org/wikipedia/commons/9/98/Eurasian_common_scoter.jpg,0,3,https://xeno-canto.org/982771/download
+Black Scoter,Macreuse à bec jaune,https://upload.wikimedia.org/wikipedia/commons/2/2c/Melanitta_americana_Barnegat_NJ.jpg,0,3,https://xeno-canto.org/486622/download
+Long-tailed Duck,Harelde de Miquelon,https://upload.wikimedia.org/wikipedia/commons/8/8e/Long-tailed-duck.jpg,0,3,https://xeno-canto.org/909900/download
+Bufflehead,Petit Garrot,https://upload.wikimedia.org/wikipedia/commons/4/40/Drake_Bufflehead_LBI.png,0,3,https://xeno-canto.org/388269/download
+Common Goldeneye,Garrot à œil d'or,https://upload.wikimedia.org/wikipedia/commons/3/34/Common_Goldeneye_%28Bucephala_clangula%29.jpg,0,3,https://xeno-canto.org/948646/download
+Barrow's Goldeneye,Garrot d'Islande,https://upload.wikimedia.org/wikipedia/commons/6/68/Barrows.goldeneye.male.010107.arp.jpg,0,3,https://xeno-canto.org/488196/download
+Smew,Harle piette,https://upload.wikimedia.org/wikipedia/commons/4/47/Zwergsaeger_maenchen_weibchen.jpg,0,3,https://xeno-canto.org/618773/download
+Hooded Merganser,Harle couronné,https://upload.wikimedia.org/wikipedia/commons/7/70/Hooded_merganser_male_in_Central_Park_%2895790%29.jpg,0,2,https://xeno-canto.org/317868/download
+Common Merganser,Harle bièvre,https://upload.wikimedia.org/wikipedia/commons/b/be/Mergus_merganser_-Sandwell_-England_-male-8.jpg,0,3,https://xeno-canto.org/959402/download
+Red-breasted Merganser,Harle huppé,https://upload.wikimedia.org/wikipedia/commons/6/65/Mergus_serrator_-New_Jersey_-USA_-winter-8.jpg,0,3,https://xeno-canto.org/571300/download
+Ruddy Duck,Érismature rousse,https://upload.wikimedia.org/wikipedia/commons/b/ba/Ruddy_Duck_%28Oxyura_jamaicensis%29_RWD2.jpg,0,3,https://xeno-canto.org/215359/download
+White-headed Duck,Érismature à tête blanche,https://upload.wikimedia.org/wikipedia/commons/0/05/Whiteheadduck.jpg,0,3,https://xeno-canto.org/462959/download
+Helmeted Guineafowl,Pintade de Numidie,https://upload.wikimedia.org/wikipedia/commons/a/af/Numida_meleagris_-Serengeti_National_Park%2C_Tanzania-8_%281%29.jpg,0,2,https://xeno-canto.org/981311/download
+Northern Bobwhite,Colin de Virginie,https://upload.wikimedia.org/wikipedia/commons/0/0c/Virginiawachtel_2007-06-16_065.jpg,0,2,https://xeno-canto.org/919215/download
+California Quail,Colin de Californie,https://upload.wikimedia.org/wikipedia/commons/a/aa/California_quail.jpg,0,2,https://xeno-canto.org/570687/download
+Hazel Grouse,Gélinotte des bois,https://upload.wikimedia.org/wikipedia/commons/a/ab/Hazel_Grouse_imported_from_iNaturalist_photo_116195913_on_11_June_2024.jpg,0,2,https://xeno-canto.org/982129/download
+Willow Ptarmigan,Lagopède des saules,https://upload.wikimedia.org/wikipedia/commons/e/ec/Lagopus_lagopus_adult_%28Denali%2C_2010%29.jpg,0,2,https://xeno-canto.org/971601/download
+Rock Ptarmigan,Lagopède alpin,https://upload.wikimedia.org/wikipedia/commons/1/1f/Rock_Ptarmigan_%28Lagopus_Muta%29.jpg,0,2,https://xeno-canto.org/487317/download
+Western Capercaillie,Grand Tétras,https://upload.wikimedia.org/wikipedia/commons/a/a3/Capercaillie_%288751340764%29.jpg,0,1,https://xeno-canto.org/942012/download
+Black Grouse,Tétras lyre,https://upload.wikimedia.org/wikipedia/commons/b/bf/Black_Grouse_Nationalpark_Bayerischer_Wald.jpg,0,2,https://xeno-canto.org/940956/download
+Caucasian Grouse,Tétras du Caucase,https://upload.wikimedia.org/wikipedia/commons/6/60/Tetras_du_caucase_jogo_0g.jpg,0,3,https://xeno-canto.org/178542/download
+Gray Partridge,Perdrix grise,https://upload.wikimedia.org/wikipedia/commons/3/31/Perdix_perdix_Turvey_3.jpg,0,2,
+Reeves's Pheasant,Faisan vénéré,https://upload.wikimedia.org/wikipedia/commons/0/08/BxZ_Syrmaticus_reevesii_00.jpg,0,3,https://xeno-canto.org/824070/download
+Lady Amherst's Pheasant,Faisan de Lady Amherst,https://upload.wikimedia.org/wikipedia/commons/5/50/Chrysolophus_amherstiae_18092009.jpg,0,3,https://xeno-canto.org/916158/download
+Ring-necked Pheasant,Faisan de Colchide,https://upload.wikimedia.org/wikipedia/commons/7/79/Common_pheasant_%28Phasianus_colchicus%29_cock_2.jpg,0,1,
+Black Francolin,Francolin noir,https://upload.wikimedia.org/wikipedia/commons/9/9d/Black_Francolin.jpg,0,3,https://xeno-canto.org/964969/download
+Caucasian Snowcock,Tétraogalle du Caucase,https://upload.wikimedia.org/wikipedia/commons/d/d2/Tetraogallus_caucasicus.jpg,0,3,https://xeno-canto.org/678203/download
+Common Quail,caille des blés,https://upload.wikimedia.org/wikipedia/commons/4/4f/Coturnix_coturnix%2C_Fraunberg%2C_Bayern%2C_Deutschland_1%2C_Ausschnitt.jpg,0,1,https://xeno-canto.org/921943/download
+Barbary Partridge,Perdrix gambra,https://upload.wikimedia.org/wikipedia/commons/0/0c/Alectoris_barbara_Tenerife.jpg,0,2,https://xeno-canto.org/134392/download
+Red-legged Partridge,Perdrix rouge,https://upload.wikimedia.org/wikipedia/commons/8/8c/Perdrix_rouge.jpg,0,2,https://xeno-canto.org/961521/download
+Rock Partridge,Perdrix bartavelle,https://upload.wikimedia.org/wikipedia/commons/5/52/Steinhuhn_Alectoris_graeca.jpg,0,2,https://xeno-canto.org/951745/download
+Rock Pigeon,pigeon biset,https://upload.wikimedia.org/wikipedia/commons/b/b7/Columba_livia_Baltasound_Shetland_1.jpg,0,1,https://xeno-canto.org/821258/download
+Stock Dove,Pigeon colombin,https://upload.wikimedia.org/wikipedia/commons/b/b5/2019-03-17_Columba_oenas%2C_Jesmond_Dene_1.jpg,0,2,https://xeno-canto.org/976831/download
+Common Wood-Pigeon,Pigeon ramier,https://upload.wikimedia.org/wikipedia/commons/f/f5/Columba_palumbus_-garden_post-8.jpg,0,1,
+Trocaz Pigeon,Pigeon trocaz,https://upload.wikimedia.org/wikipedia/commons/f/f5/Trocaz_Pigeon_Madeira.jpg,0,1,https://xeno-canto.org/962011/download
+Bolle's Pigeon,Pigeon de Bolle,https://upload.wikimedia.org/wikipedia/commons/b/b7/Lorbeertaube3_3.jpg,0,2,https://xeno-canto.org/899826/download
+Laurel Pigeon,Pigeon des lauriers,https://upload.wikimedia.org/wikipedia/commons/a/a6/Columba_junoniae_163958122.jpg,0,2,https://xeno-canto.org/899830/download
+Passenger Pigeon,Tourte voyageuse,https://upload.wikimedia.org/wikipedia/commons/0/03/Bird_lore_%281913%29_%2814562557107%29.jpg,0,2,
+European Turtle-Dove,Tourterelle des bois,https://upload.wikimedia.org/wikipedia/commons/e/ec/Turtle_dove_%28Streptopelia_turtur_turtur%29_Hungary.jpg,0,1,
+Oriental Turtle-Dove,Tourterelle orientale,https://upload.wikimedia.org/wikipedia/commons/9/9f/Av_Oriental_Turtle-Dove_JG.jpg,0,1,
+Eurasian Collared-Dove,Tourterelle turque,https://upload.wikimedia.org/wikipedia/commons/f/fa/2022-04-06_Streptopelia_decaocto%2C_Plovdiv%2C_Bulgaria_1.jpg,0,1,
+African Collared-Dove,Tourterelle rieuse,https://upload.wikimedia.org/wikipedia/commons/1/11/Streptopelia_roseogrisea%2C_Waza_NP%2C_Cameroon_%28cropped%29.jpg,0,1,
+Laughing Dove,Tourterelle maillée,https://upload.wikimedia.org/wikipedia/commons/6/6c/Laughing_dove_-_Vadodara_2022-01-28.jpg,0,2,https://xeno-canto.org/954435/download
+Namaqua Dove,Tourterelle masquée,https://upload.wikimedia.org/wikipedia/commons/b/ba/Oena_capensis_-near_Kambi_ya_Tembo%2C_Arusha%2C_Tanzania-8%2C_crop.jpg,0,2,https://xeno-canto.org/951388/download
+Zenaida Dove,Tourterelle à queue carrée,https://upload.wikimedia.org/wikipedia/commons/3/3d/Zenaida_Dove%2C_St._Thomas.jpg,0,2,https://xeno-canto.org/799860/download
+Mourning Dove,Tourterelle triste,https://upload.wikimedia.org/wikipedia/commons/a/aa/Av_Mourning_Dove_JG.jpg,0,2,https://xeno-canto.org/940517/download
+Pallas's Sandgrouse,Syrrhapte paradoxal,https://upload.wikimedia.org/wikipedia/commons/9/91/Syrrhaptes_paradoxus_%28J%C3%A1n_Svetl%C3%ADk%29.jpg,0,3,https://xeno-canto.org/833432/download
+Pin-tailed Sandgrouse,Ganga cata,https://upload.wikimedia.org/wikipedia/commons/8/8c/Pin-tailed_sandgrouse_%28Pterocles_alchata%29.jpg,0,3,https://xeno-canto.org/975934/download
+Spotted Sandgrouse,Ganga tacheté,https://upload.wikimedia.org/wikipedia/commons/9/95/Spotted_sandgrouse_%28cropped%29.jpg,0,3,https://xeno-canto.org/527579/download
+Black-bellied Sandgrouse,Ganga unibande,https://upload.wikimedia.org/wikipedia/commons/2/21/Pterocles_orientalis_in_flight.jpg,0,2,https://xeno-canto.org/972267/download
+Great Bustard,Grande Outarde,https://upload.wikimedia.org/wikipedia/commons/9/90/Drop_f%C3%BAzat%C3%BD_%28Otis_tarda%29_%282416576086%29.jpg,0,1,https://xeno-canto.org/922367/download
+African Houbara,Outarde houbara,https://upload.wikimedia.org/wikipedia/commons/4/45/Houbara035.JPG,0,2,
+Asian Houbara,Outarde de Macqueen,https://upload.wikimedia.org/wikipedia/commons/c/cc/MacQueens_Bustard_in_Greater_Rann_of_Kutch%2C_Gujarat%2C_India.jpg,0,2,
+Little Bustard,Outarde canepetière,https://upload.wikimedia.org/wikipedia/commons/9/92/Little_Bustard_%28Tetrax_tetrax%29%2C_Castuera%2C_Extremadura%2C_Spain.jpg,0,2,https://xeno-canto.org/972738/download
+Great Spotted Cuckoo,Coucou geai,https://upload.wikimedia.org/wikipedia/commons/9/91/Clamator_glandarius_%28cropped_2%29.jpg,0,2,https://xeno-canto.org/545287/download
+Yellow-billed Cuckoo,Coulicou à bec jaune,https://upload.wikimedia.org/wikipedia/commons/a/aa/Yellow-billed_cuckoo_%2842690%29.jpg,0,1,https://xeno-canto.org/901133/download
+Black-billed Cuckoo,Coulicou à bec noir,https://upload.wikimedia.org/wikipedia/commons/6/67/Black-billed-cuckoo2.jpg,0,2,https://xeno-canto.org/807265/download
+Northern Hawk-Cuckoo,Coucou de Hodgson,https://upload.wikimedia.org/wikipedia/commons/9/97/Hodgson%27s_Hawk_Cuckoo%2C_Cherapunjee%2C_Meghalaya%2C_India.jpg,0,2,
+Himalayan Cuckoo,Coucou de l'Himalaya,https://upload.wikimedia.org/wikipedia/commons/f/fc/Himalayan_Cuckoo_Gnathang_Valley_East_Sikkim_India_23.09.2018.jpg,0,2,https://xeno-canto.org/957225/download
+Common Cuckoo,coucou gris,https://upload.wikimedia.org/wikipedia/commons/1/14/Cuculus_canorus_vogelartinfo_chris_romeiks_CHR0791_cropped.jpg,0,1,https://xeno-canto.org/982392/download
+Oriental Cuckoo,Coucou oriental,https://upload.wikimedia.org/wikipedia/commons/8/80/Oriental_Cuckoo_Maiala.JPG,0,1,https://xeno-canto.org/903270/download
+Common Nighthawk,Engoulevent d'Amérique,https://upload.wikimedia.org/wikipedia/commons/e/eb/Common_Nighthawk_%2814428313550%29.jpg,0,2,https://xeno-canto.org/569822/download
+Red-necked Nightjar,Engoulevent à collier roux,https://upload.wikimedia.org/wikipedia/commons/8/8a/Caprimulgus_ruficollis_-Portugal-8.jpg,0,2,https://xeno-canto.org/905834/download
+Eurasian Nightjar,Engoulevent d'Europe,https://upload.wikimedia.org/wikipedia/commons/c/c1/%C5%9Eivanxap%C3%AEnok.jpg,0,1,
+Egyptian Nightjar,Engoulevent du désert,https://upload.wikimedia.org/wikipedia/commons/8/82/Egyptian_nightjar.png,0,2,https://xeno-canto.org/977386/download
+Chimney Swift,martinet ramoneur,https://upload.wikimedia.org/wikipedia/commons/6/6f/Chaetura_pelagica%2C_by_Lake_Erie%2C_Cleveland%2C_Ohio%2C_USA_339593191.jpg,0,2,https://xeno-canto.org/487256/download
+White-throated Needletail,Martinet épineux,https://upload.wikimedia.org/wikipedia/commons/e/e8/White-throated_Needletail_0A2A6919.jpg,0,2,https://xeno-canto.org/508634/download
+Alpine Swift,Martinet à ventre blanc,https://upload.wikimedia.org/wikipedia/commons/4/4d/%CE%92%CE%BF%CF%85%CE%BD%CE%BF%CF%83%CF%84%CE%B1%CF%87%CF%84%CE%AC%CF%81%CE%B1_Alpine_Swift_Tachymarptis_melba.jpg,0,1,https://xeno-canto.org/980555/download
+Common Swift,Martinet noir,https://upload.wikimedia.org/wikipedia/commons/b/be/Apus_apus_-Barcelona%2C_Spain-8_%281%29.jpg,0,1,https://xeno-canto.org/941109/download
+Plain Swift,Martinet unicolore,https://upload.wikimedia.org/wikipedia/commons/9/9f/Einfarbsegler.jpg,0,2,https://xeno-canto.org/521878/download
+Pallid Swift,Martinet pâle,https://upload.wikimedia.org/wikipedia/commons/3/3f/Apus_pallidus_-Greece-8.jpg,0,2,https://xeno-canto.org/972572/download
+Pacific Swift,Martinet de Sibérie,https://upload.wikimedia.org/wikipedia/commons/5/54/Pacific_Swift_%28cropped%29.jpg,0,2,https://xeno-canto.org/915151/download
+Little Swift,Martinet des maisons,https://upload.wikimedia.org/wikipedia/commons/f/f7/Little_swift%2C_Apus_affinis%2C_at_Kruger_National_Park%2C_South_Africa%2C_crop.jpg,0,2,https://xeno-canto.org/982333/download
+Horus Swift,Martinet horus,https://upload.wikimedia.org/wikipedia/commons/2/21/ApusHorus_RobertWienand.jpg,0,2,https://xeno-canto.org/438049/download
+White-rumped Swift,Martinet cafre,https://upload.wikimedia.org/wikipedia/commons/8/8a/White-rumped_swift%2C_Apus_caffer%2C_at_Suikerbosrand_Nature_Reserve%2C_Gauteng%2C_South_Africa_%2823057155930%29%2C_crop.jpg,0,3,https://xeno-canto.org/184180/download
+Virginia Rail,Râle de Virginie,https://upload.wikimedia.org/wikipedia/commons/2/2f/Virginia_rail_%2841109%29.jpg,0,2,https://xeno-canto.org/979245/download
+Water Rail,Râle d'eau,https://upload.wikimedia.org/wikipedia/commons/b/b3/Water_rail_2022_04_30_01.jpg,0,2,https://xeno-canto.org/982818/download
+Corn Crake,Râle des genêts,https://upload.wikimedia.org/wikipedia/commons/7/76/Ruisr%C3%A4%C3%A4kk%C3%A4.JPG,0,3,https://xeno-canto.org/921308/download
+African Crake,Râle des prés,https://upload.wikimedia.org/wikipedia/commons/b/ba/CrakeAfrican2%28byMarkTittley%29_cropped_and_mirrored.jpg,0,3,https://xeno-canto.org/872294/download
+Spotted Crake,Marouette ponctuée,https://upload.wikimedia.org/wikipedia/commons/4/42/Porzana_porzana_6_%28Marek_Szczepanek%29.jpg,0,3,https://xeno-canto.org/924383/download
+Lesser Moorhen,Gallinule africaine,https://upload.wikimedia.org/wikipedia/commons/d/d4/Lesser_moorhen_%28Paragallinula_angulata%29.jpg,0,3,https://xeno-canto.org/791485/download
+Eurasian Moorhen,Gallinule poule-d'eau,https://upload.wikimedia.org/wikipedia/commons/e/ee/Common_moorhen_%28Gallinula_chloropus%29_France.jpg,0,1,
+Common Gallinule,Gallinule d'Amérique,https://upload.wikimedia.org/wikipedia/commons/2/20/Common-gallinule-galapagos-casey-klebba.jpg,0,2,https://xeno-canto.org/470873/download
+Eurasian Coot,Foulque macroule,https://upload.wikimedia.org/wikipedia/commons/a/a0/%D0%9B%D1%8B%D1%81%D1%83%D1%85%D0%B0_%28Fulica_atra%29%2C_%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4.jpg,0,2,https://xeno-canto.org/971090/download
+Red-knobbed Coot,Foulque à crête,https://upload.wikimedia.org/wikipedia/commons/7/78/Fulica_cristata_-Cape_Town%2C_South_Africa_-adult-8.jpg,0,2,https://xeno-canto.org/909702/download
+American Coot,Foulque d'Amérique,https://upload.wikimedia.org/wikipedia/commons/d/d8/American_coot_in_Prospect_Park_%2806152%29.jpg,0,2,https://xeno-canto.org/937001/download
+Allen's Gallinule,Talève d'Allen,https://upload.wikimedia.org/wikipedia/commons/6/65/Porphyrio_alleni_Martien_Brand.jpg,0,3,https://xeno-canto.org/39322/download
+Western Swamphen,Talève sultane,https://upload.wikimedia.org/wikipedia/commons/6/6c/Purpurhuhn.jpg,0,3,https://xeno-canto.org/977075/download
+African Swamphen,Talève d'Afrique,https://upload.wikimedia.org/wikipedia/commons/0/07/African_Purple_Swamphen.jpg,0,2,https://xeno-canto.org/976833/download
+Watercock,Râle à crête,https://upload.wikimedia.org/wikipedia/commons/e/eb/Gallicrex_cinerea_-Basai_Wetlands%2C_near_Gurgaon%2C_Haryana%2C_India-8.jpg,0,3,https://xeno-canto.org/982027/download
+Striped Crake,Marouette rayée,https://upload.wikimedia.org/wikipedia/commons/9/93/Aenigmatolimnas_marginalis%2C_Kgomo-kgomo-vleiland%2C_Birding_Weto%2C_a.jpg,0,3,https://xeno-canto.org/980421/download
+Little Crake,Marouette poussin,https://upload.wikimedia.org/wikipedia/commons/8/81/Porzana_parva_%2850%29.jpg,0,3,https://xeno-canto.org/975336/download
+Baillon's Crake,Marouette de Baillon,https://upload.wikimedia.org/wikipedia/commons/7/76/Porzana_pusilla_-_Mount_Annan_Botanical_Garden.jpg,0,3,https://xeno-canto.org/924558/download
+Demoiselle Crane,Grue demoiselle,https://upload.wikimedia.org/wikipedia/commons/c/c3/Demoiselle_Cranes_at_Tal_Chappar.jpg,0,1,https://xeno-canto.org/911516/download
+Siberian Crane,Grue de Sibérie,https://upload.wikimedia.org/wikipedia/commons/6/61/Schneekranich_Grus_leucogeranus_090501_We_147.JPG,0,2,https://xeno-canto.org/890264/download
+Sandhill Crane,Grue du Canada,https://upload.wikimedia.org/wikipedia/commons/5/55/Sandhill_Crane_JG.jpg,0,2,https://xeno-canto.org/552624/download
+Common Crane,Grue cendrée,https://upload.wikimedia.org/wikipedia/commons/f/fd/Common_crane_grus_grus.jpg,0,2,https://xeno-canto.org/982202/download
+Hooded Crane,Grue moine,https://upload.wikimedia.org/wikipedia/commons/c/c2/Grus_monacha_-Kyushu%2C_Japan_-three-8.jpg,0,2,https://xeno-canto.org/892190/download
+Eurasian Thick-knee,Œdicnème criard,https://upload.wikimedia.org/wikipedia/commons/d/d8/Burhinus_oedicnemus_insularum_Lanzarote_1.jpg,0,3,
+Egyptian Plover,Pluvian fluviatile,https://upload.wikimedia.org/wikipedia/commons/0/0d/Flickr_-_Rainbirder_-_Egyptian_Plover_%28Pluvianus_aegyptius%29.jpg,0,3,https://xeno-canto.org/719415/download
+Black-winged Stilt,Échasse blanche,https://upload.wikimedia.org/wikipedia/commons/3/31/Black-winged_stilt_%28Himantopus_himantopus%29.jpg,0,2,https://xeno-canto.org/980115/download
+Pied Avocet,Avocette élégante,https://upload.wikimedia.org/wikipedia/commons/c/c5/Pied_Avocet_Recurvirostra_avosetta.jpg,0,3,https://xeno-canto.org/981797/download
+American Avocet,Avocette d'Amérique,https://upload.wikimedia.org/wikipedia/commons/d/de/American_Avocet1.jpg,0,2,https://xeno-canto.org/891493/download
+Eurasian Oystercatcher,Huîtrier pie,https://upload.wikimedia.org/wikipedia/commons/a/a7/Haematopus_ostralegus_Norway.jpg,0,1,https://xeno-canto.org/982617/download
+American Oystercatcher,Huîtrier d'Amérique,https://upload.wikimedia.org/wikipedia/commons/d/df/American_oystercatchers_at_Fort_Tilden_%2860747%29.jpg,0,2,https://xeno-canto.org/871345/download
+Canarian Oystercatcher,Huîtrier des Canaries,https://upload.wikimedia.org/wikipedia/commons/b/b3/Canarian_Oystercatcher.jpg,0,3,
+Black-bellied Plover,Pluvier argenté,https://upload.wikimedia.org/wikipedia/commons/4/4c/Black-bellied_plover_Egg_Harbor.png,0,3,
+European Golden-Plover,Pluvier doré,https://upload.wikimedia.org/wikipedia/commons/1/11/Kul%C3%ADk_zlat%C3%BD_%28Pluvialis_apricaria%29_a_%283949776435%29.jpg,0,3,
+American Golden-Plover,Pluvier bronzé,https://upload.wikimedia.org/wikipedia/commons/0/0c/American_Golden_Plover_%287458262530%29.jpg,0,3,
+Pacific Golden-Plover,Pluvier fauve,https://upload.wikimedia.org/wikipedia/commons/0/0b/Pluvialis_fulva_-Bering_Land_Bridge_National_Preserve%2C_Alaska%2C_USA-8.jpg,0,2,
+Eurasian Dotterel,Pluvier guignard,https://upload.wikimedia.org/wikipedia/commons/b/bb/Charadrius_morinellus_male.jpg,0,3,https://xeno-canto.org/914373/download
+Killdeer,Pluvier kildir,https://upload.wikimedia.org/wikipedia/commons/c/cb/Killdeer_Heislerville.png,0,3,https://xeno-canto.org/955105/download
+Common Ringed Plover,Pluvier grand-gravelot,https://upload.wikimedia.org/wikipedia/commons/d/d2/Common_ringed_plover_%28Charadrius_hiaticula%29_Oppdal.jpg,0,3,https://xeno-canto.org/979718/download
+Semipalmated Plover,Pluvier semipalmé,https://upload.wikimedia.org/wikipedia/commons/c/c6/Plover_Semipalmated_Breeding_JG.jpg,0,2,https://xeno-canto.org/974538/download
+Little Ringed Plover,Petit Gravelot,https://upload.wikimedia.org/wikipedia/commons/b/bb/Flussregenpfeifer_im_flachen_Wasser_01.jpg,0,2,https://xeno-canto.org/982808/download
+Northern Lapwing,Vanneau huppé,https://upload.wikimedia.org/wikipedia/commons/2/2f/Northern-Lapwing-Vanellus-vanellus.jpg,0,2,https://xeno-canto.org/975772/download
+Spur-winged Lapwing,Vanneau à éperons,https://upload.wikimedia.org/wikipedia/commons/7/75/Spur-winged_lapwing_%28Vanellus_spinosus%29_in_flight.jpg,0,3,https://xeno-canto.org/976566/download
+Gray-headed Lapwing,Vanneau à tête grise,https://upload.wikimedia.org/wikipedia/commons/b/b5/Vanellus_cinereus.JPG,0,3,
+Sociable Lapwing,Vanneau sociable,https://upload.wikimedia.org/wikipedia/commons/6/62/SociablePlover.jpg,0,3,https://xeno-canto.org/566869/download
+White-tailed Lapwing,Vanneau à queue blanche,https://upload.wikimedia.org/wikipedia/commons/8/86/White-tailed_lapwing_%28Vanellus_leucurus%29.jpg,0,3,https://xeno-canto.org/960240/download
+Caspian Plover,Pluvier asiatique,https://upload.wikimedia.org/wikipedia/commons/9/98/Wermutregenpfeifer_%28Charadrius_asiaticus%29_206737679.jpg,0,3,https://xeno-canto.org/962229/download
+Oriental Plover,Pluvier oriental,https://upload.wikimedia.org/wikipedia/commons/b/b7/Charadrius_veredus_West_Timor_0.jpg,0,3,https://xeno-canto.org/411921/download
+Greater Sand-Plover,Pluvier de Leschenault,https://upload.wikimedia.org/wikipedia/commons/3/3a/2024-07-26_Anarhynchus_leschenaultii_leschenaultii%2C_Newbiggin%2C_Northumberland_1.jpg,0,3,
+Kittlitz's Plover,Pluvier pâtre,https://upload.wikimedia.org/wikipedia/commons/7/79/Kittlitz%27s_plover_%28Charadrius_pecuarius%29.jpg,0,3,https://xeno-canto.org/758524/download
+Snowy Plover,Pluvier neigeux,https://upload.wikimedia.org/wikipedia/commons/0/0a/Snowy_Plover_Morro_Strand.jpg,0,2,https://xeno-canto.org/566601/download
+Kentish Plover,Pluvier à collier interrompu,https://upload.wikimedia.org/wikipedia/commons/6/6f/Kentish_Plover_Charadrius_alexandrinus%2C_India.jpg,0,3,https://xeno-canto.org/982472/download
+Upland Sandpiper,Maubèche des champs,https://upload.wikimedia.org/wikipedia/commons/c/cf/UplandSandpiperOntarioCropped.jpg,0,3,https://xeno-canto.org/549859/download
+Little Curlew,Courlis nain,https://upload.wikimedia.org/wikipedia/commons/f/fd/Numenius_minutus_1.jpg,0,2,https://xeno-canto.org/792063/download
+Slender-billed Curlew,Courlis à bec grêle,https://upload.wikimedia.org/wikipedia/commons/a/ae/Naturalis_Biodiversity_Center_-_ZMA.AVES.1670_-_Numenius_tenuirostris_Vieillot%2C_1817_-_Scolopacidae_-_skin_specimen_%28cropped%29.jpeg,0,3,https://xeno-canto.org/398794/download
+Eurasian Curlew,Courlis cendré,https://upload.wikimedia.org/wikipedia/commons/2/2c/Eurasian_Curlew.jpg,0,2,https://xeno-canto.org/982664/download
+Bar-tailed Godwit,Barge rousse,https://upload.wikimedia.org/wikipedia/commons/c/ca/Bar-tailed_Godwit.jpg,0,3,https://xeno-canto.org/982508/download
+Black-tailed Godwit,Barge à queue noire,https://upload.wikimedia.org/wikipedia/commons/d/d9/Black-tailed_godwit_-_Dhichda_Lake%2C_Jamnagar_2023-11-17.jpg,0,2,https://xeno-canto.org/981842/download
+Hudsonian Godwit,Barge hudsonienne,https://upload.wikimedia.org/wikipedia/commons/1/1a/Limosa_haemastica_-_Kogarah_Bay.jpg,0,3,https://xeno-canto.org/856368/download
+Short-billed Dowitcher,Bécassin roux,https://upload.wikimedia.org/wikipedia/commons/6/66/Short-billed_dowitcher_in_JBWR_%2840844%29.jpg,0,2,https://xeno-canto.org/902072/download
+Long-billed Dowitcher,Bécassin à long bec,https://upload.wikimedia.org/wikipedia/commons/9/92/Limnodromus_scolopaceus_Mike_Baird_crop.jpg,0,3,https://xeno-canto.org/948874/download
+Jack Snipe,Bécassine sourde,https://upload.wikimedia.org/wikipedia/commons/c/c9/Jack_snipe.png,0,2,https://xeno-canto.org/982106/download
+American Woodcock,Bécasse d'Amérique,https://upload.wikimedia.org/wikipedia/commons/c/cb/American_Woodcock_-_13611759975.jpg,0,1,https://xeno-canto.org/560227/download
+Eurasian Woodcock,Bécasse des bois,https://upload.wikimedia.org/wikipedia/commons/1/1c/Woodcock_earthworm.jpg,0,2,https://xeno-canto.org/957126/download
+Great Snipe,Bécassine double,https://upload.wikimedia.org/wikipedia/commons/5/5a/Greatsnipe_1000.jpg,0,2,https://xeno-canto.org/911831/download
+Swinhoe's Snipe,Bécassine de Swinhoe,https://upload.wikimedia.org/wikipedia/commons/2/23/Gallinago_megala.jpg,0,2,https://xeno-canto.org/765731/download
+Pin-tailed Snipe,Bécassine à queue pointue,https://upload.wikimedia.org/wikipedia/commons/5/5f/Gallinago_stenura_-_Laem_Pak_Bia.jpg,0,2,https://xeno-canto.org/840942/download
+Common Snipe,Bécassine des marais,https://upload.wikimedia.org/wikipedia/commons/f/f8/Common_Snipe_%28Gallinago_gallinago%29_%2826144727151%29.jpg,0,2,https://xeno-canto.org/960737/download
+Wilson's Snipe,Bécassine de Wilson,https://upload.wikimedia.org/wikipedia/commons/9/9d/Gallinago-delicata-002-cropped.jpg,0,2,https://xeno-canto.org/837812/download
+Wilson's Phalarope,Phalarope de Wilson,https://upload.wikimedia.org/wikipedia/commons/f/f1/Wilson%27s_Phalarope%2C_Oregon_03_%28cropped%29.jpg,0,3,https://xeno-canto.org/877030/download
+Red Phalarope,Phalarope à bec large,https://upload.wikimedia.org/wikipedia/commons/1/17/Phalaropus_fulicarius_98755138_%28cropped%29.jpg,0,2,https://xeno-canto.org/952471/download
+Red-necked Phalarope,Phalarope à bec étroit,https://upload.wikimedia.org/wikipedia/commons/5/5c/Red-necked_Phalarope.jpg,0,3,https://xeno-canto.org/981773/download
+Terek Sandpiper,Chevalier bargette,https://upload.wikimedia.org/wikipedia/commons/9/91/Xenus_cinereus_lifting_leg.jpg,0,3,https://xeno-canto.org/982481/download
+Common Sandpiper,Chevalier guignette,https://upload.wikimedia.org/wikipedia/commons/a/a7/Actitis_hypoleucos_-_Laem_Pak_Bia.jpg,0,3,https://xeno-canto.org/982468/download
+Spotted Sandpiper,Chevalier grivelé,https://upload.wikimedia.org/wikipedia/commons/4/46/Actitis-macularia-005.jpg,0,3,https://xeno-canto.org/928730/download
+Green Sandpiper,Chevalier cul-blanc,https://upload.wikimedia.org/wikipedia/commons/7/70/Green_sandpiper_%28Tringa_ochropus%29.jpg,0,2,https://xeno-canto.org/979320/download
+Solitary Sandpiper,Chevalier solitaire,https://upload.wikimedia.org/wikipedia/commons/f/f0/Solitarysandpiper.jpg,0,2,https://xeno-canto.org/552318/download
+Gray-tailed Tattler,Tringa brevipes,https://upload.wikimedia.org/wikipedia/commons/9/9f/Tringa_brevipes2.jpg,0,3,
+Marsh Sandpiper,Chevalier stagnatile,https://upload.wikimedia.org/wikipedia/commons/e/e0/Tringa_stagnatilis_2_-_Laem_Pak_Bia.jpg,0,3,https://xeno-canto.org/960654/download
+Wood Sandpiper,Chevalier sylvain,https://upload.wikimedia.org/wikipedia/commons/8/87/Wood_Sandpiper_Safari_Park.jpg,0,3,https://xeno-canto.org/981751/download
+Common Redshank,Chevalier gambette,https://upload.wikimedia.org/wikipedia/commons/4/4e/Common_Redshank_Tringa_totanus.jpg,0,2,https://xeno-canto.org/981453/download
+Lesser Yellowlegs,Petit Chevalier,https://upload.wikimedia.org/wikipedia/commons/a/a3/Lesser_Yellowlegs.jpg,0,2,https://xeno-canto.org/972896/download
+Willet,Chevalier semipalmé,https://upload.wikimedia.org/wikipedia/commons/2/2c/Catoptrophorus_semipalmatus_edit.jpg,0,3,https://xeno-canto.org/474504/download
+Spotted Redshank,Chevalier arlequin,https://upload.wikimedia.org/wikipedia/commons/c/c0/Tringa_erythropus_-_Laem_Pak_Bia.jpg,0,3,https://xeno-canto.org/931220/download
+Common Greenshank,Chevalier aboyeur,https://upload.wikimedia.org/wikipedia/commons/8/8e/Greenshank_%28Tringa_nebularia%29.jpg,0,3,https://xeno-canto.org/982560/download
+Greater Yellowlegs,Grand Chevalier,https://upload.wikimedia.org/wikipedia/commons/6/66/Greater_Yellowlegs_JG.jpg,0,2,https://xeno-canto.org/957945/download
+Ruddy Turnstone,Tournepierre à collier,https://upload.wikimedia.org/wikipedia/commons/e/e9/Arenaria_interpres_%28habitus%29.jpg,0,3,https://xeno-canto.org/914125/download
+Great Knot,Bécasseau de l'Anadyr,https://upload.wikimedia.org/wikipedia/commons/2/27/Calidris_tenuirostris_-_Laem_Phak_Bia.jpg,0,3,https://xeno-canto.org/396375/download
+Red Knot,Bécasseau maubèche,https://upload.wikimedia.org/wikipedia/commons/0/03/Rufa_red_knot_%28Calidris_canutus_rufa%29_in_Delaware_Bay%2C_New_Jersey.jpg,0,2,https://xeno-canto.org/382128/download
+Broad-billed Sandpiper,Bécasseau falcinelle,https://upload.wikimedia.org/wikipedia/commons/f/fb/Broad_billed_sandpiper_by_Sreedev_Puthur.jpg,0,3,https://xeno-canto.org/977582/download
+Sharp-tailed Sandpiper,Bécasseau à queue pointue,https://upload.wikimedia.org/wikipedia/commons/9/94/Calidris_acuminata_-_Hexham_Swamp.jpg,0,2,https://xeno-canto.org/425083/download
+Curlew Sandpiper,Bécasseau cocorli,https://upload.wikimedia.org/wikipedia/commons/c/cc/Calidris_ferruginea%2C_winter_adult%2C_Pak_Thale.jpg,0,3,https://xeno-canto.org/978090/download
+Stilt Sandpiper,Bécasseau à échasses,https://upload.wikimedia.org/wikipedia/commons/7/75/Calidris_himantopus.jpg,0,3,https://xeno-canto.org/340730/download
+Temminck's Stint,Bécasseau de Temminck,https://upload.wikimedia.org/wikipedia/commons/6/6b/Temmincks_Stint.jpg,0,3,https://xeno-canto.org/903063/download
+Long-toed Stint,Bécasseau à longs doigts,https://upload.wikimedia.org/wikipedia/commons/c/cf/Calidris_subminuta_-_Pak_Thale.jpg,0,3,https://xeno-canto.org/950064/download
+Red-necked Stint,Bécasseau à col roux,https://upload.wikimedia.org/wikipedia/commons/1/1b/Red-necked_Stint_-_Boat_Harbour.jpg,0,3,https://xeno-canto.org/950071/download
+Spoon-billed Sandpiper,Bécasseau spatule,https://upload.wikimedia.org/wikipedia/commons/0/09/Eurynorhynchus_pygmeus_2_-_Pak_Thale.jpg,0,3,https://xeno-canto.org/486596/download
+Buff-breasted Sandpiper,Bécasseau rousset,https://upload.wikimedia.org/wikipedia/commons/b/b4/Tryngites_subruficollis_-USA-8.jpg,0,3,https://xeno-canto.org/747826/download
+Sanderling,Bécasseau sanderling,https://upload.wikimedia.org/wikipedia/commons/a/a9/Sanderling_JG.jpg,0,3,https://xeno-canto.org/976407/download
+Dunlin,Bécasseau variable,https://upload.wikimedia.org/wikipedia/commons/1/1c/Calidris_alpina_alpina%2C_Riga%2C_Latvia_1.jpg,0,3,https://xeno-canto.org/982474/download
+Purple Sandpiper,Bécasseau violet,https://upload.wikimedia.org/wikipedia/commons/8/8a/PUSA_perched_LBI.jpg,0,3,https://xeno-canto.org/487569/download
+Baird's Sandpiper,Bécasseau de Baird,https://upload.wikimedia.org/wikipedia/commons/0/08/Calidris_bairdii.jpg,0,3,https://xeno-canto.org/544958/download
+Little Stint,Bécasseau minute,https://upload.wikimedia.org/wikipedia/commons/7/77/Little_Stint_%28Calidris_minuta%29_2.jpg,0,2,https://xeno-canto.org/766088/download
+White-rumped Sandpiper,Bécasseau à croupion blanc,https://upload.wikimedia.org/wikipedia/commons/7/7b/Calidris_fuscicollis_PLAYERO_RABADILLA_BLANCA.jpg,0,3,https://xeno-canto.org/526480/download
+Least Sandpiper,Bécasseau minuscule,https://upload.wikimedia.org/wikipedia/commons/e/e9/Least_Sandpiper_Foraging.png,0,3,https://xeno-canto.org/954846/download
+Pectoral Sandpiper,Bécasseau à poitrine cendrée,https://upload.wikimedia.org/wikipedia/commons/9/96/Pectoral_Sandpiper3.jpg,0,2,https://xeno-canto.org/935128/download
+Western Sandpiper,Bécasseau d'Alaska,https://upload.wikimedia.org/wikipedia/commons/5/51/Western_Sandpiper.jpg,0,3,https://xeno-canto.org/546122/download
+Semipalmated Sandpiper,Bécasseau semipalmé,https://upload.wikimedia.org/wikipedia/commons/6/63/SemiPalmHeislerville.png,0,3,https://xeno-canto.org/201397/download
+Small Buttonquail,Turnix d'Andalousie,https://upload.wikimedia.org/wikipedia/commons/a/a9/TurnixSylvaticaWhistler.jpg,0,3,
+Cream-colored Courser,Cursorius cursor,https://upload.wikimedia.org/wikipedia/commons/d/d4/Cream-colored_courser.jpg,0,3,https://xeno-canto.org/951296/download
+Collared Pratincole,Glaréole à collier,https://upload.wikimedia.org/wikipedia/commons/d/d1/Collared_pratincole_%28Glareola_pratincola%29.jpg,0,3,https://xeno-canto.org/976632/download
+Black-winged Pratincole,Glaréole à ailes noires,https://upload.wikimedia.org/wikipedia/commons/a/a9/Tyrkyshka.jpg,0,3,https://xeno-canto.org/813415/download
+Oriental Pratincole,Glaréole orientale,https://upload.wikimedia.org/wikipedia/commons/0/07/Glareola_maldivarum_-_Beung_Borapet.jpg,0,2,https://xeno-canto.org/950069/download
+Long-tailed Jaeger,Labbe à longue queue,https://upload.wikimedia.org/wikipedia/commons/4/4c/Long-tailed_Skua_%28js%29_26.jpg,0,2,https://xeno-canto.org/938535/download
+Parasitic Jaeger,Labbe parasite,https://upload.wikimedia.org/wikipedia/commons/b/ba/Arctic_Skua_1.jpg,0,3,https://xeno-canto.org/933119/download
+Pomarine Jaeger,Labbe pomarin,https://upload.wikimedia.org/wikipedia/commons/0/0d/Stercorarius_pomarinusPCCA20070623-3985B.jpg,0,2,https://xeno-canto.org/957624/download
+Great Skua,Grand Labbe,https://upload.wikimedia.org/wikipedia/commons/6/65/Stercorarius_skua_-Iceland-8.jpg,0,3,https://xeno-canto.org/483207/download
+South Polar Skua,Labbe de McCormick,https://upload.wikimedia.org/wikipedia/commons/a/a3/South_polar_skua.jpg,0,3,https://xeno-canto.org/953125/download
+Tufted Puffin,Macareux huppé,https://upload.wikimedia.org/wikipedia/commons/e/e5/Tufted_Puffin_Alaska_%28cropped%29.jpg,0,2,
+Atlantic Puffin,Macareux moine,https://upload.wikimedia.org/wikipedia/commons/c/c4/Puffin_%28Fratercula_arctica%29.jpg,0,2,https://xeno-canto.org/479180/download
+Horned Puffin,macareux cornu,https://upload.wikimedia.org/wikipedia/commons/b/b7/Horned_Puffin_%2812980039874%29.jpg,0,1,https://xeno-canto.org/177513/download
+Crested Auklet,Starique cristatelle,https://upload.wikimedia.org/wikipedia/commons/4/4b/Aethia_cristatella.jpg,0,3,https://xeno-canto.org/106006/download
+Parakeet Auklet,Starique perroquet,https://upload.wikimedia.org/wikipedia/commons/5/59/Parakeetauklets2.jpg,0,2,https://xeno-canto.org/101454/download
+Long-billed Murrelet,Guillemot à long bec,https://upload.wikimedia.org/wikipedia/commons/d/d5/Brachyramphus_perdix0.jpg,0,3,
+Black Guillemot,Guillemot à miroir,https://upload.wikimedia.org/wikipedia/commons/b/bc/Black_Guillemot_Cepphus_grylle.jpg,0,2,https://xeno-canto.org/898562/download
+Pigeon Guillemot,Guillemot colombin,https://upload.wikimedia.org/wikipedia/commons/1/1b/Pigeon_guillemot.jpg,0,2,https://xeno-canto.org/818943/download
+Razorbill,Petit Pingouin,https://upload.wikimedia.org/wikipedia/commons/8/8d/Razorbill_with_a_nice_catch.jpg,0,1,https://xeno-canto.org/929955/download
+Great Auk,Grand Pingouin,https://upload.wikimedia.org/wikipedia/commons/4/4e/Great_Auk_%28Pinguinis_impennis%29_specimen%2C_Kelvingrove%2C_Glasgow_-_geograph.org.uk_-_1108249.jpg,0,1,
+Dovekie,Mergule nain,https://upload.wikimedia.org/wikipedia/commons/4/4c/Krabbentaucher_Sommer_2023.jpg,0,3,
+Thick-billed Murre,Guillemot de Brünnich,https://upload.wikimedia.org/wikipedia/commons/d/d1/Uria_lomvia1.jpg,0,3,https://xeno-canto.org/487904/download
+Common Murre,Guillemot de Troïl,https://upload.wikimedia.org/wikipedia/commons/6/64/Common_Murre_Uria_aalge.jpg,0,2,https://xeno-canto.org/944246/download
+Ancient Murrelet,Guillemot à cou blanc,https://upload.wikimedia.org/wikipedia/commons/d/d8/Ancient_Murrelet_-_Semiahmoo_Spit.jpg,0,3,https://xeno-canto.org/135265/download
+Little Gull,Mouette pygmée,https://upload.wikimedia.org/wikipedia/commons/5/50/%C4%8Cajka_mal%C3%A1_%28Larus_minutus%29_a_%284834254958%29.jpg,0,3,https://xeno-canto.org/900984/download
+Ross's Gull,Mouette rosée,https://upload.wikimedia.org/wikipedia/commons/d/d4/Rhodostethia_rosea%2C_Shiretoko%2C_Japan.jpg,0,2,https://xeno-canto.org/424282/download
+Black-legged Kittiwake,Mouette tridactyle,https://upload.wikimedia.org/wikipedia/commons/0/03/Rissa_tridactyla_%28Vard%C3%B8%2C_2012%29.jpg,0,1,https://xeno-canto.org/935221/download
+Ivory Gull,Mouette blanche,https://upload.wikimedia.org/wikipedia/commons/7/71/Ivory_Gull_Portrait.jpg,0,2,https://xeno-canto.org/943378/download
+Sabine's Gull,Mouette de Sabine,https://upload.wikimedia.org/wikipedia/commons/b/bd/Xema_sabini_-Iceland_-swimming-8_%281%29.jpg,0,2,https://xeno-canto.org/933306/download
+Slender-billed Gull,Chroicocephalus genei,https://upload.wikimedia.org/wikipedia/commons/7/7b/Slender-billed_gull_%28Chroicocephalus_genei%29_Bahrain.jpg,0,3,https://xeno-canto.org/982490/download
+Bonaparte's Gull,Mouette de Bonaparte,https://upload.wikimedia.org/wikipedia/commons/5/58/Bonaparte%27s_Gull_in_breeding_plumage_-_52016973462.jpg,0,3,https://xeno-canto.org/348507/download
+Black-headed Gull,Mouette rieuse,https://upload.wikimedia.org/wikipedia/commons/2/29/Chroicocephalus_ridibundus_%28summer%29.jpg,0,2,https://xeno-canto.org/982800/download
+Gray-hooded Gull,Mouette à tête grise,https://upload.wikimedia.org/wikipedia/commons/9/96/Chroicocephalus_cirrocephalus%2C_Cassino%2C_Rio_Grande_do_Sul%2C_Brazil_1.jpg,0,2,
+Laughing Gull,Mouette atricille,https://upload.wikimedia.org/wikipedia/commons/e/ed/Leucophaeus_atricilla_Caye_Caulker_04.JPG,0,3,https://xeno-canto.org/142543/download
+Franklin's Gull,Mouette de Franklin,https://upload.wikimedia.org/wikipedia/commons/6/68/Franklin%27s_Gull%2C_Calgary.jpg,0,3,https://xeno-canto.org/877016/download
+Pallas's Gull,Goéland ichthyaète,https://upload.wikimedia.org/wikipedia/commons/0/03/Larus_ichtyaetus_1.png,0,3,https://xeno-canto.org/980336/download
+Relict Gull,Mouette relique,https://upload.wikimedia.org/wikipedia/commons/3/31/Relict_Gull.jpg,0,3,https://xeno-canto.org/131997/download
+Audouin's Gull,Goéland d'Audouin,https://upload.wikimedia.org/wikipedia/commons/1/16/Ichthyaetus_audouinii.jpg,0,2,https://xeno-canto.org/932028/download
+Mediterranean Gull,Mouette mélanocéphale,https://upload.wikimedia.org/wikipedia/commons/e/e7/Larus_melanocephalus_aka_Mediterranean_Gull_rare_guest_in_Sweden2.jpg,0,3,https://xeno-canto.org/979719/download
+White-eyed Gull,Goéland à iris blanc,https://upload.wikimedia.org/wikipedia/commons/6/66/White-eyed_gull_at_the_Red_Sea_2.jpg,0,3,https://xeno-canto.org/740181/download
+Black-tailed Gull,Goéland à queue noire,https://upload.wikimedia.org/wikipedia/commons/8/8c/Laridae_in_Beijing_Zoo.JPG,0,2,https://xeno-canto.org/840768/download
+Common Gull,Goéland cendré,https://upload.wikimedia.org/wikipedia/commons/e/e4/Common_gull_%28Larus_canus%29_adult_breeding_Oppdal.jpg,0,1,https://xeno-canto.org/929944/download
+Short-billed Gull,Larus brachyrhynchus,https://upload.wikimedia.org/wikipedia/commons/d/d6/Larus_brachyrhynchus%2C_Potter%27s_Marsh%2C_Anchorage%2C_Alaska.jpg,0,3,https://xeno-canto.org/756221/download
+Ring-billed Gull,Goéland à bec cerclé,https://upload.wikimedia.org/wikipedia/commons/e/e6/Ring-billed_gull_in_Red_Hook_%2842799%29.jpg,0,2,https://xeno-canto.org/543313/download
+Caspian Gull,Goéland pontique,https://upload.wikimedia.org/wikipedia/commons/b/bf/Caspian_gull_%28Larus_cachinnans%29_summer_Danube_delta.jpg,0,2,https://xeno-canto.org/912831/download
+Kelp Gull,Goéland dominicain,https://upload.wikimedia.org/wikipedia/commons/e/ea/SouthShetland-2016-Livingston_Island_%28Hannah_Point%29%E2%80%93Kelp_gull_%28Larus_dominicanus%29.jpg,0,1,https://xeno-canto.org/958066/download
+American Herring Gull,Goéland hudsonien,https://upload.wikimedia.org/wikipedia/commons/8/86/Herring_gull_%2816221%29.jpg,0,2,https://xeno-canto.org/564804/download
+Vega Gull,Goéland de la Véga,https://upload.wikimedia.org/wikipedia/commons/4/49/Bilibinsky_District%2C_Chukotka_Autonomous_Okrug%2C_Russia_-_panoramio_%2850%29.jpg,0,2,https://xeno-canto.org/840804/download
+European Herring Gull,Goéland argenté,https://upload.wikimedia.org/wikipedia/commons/8/8a/Larus_argentatus%2C_Vaxholm%2C_Stockholm%2C_Sweden_%2814923468303%29.jpg,0,1,https://xeno-canto.org/976583/download
+Yellow-legged Gull,Goéland leucophée,https://upload.wikimedia.org/wikipedia/commons/a/a3/Yellow-legged_Gull_2023-10-10.jpg,0,2,https://xeno-canto.org/980189/download
+Armenian Gull,Goéland d'Arménie,https://upload.wikimedia.org/wikipedia/commons/a/ae/Armenian_Gull_standing%2C_closeup_at_Sevan_Lake.jpg,0,2,https://xeno-canto.org/779601/download
+Great Black-backed Gull,Goéland marin,https://upload.wikimedia.org/wikipedia/commons/c/c6/Great_Black-backed_Gull_Larus_marinus.jpg,0,1,https://xeno-canto.org/972494/download
+Glaucous Gull,Goéland bourgmestre,https://upload.wikimedia.org/wikipedia/commons/7/7a/Glacous_Gull_on_ice.jpg,0,2,https://xeno-canto.org/522374/download
+Lesser Black-backed Gull,Goéland brun,https://upload.wikimedia.org/wikipedia/commons/5/5e/Larus-fuscus-taxbox.jpg,0,2,https://xeno-canto.org/979706/download
+Glaucous-winged Gull,Goéland à ailes grises,https://upload.wikimedia.org/wikipedia/commons/7/70/Glaucous-winged_gull.jpg,0,2,https://xeno-canto.org/841313/download
+Slaty-backed Gull,Goéland à manteau ardoisé,https://upload.wikimedia.org/wikipedia/commons/d/d1/Ooseguro-kamome.jpg,0,2,https://xeno-canto.org/651642/download
+Iceland Gull,Goéland arctique,https://upload.wikimedia.org/wikipedia/commons/d/d7/Larus_glaucoides_IthacaNY.jpg,0,2,https://xeno-canto.org/523094/download
+Black Skimmer,Bec-en-ciseaux noir,https://upload.wikimedia.org/wikipedia/commons/e/ed/Black_Skimmer_JG.jpg,0,3,https://xeno-canto.org/540248/download
+Brown Noddy,Noddi brun,https://upload.wikimedia.org/wikipedia/commons/6/61/Common_noddy_%28Anous_stolidus_pileatus%29_in_flight_Michaelmas_Cay.jpg,0,3,https://xeno-canto.org/713908/download
+Aleutian Tern,Sterne des Aléoutiennes,https://upload.wikimedia.org/wikipedia/commons/6/6c/Aleutian_Tern.jpg,0,2,https://xeno-canto.org/487472/download
+Sooty Tern,Sterne fuligineuse,https://upload.wikimedia.org/wikipedia/commons/5/52/TRINTA-R%C3%89IS-DAS-ROCAS_na_Ilha_da_Trindade_-_2022_%2852551310766%29.jpg,0,2,https://xeno-canto.org/766526/download
+Bridled Tern,Sterne bridée,https://upload.wikimedia.org/wikipedia/commons/5/51/Bridled_Tern_LEI_Nov06.JPG,0,2,https://xeno-canto.org/864240/download
+Little Tern,Sterne naine,https://upload.wikimedia.org/wikipedia/commons/9/9e/%D0%9A%D1%80%D1%8F%D1%87%D0%BE%D0%BA_%D0%BC%D0%B0%D0%BB%D0%B8%D0%B9.jpg,0,2,https://xeno-canto.org/930812/download
+Saunders's Tern,Sterne de Saunders,https://upload.wikimedia.org/wikipedia/commons/a/ab/Saunders%27s_Tern_%28Sternula_saundersi%29%2C_Jeddah%2C_Saudi_Arabia_%28crop%29.jpg,0,2,https://xeno-canto.org/795147/download
+Least Tern,Petite Sterne,https://upload.wikimedia.org/wikipedia/commons/b/ba/Least_Tern_%28Sternula_antillarum%29_RWD1.jpg,0,1,https://xeno-canto.org/919578/download
+Gull-billed Tern,Sterne hansel,https://upload.wikimedia.org/wikipedia/commons/a/a4/Gelochelidon_nilotica_vanrossemi.jpg,0,2,https://xeno-canto.org/975377/download
+Caspian Tern,Sterne caspienne,https://upload.wikimedia.org/wikipedia/commons/7/72/Sterna-caspia-010.jpg,0,1,https://xeno-canto.org/982437/download
+Whiskered Tern,Guifette moustac,https://upload.wikimedia.org/wikipedia/commons/1/17/Whiskered_tern_%28Chlidonias_hybrida_delalandii%29.jpg,0,3,https://xeno-canto.org/981267/download
+Black Tern,Guifette noire,https://upload.wikimedia.org/wikipedia/commons/5/5e/%C4%8Cor%C3%ADk_%C4%8Dierny_%28Chlidonias_niger%29_a_%284644831482%29.jpg,0,2,https://xeno-canto.org/932012/download
+White-winged Tern,Guifette leucoptère,https://upload.wikimedia.org/wikipedia/commons/d/d0/Chlidonias_leucopterus_2023-04-08.jpg,0,3,https://xeno-canto.org/956647/download
+Forster's Tern,Sterne de Forster,https://upload.wikimedia.org/wikipedia/commons/8/84/Forster%27s_Tern%2C_Horicon_NWR%2C_Wisconsin.jpg,0,2,https://xeno-canto.org/924728/download
+Arctic Tern,Sterne arctique,https://upload.wikimedia.org/wikipedia/commons/2/29/2009_07_02_-_Arctic_tern_on_Farne_Islands_-_The_blue_rope_demarcates_the_visitors%27_path.JPG,0,1,https://xeno-canto.org/929305/download
+Common Tern,Sterna hirundo,https://upload.wikimedia.org/wikipedia/commons/a/a6/2014-05-18_Sterna_hirundo%2C_Killingworth_Lake%2C_Northumberland_02.jpg,0,2,https://xeno-canto.org/977207/download
+White-cheeked Tern,Sterne à joues blanches,https://upload.wikimedia.org/wikipedia/commons/c/c0/White-cheeked_Tern.jpg,0,2,https://xeno-canto.org/659655/download
+Roseate Tern,Sterne de Dougall,https://upload.wikimedia.org/wikipedia/commons/4/4d/2021-07-10_Sterna_dougallii%2C_St_Marys_Island%2C_Northumberland_15.jpg,0,2,https://xeno-canto.org/933389/download
+Sandwich Tern,Sterne caugek,https://upload.wikimedia.org/wikipedia/commons/3/3e/2021-07-10_Thalasseus_sandvicensis%2C_St_Marys_Island%2C_Northumberland_01.jpg,0,2,https://xeno-canto.org/479582/download
+Elegant Tern,Sterne élégante,https://upload.wikimedia.org/wikipedia/commons/4/47/2022-04-16_Thalasseus_elegans%2C_Upper_Newport_Bay%2C_California_4.jpg,0,1,https://xeno-canto.org/332931/download
+Lesser Crested Tern,Sterne voyageuse,https://upload.wikimedia.org/wikipedia/commons/d/d6/Lesser_crested_terns_%28Thalasseus_bengalensis%29_by_Shantanu_Kuveskar.jpg,0,2,https://xeno-canto.org/968931/download
+West African Crested Tern,Thalasseus albididorsalis (Sterne d'Afrique),https://upload.wikimedia.org/wikipedia/commons/6/61/Thalasseus_albididorsalis%2C_Foundiougne%2C_Fatick%2C_Senegal_1.jpg,0,2,https://xeno-canto.org/246637/download
+Royal Tern,Sterne royale,https://upload.wikimedia.org/wikipedia/commons/1/17/Royal_Tern.jpg,0,3,https://xeno-canto.org/927228/download
+Chilean Flamingo,Flamant du Chili,https://upload.wikimedia.org/wikipedia/commons/d/df/Chilenischer_Flamingo_Tiergarten_Bernburg_2007.jpg,0,2,https://xeno-canto.org/711476/download
+American Flamingo,Flamant des Caraïbes,https://upload.wikimedia.org/wikipedia/commons/2/21/American_Flamingo_JG.jpg,0,1,https://xeno-canto.org/824005/download
+Greater Flamingo,Flamant rose,https://upload.wikimedia.org/wikipedia/commons/8/81/010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg,0,1,https://xeno-canto.org/982020/download
+Lesser Flamingo,Flamant nain,https://upload.wikimedia.org/wikipedia/commons/f/f9/Lesser_Flamingo_%28Phoenicopterus_minor%29_-_Flickr_-_Lip_Kee.jpg,0,2,https://xeno-canto.org/383208/download
+Little Grebe,Grèbe castagneux,https://upload.wikimedia.org/wikipedia/commons/8/84/Little_grebe_Zwergtaucher.jpg,0,3,https://xeno-canto.org/982019/download
+Pied-billed Grebe,Grèbe à bec bigarré,https://upload.wikimedia.org/wikipedia/commons/8/8c/Podilymbus-podiceps-001.jpg,0,3,https://xeno-canto.org/542620/download
+Horned Grebe,Grèbe esclavon,https://upload.wikimedia.org/wikipedia/commons/7/77/Podiceps_auritus_%2813909539717%29.jpg,0,2,https://xeno-canto.org/795694/download
+Red-necked Grebe,Grèbe jougris,https://upload.wikimedia.org/wikipedia/commons/6/6b/Red-necked_grebe_%28Podiceps_grisegena_grisegena%29_breeding_adult_Gronjordssoen.jpg,0,2,https://xeno-canto.org/949348/download
+Great Crested Grebe,grèbe huppé,https://upload.wikimedia.org/wikipedia/commons/b/bd/Great_crested_grebe_swimming_2022-02-27.jpg,0,1,https://xeno-canto.org/981243/download
+Eared Grebe,Grèbe à cou noir,https://upload.wikimedia.org/wikipedia/commons/1/10/Black-necked_Grebe_Schwarzhalstaucher.jpg,0,2,
+White-tailed Tropicbird,Phaéton à bec jaune,https://upload.wikimedia.org/wikipedia/commons/2/2f/Phaethon_lepturus_%28Warwick%2C_Bermuda%29_%28cropped%29.jpg,0,2,https://xeno-canto.org/506355/download
+Red-billed Tropicbird,Phaéton à bec rouge,https://upload.wikimedia.org/wikipedia/commons/9/95/Red-billed_tropicbird.jpg,0,2,https://xeno-canto.org/503607/download
+Red-throated Loon,Plongeon catmarin,https://upload.wikimedia.org/wikipedia/commons/f/f5/Gavia_Stellata_%C3%96lfus%C3%A1_20090606.jpg,0,2,https://xeno-canto.org/975871/download
+Arctic Loon,Plongeon arctique,https://upload.wikimedia.org/wikipedia/commons/3/3e/Black-throated_Diver%2C_Oulu%2C_Finland_02_%2815195370798%29.jpg,0,2,
+Pacific Loon,Plongeon du Pacifique,https://upload.wikimedia.org/wikipedia/commons/e/ef/PacificLoon24.jpg,0,2,https://xeno-canto.org/486606/download
+Common Loon,Plongeon huard,https://upload.wikimedia.org/wikipedia/commons/b/b0/Gavia_immer_-Minocqua%2C_Wisconsin%2C_USA_-swimming-8.jpg,0,3,https://xeno-canto.org/488028/download
+Yellow-billed Loon,Plongeon à bec blanc,https://upload.wikimedia.org/wikipedia/commons/e/ee/Yellow-billed_Loon_Chipp_South_8-12-13_Ryan_Askren.jpg,0,3,https://xeno-canto.org/838309/download
+Snowy Albatross,Albatros hurleur,https://upload.wikimedia.org/wikipedia/commons/a/aa/Diomedea_exulans_-_SE_Tasmania.jpg,0,2,
+Tristan Albatross,Albatros de Tristan,https://upload.wikimedia.org/wikipedia/commons/a/a6/Tristan_Albatross_%281%29.jpg,0,2,https://xeno-canto.org/325540/download
+Atlantic Yellow-nosed Albatross,Albatros à nez jaune,https://upload.wikimedia.org/wikipedia/commons/4/4b/Thalassarche_chlororhynchos.png,0,3,https://xeno-canto.org/615665/download
+Black-browed Albatross,Albatros à sourcils noirs,https://upload.wikimedia.org/wikipedia/commons/1/10/Thalassarche_melanophrys_-_SE_Tasmania.jpg,0,1,https://xeno-canto.org/952602/download
+Wilson's Storm-Petrel,Océanite de Wilson,https://upload.wikimedia.org/wikipedia/commons/5/55/Wilson%27s_Storm-petrel_0A2A7191.jpg,0,3,
+White-faced Storm-Petrel,Océanite frégate,https://upload.wikimedia.org/wikipedia/commons/4/4a/White-faced_Storm-petrel_0A2A9606.jpg,0,3,
+Black-bellied Storm-Petrel,Océanite à ventre noir,https://upload.wikimedia.org/wikipedia/commons/8/80/Fregetta_tropica%2C_Kaapse_waters%2C_Birding_Weto%2C_a.jpg,0,3,
+European Storm-Petrel,Océanite tempête,https://upload.wikimedia.org/wikipedia/commons/b/b4/European_storm_petrel_%28Hydrobates_pelagicus%29_Sagres.jpg,0,2,
+Leach's Storm-Petrel,Océanite cul-blanc,https://upload.wikimedia.org/wikipedia/commons/e/e0/Leach%27s_Storm-petrel_Saint-Jean-de-Monts_01.jpg,0,2,
+Swinhoe's Storm-Petrel,Océanite de Swinhoe,https://upload.wikimedia.org/wikipedia/commons/6/65/OceanodromaMonorhisSmit.jpg,0,3,
+Band-rumped Storm-Petrel,Océanite de Castro,https://upload.wikimedia.org/wikipedia/commons/6/6b/Band_rumped_storm_petrel_Andre_Raine_KESRP_%2821789178016%29.jpg,0,3,
+Monteiro's Storm-Petrel,Océanite de Monteiro,https://upload.wikimedia.org/wikipedia/commons/4/42/Cria_painho-de-monteiro.jpg,0,3,
+Southern Giant-Petrel,Pétrel géant,https://upload.wikimedia.org/wikipedia/commons/a/ab/Giant_petrel_with_chicks.jpg,0,2,
+Northern Fulmar,Fulmar boréal,https://upload.wikimedia.org/wikipedia/commons/e/e0/Fulmarus_Glacialis.jpg,0,3,https://xeno-canto.org/979721/download
+Pintado Petrel,Damier du Cap,https://upload.wikimedia.org/wikipedia/commons/b/b4/Daption_capense_capense%2C_at_sea_off_Cape_of_Good_Hope%2C_South_Africa_08.jpg,0,3,
+Great-winged Petrel,Pétrel noir,https://upload.wikimedia.org/wikipedia/commons/6/66/Pterodroma_macroptera_in_flight_3_-_SE_Tasmania.jpg,0,1,
+Kermadec Petrel,Pétrel des Kermadec,https://upload.wikimedia.org/wikipedia/commons/f/f6/Fledgling_Kermadec_Petrel_chick_%26_parent.jpg,0,3,https://xeno-canto.org/141334/download
+Trindade Petrel,Pétrel de Trindade,https://upload.wikimedia.org/wikipedia/commons/3/33/Pterodroma_arminjoniana_1.jpeg,0,3,https://xeno-canto.org/77650/download
+Zino's Petrel,Pétrel de Madère,https://upload.wikimedia.org/wikipedia/commons/0/09/Pterodroma_madeira_92954030_%28cropped%29.jpg,0,2,https://xeno-canto.org/461964/download
+Fea's Petrel,Pétrel gongon,https://upload.wikimedia.org/wikipedia/commons/3/3d/Feas_Petrel_From_The_Crossley_ID_Guide_Eastern_Birds.jpg,0,2,https://xeno-canto.org/718735/download
+Soft-plumaged Petrel,Pétrel soyeux,https://upload.wikimedia.org/wikipedia/commons/9/90/Pterodroma_mollis_light_morph_-_SE_Tasmania_2019.jpg,0,2,https://xeno-canto.org/927149/download
+Barau's Petrel,Pétrel de Barau,https://upload.wikimedia.org/wikipedia/commons/c/c3/Pterodroma_baraui%2C_Durban%2C_Birding_Weto%2C_b.jpg,0,2,https://xeno-canto.org/309351/download
+Bermuda Petrel,Pétrel des Bermudes,https://upload.wikimedia.org/wikipedia/commons/8/84/Bermuda_Petrel_From_The_Crossley_ID_Guide_Eastern_Birds%2C_crop.jpg,0,3,https://xeno-canto.org/738388/download
+Black-capped Petrel,Pétrel diablotin,https://upload.wikimedia.org/wikipedia/commons/7/7e/Pterodroma_hasitataPCCA20070623-3608B.jpg,0,3,
+Atlantic Petrel,Pétrel de Schlegel,https://upload.wikimedia.org/wikipedia/commons/5/5d/PterodromaIncerta.jpg,0,3,https://xeno-canto.org/332462/download
+Bulwer's Petrel,Pétrel de Bulwer,https://upload.wikimedia.org/wikipedia/commons/e/e4/P%C3%A9trel_de_Bulwer.jpg,0,3,https://xeno-canto.org/619771/download
+White-chinned Petrel,Puffin à menton blanc,https://upload.wikimedia.org/wikipedia/commons/a/a3/Procellaria_aequinoctialis_1_-_SE_Tasmania.jpg,0,2,https://xeno-canto.org/863989/download
+Cory's Shearwater,Puffin boréal,https://upload.wikimedia.org/wikipedia/commons/3/31/Cory%27s_Shearwater_from_the_Crossley_ID_Guide_Britain_and_Ireland_crop.jpg,0,2,https://xeno-canto.org/945948/download
+Scopoli's Shearwater,Puffin de Scopoli,https://upload.wikimedia.org/wikipedia/commons/d/d2/Scopoli%27s_Shearwater.jpg,0,3,https://xeno-canto.org/919307/download
+Cape Verde Shearwater,Puffin du Cap-Vert,https://upload.wikimedia.org/wikipedia/commons/e/e5/Cape_Verde_Shearwater_imported_from_iNaturalist_photo_9221156_on_21_April_2022.jpg,0,3,https://xeno-canto.org/718760/download
+Flesh-footed Shearwater,Puffin à pieds pâles,https://upload.wikimedia.org/wikipedia/commons/5/5e/Flesh-footed_Shearwater_imported_from_iNaturalist_photo_361326826_on_15_June_2024.jpg,0,2,https://xeno-canto.org/794888/download
+Great Shearwater,Ardenna gravis,https://upload.wikimedia.org/wikipedia/commons/4/48/Greater_shearwater_%28Ardenna_gravis%29_Sagres.jpg,0,3,https://xeno-canto.org/936583/download
+Buller's Shearwater,Puffin de Buller,https://upload.wikimedia.org/wikipedia/commons/e/ed/Buller%27s_Shearwater_0A2A8858.jpg,0,3,https://xeno-canto.org/854364/download
+Sooty Shearwater,Puffin fuligineux,https://upload.wikimedia.org/wikipedia/commons/4/49/Puffinus_griseus_in_flight_-_SE_Tasmania.jpg,0,3,https://xeno-canto.org/845182/download
+Short-tailed Shearwater,Ardenna tenuirostris,https://upload.wikimedia.org/wikipedia/commons/f/fb/Puffinus_tenuirostris_-_SE_Tasmania.jpg,0,3,https://xeno-canto.org/859662/download
+Manx Shearwater,Puffin des Anglais,https://upload.wikimedia.org/wikipedia/commons/8/8e/Manx_Shearwater.JPG,0,3,https://xeno-canto.org/928917/download
+Yelkouan Shearwater,Puffin yelkouan,https://upload.wikimedia.org/wikipedia/commons/6/68/Puffinus_yelkouan_140249998.jpg,0,3,https://xeno-canto.org/973359/download
+Balearic Shearwater,Puffin des Baléares,https://upload.wikimedia.org/wikipedia/commons/6/62/Puffinus_mauretanicus.jpg,0,3,https://xeno-canto.org/645385/download
+Barolo Shearwater,Puffin de Macaronésie,https://upload.wikimedia.org/wikipedia/commons/9/96/Barolo_Shearwater.jpg,0,3,https://xeno-canto.org/565411/download
+Boyd's Shearwater,Puffin de Boyd,https://upload.wikimedia.org/wikipedia/commons/b/b2/Puffinus_boydi.jpg,0,3,https://xeno-canto.org/871372/download
+Black Stork,Cigogne noire,https://upload.wikimedia.org/wikipedia/commons/b/ba/Ciconia_nigra_-Kruger_National_Park-8.jpg,0,2,https://xeno-canto.org/980027/download
+White Stork,Cigogne blanche,https://upload.wikimedia.org/wikipedia/commons/1/13/White_stork_%28Ciconia_ciconia%29_Bia%C5%82owieza.jpg,0,1,https://xeno-canto.org/975960/download
+Marabou Stork,marabout d'Afrique,https://upload.wikimedia.org/wikipedia/commons/0/05/Marabou_stork_%28Leptoptilos_crumenifer%29.jpg,0,1,https://xeno-canto.org/508623/download
+Yellow-billed Stork,Tantale ibis,https://upload.wikimedia.org/wikipedia/commons/3/3e/Yellow-billed_Stork_%28Mycteria_ibis%29_%286045310265%29.jpg,0,3,https://xeno-canto.org/131912/download
+Ascension Frigatebird,Frégate aigle-de-mer,https://upload.wikimedia.org/wikipedia/commons/e/eb/Male_Frigatebird_with_chick_Fregata_aquila.jpg,0,2,https://xeno-canto.org/314486/download
+Magnificent Frigatebird,Frégate superbe,https://upload.wikimedia.org/wikipedia/commons/e/e4/Fregata_magnificens_-Galapagos%2C_Ecuador_-male-8_%281%29.jpg,0,1,https://xeno-canto.org/927123/download
+Northern Gannet,fou de Bassan,https://upload.wikimedia.org/wikipedia/commons/2/2d/Morus_bassanus_adu.jpg,0,1,https://xeno-canto.org/438348/download
+Cape Gannet,Fou du Cap,https://upload.wikimedia.org/wikipedia/commons/b/b1/Cape_gannet_sideview.jpg,0,2,https://xeno-canto.org/515403/download
+Red-footed Booby,Fou à pieds rouges,https://upload.wikimedia.org/wikipedia/commons/4/45/Sula_sula_by_Gregg_Yan_01.jpg,0,2,https://xeno-canto.org/815569/download
+Brown Booby,Fou brun,https://upload.wikimedia.org/wikipedia/commons/0/08/Brown_boobytern.JPG,0,2,https://xeno-canto.org/927122/download
+Masked Booby,Fou masqué,https://upload.wikimedia.org/wikipedia/commons/d/d2/Starr_080606-6808_Coronopus_didymus.jpg,0,2,https://xeno-canto.org/730161/download
+Reed Cormorant,Cormoran africain,https://upload.wikimedia.org/wikipedia/commons/a/ad/Cormor%C3%A1n_africano_%28Microcarbo_africanus%29%2C_parque_nacional_de_Chobe%2C_Botsuana%2C_2018-07-28%2C_DD_48.jpg,0,1,https://xeno-canto.org/860402/download
+Pygmy Cormorant,Cormoran pygmée,https://upload.wikimedia.org/wikipedia/commons/7/72/Phalacrocorax_pygmeus_1_%28Martin_Mecnarowski%29.jpg,0,1,https://xeno-canto.org/826114/download
+Pallas's Cormorant,Cormoran de Pallas,https://upload.wikimedia.org/wikipedia/commons/e/ee/ExtbPallusCormorantovw.jpg,0,3,
+Great Cormorant,Grand Cormoran,https://upload.wikimedia.org/wikipedia/commons/c/c3/2021-05-05_Phalacrocorax_carbo_carbo%2C_Killingworth_Lake%2C_Northumberland_1-1.jpg,0,3,https://xeno-canto.org/981347/download
+European Shag,Gulosus aristotelis,https://upload.wikimedia.org/wikipedia/commons/6/63/Shag_Phalacrocorax_aristotelis.jpg,0,2,https://xeno-canto.org/908645/download
+Double-crested Cormorant,Cormoran à aigrettes,https://upload.wikimedia.org/wikipedia/commons/f/fb/Phalacrocorax-auritus-007.jpg,0,2,https://xeno-canto.org/898918/download
+Glossy Ibis,Ibis falcinelle,https://upload.wikimedia.org/wikipedia/commons/a/a3/Glossy_ibis.png,0,2,https://xeno-canto.org/951356/download
+African Sacred Ibis,Ibis sacré,https://upload.wikimedia.org/wikipedia/commons/7/7e/Sacred_ibis_%28Threskiornis_aethiopicus%29.jpg,0,1,https://xeno-canto.org/651807/download
+Northern Bald Ibis,Ibis chauve,https://upload.wikimedia.org/wikipedia/commons/4/44/Northern_Bald_Ibis_Geronticus_eremita_%288470600428%29.jpg,0,2,https://xeno-canto.org/361538/download
+Eurasian Spoonbill,Spatule blanche,https://upload.wikimedia.org/wikipedia/commons/8/8c/Eurasian_Spoonbill-2.jpg,0,1,https://xeno-canto.org/911426/download
+African Spoonbill,Spatule d'Afrique,https://upload.wikimedia.org/wikipedia/commons/2/2f/African_spoonbill_%28Platalea_alba%29.jpg,0,2,https://xeno-canto.org/611674/download
+Great White Pelican,Pélican blanc,https://upload.wikimedia.org/wikipedia/commons/d/dd/Great_white_pelican_%28Pelecanus_onocrotalus%29.jpg,0,1,https://xeno-canto.org/331138/download
+Pink-backed Pelican,Pélican gris,https://upload.wikimedia.org/wikipedia/commons/6/64/Pink_backed_pelican_side_view.jpg,0,1,https://xeno-canto.org/862719/download
+Dalmatian Pelican,Pélican frisé,https://upload.wikimedia.org/wikipedia/commons/3/37/ComputerHotline_-_Pelecanus_crispus_%28by%29_%281%29.jpg,0,2,https://xeno-canto.org/331137/download
+Eurasian Bittern,Butor étoilé,https://upload.wikimedia.org/wikipedia/commons/3/3b/Eurasian_Bittern_-_Torrile_-_Italy_4528_%2815409347121%29.jpg,0,1,https://xeno-canto.org/981988/download
+American Bittern,Butor d'Amérique,https://upload.wikimedia.org/wikipedia/commons/8/8d/Botaurus_lentiginosus_28079.JPG,0,2,https://xeno-canto.org/906725/download
+Least Bittern,Petit Blongios,https://upload.wikimedia.org/wikipedia/commons/b/bf/Least_Bittern_For_Wiki.png,0,2,https://xeno-canto.org/492427/download
+Schrenck's Bittern,Blongios de Schrenck,https://upload.wikimedia.org/wikipedia/commons/f/f7/Ixobrychus_eurhythmus_by_OpenCage.jpg,0,3,https://xeno-canto.org/267203/download
+Dwarf Bittern,Blongios de Sturm,https://upload.wikimedia.org/wikipedia/commons/5/51/BitternDwarf.jpg,0,3,https://xeno-canto.org/792321/download
+Little Bittern,Blongios nain,https://upload.wikimedia.org/wikipedia/commons/4/49/Zwergdommel.jpg,0,2,https://xeno-canto.org/978098/download
+Yellow-crowned Night Heron,Bihoreau violacé,https://upload.wikimedia.org/wikipedia/commons/d/d1/Yellow-crowned_Night_Heron_in_Cape_May_County%2C_New_Jersey.png,0,3,https://xeno-canto.org/982777/download
+Black-crowned Night Heron,Bihoreau gris,https://upload.wikimedia.org/wikipedia/commons/a/a1/Nycticorax_nycticorax_457953189.jpg,0,3,https://xeno-canto.org/972849/download
+Little Blue Heron,Aigrette bleue,https://upload.wikimedia.org/wikipedia/commons/7/77/Egretta_caerulea_-Cananeia%2C_Sao_Paulo%2C_Brasil-8.jpg,0,2,https://xeno-canto.org/878467/download
+Tricolored Heron,Aigrette tricolore,https://upload.wikimedia.org/wikipedia/commons/1/10/Tricolored_Heron_by_Dan_Pancamo.jpg,0,2,https://xeno-canto.org/166593/download
+Black Heron,Aigrette ardoisée,https://upload.wikimedia.org/wikipedia/commons/2/25/Black_heron%2C_Egretta_ardesiaca%2C_at_Marievale_Nature_Reserve%2C_Gauteng%2C_South_Africa._%2825201552667%29.jpg,0,2,https://xeno-canto.org/973474/download
+Snowy Egret,Aigrette neigeuse,https://upload.wikimedia.org/wikipedia/commons/2/2f/SnowyEgret_Gam.jpg,0,2,https://xeno-canto.org/559898/download
+Little Egret,Aigrette garzette,https://upload.wikimedia.org/wikipedia/commons/f/f1/Little_egret_%28Egretta_garzetta%29_Photograph_by_Shantanu_Kuveskar.jpg,0,3,https://xeno-canto.org/979922/download
+Western Reef-Heron,Aigrette à gorge blanche,https://upload.wikimedia.org/wikipedia/commons/8/86/Western_reef_egret_%28Egretta_gularis_schistacea%29_dark_morph.jpg,0,3,
+Striated Heron,Héron strié,https://upload.wikimedia.org/wikipedia/commons/0/07/Striated_heron_%28Butorides_striata_striata%29.JPG,0,2,https://xeno-canto.org/961357/download
+Green Heron,Héron vert,https://upload.wikimedia.org/wikipedia/commons/f/f3/Butorides_virescens2.jpg,0,3,https://xeno-canto.org/957415/download
+Squacco Heron,Crabier chevelu,https://upload.wikimedia.org/wikipedia/commons/6/6e/Crabier_chevelu.jpg,0,3,https://xeno-canto.org/973568/download
+Indian Pond-Heron,Crabier de Gray,https://upload.wikimedia.org/wikipedia/commons/5/55/Indian_pond_heron_%28Ardeola_grayii%29_non_breeding.jpg,0,3,
+Chinese Pond-Heron,Crabier chinois,https://upload.wikimedia.org/wikipedia/commons/6/63/Chinese_Pond_Heron_in_Summer.jpg,0,3,
+Great Egret,Grande aigrette,https://upload.wikimedia.org/wikipedia/commons/1/1e/Great_Egret_Breeding_Plumage.png,0,3,https://xeno-canto.org/982464/download
+Yellow-billed Egret,Héron à bec jaune (Ardea intermedia brachyrhyncha),https://upload.wikimedia.org/wikipedia/commons/4/45/Egretta_intermedia00.jpg,0,3,
+Medium Egret,Héron intermédiaire (Ardea intermedia),https://upload.wikimedia.org/wikipedia/commons/f/fe/Intermediate_Egret_%2823385032726%29.jpg,0,3,
+Gray Heron,héron cendré,https://upload.wikimedia.org/wikipedia/commons/0/09/Graureiher_Grey_Heron.jpg,0,2,
+Great Blue Heron,Grand Héron,https://upload.wikimedia.org/wikipedia/commons/f/f1/GreatBlueHeronInARiver.jpg,0,1,https://xeno-canto.org/560546/download
+Purple Heron,Héron pourpré,https://upload.wikimedia.org/wikipedia/commons/5/5b/Purple_heron_-_Vadodara_2022-01-08.jpg,0,2,https://xeno-canto.org/976224/download
+Black-headed Heron,Héron mélanocéphale,https://upload.wikimedia.org/wikipedia/commons/0/0b/Black-headed_Heron_%28Ardea_melanocephala%29.jpg,0,3,https://xeno-canto.org/947948/download
+Osprey,Balbuzard pêcheur,https://upload.wikimedia.org/wikipedia/commons/0/0b/Osprey_on_nest.jpg,0,2,https://xeno-canto.org/982371/download
+Black-winged Kite,Élanion blanc,https://upload.wikimedia.org/wikipedia/commons/2/28/Black-shouldered_Kite_%28Elanus_caeruleus%29_in_Hyderabad_W_IMG_4418.jpg,0,3,https://xeno-canto.org/352477/download
+Bearded Vulture,gypaète barbu,https://upload.wikimedia.org/wikipedia/commons/c/cf/010e_Wild_Bearded_Vulture_in_flight_at_Pfyn-Finges_%28Switzerland%29_Photo_by_Giles_Laurent.jpg,0,3,https://xeno-canto.org/474567/download
+Egyptian Vulture,Percnoptère,https://upload.wikimedia.org/wikipedia/commons/e/ee/Egyptian_Vulture_%2818208369344%29.jpg,0,3,https://xeno-canto.org/654205/download
+European Honey-buzzard,Bondrée apivore,https://upload.wikimedia.org/wikipedia/commons/6/6d/Wespenbussard_European_honey_buzzard_Pernis_apivorus%2C_crop.jpg,0,3,
+Oriental Honey-buzzard,Bondrée orientale,https://upload.wikimedia.org/wikipedia/commons/5/5d/Oriental_honey_buzzard_Mudumalai_Mar21_DSC01405.jpg,0,2,
+Swallow-tailed Kite,Milan à queue fourchue,https://upload.wikimedia.org/wikipedia/commons/e/e0/Swallow-tailed_Kite_%2834163638494%29.jpg,0,3,https://xeno-canto.org/531920/download
+Cinereous Vulture,Vautour moine,https://upload.wikimedia.org/wikipedia/commons/e/e2/Buitre_negro_%281%29.jpg,0,2,https://xeno-canto.org/917405/download
+Lappet-faced Vulture,Vautour oricou,https://upload.wikimedia.org/wikipedia/commons/b/b4/2012-lappet-faced-vulture.jpg,0,2,
+Hooded Vulture,Vautour charognard,https://upload.wikimedia.org/wikipedia/commons/4/4d/Hooded_vulture_%28Necrosyrtes_monachus%29.jpg,0,2,https://xeno-canto.org/277866/download
+Himalayan Griffon,Vautour de l'Himalaya,https://upload.wikimedia.org/wikipedia/commons/a/a1/Himalayan_Griffon_%28Gyps_himalayensis%29.jpg,0,2,
+White-backed Vulture,Vautour africain,https://upload.wikimedia.org/wikipedia/commons/d/d3/2012-white-backed-vulture.jpg,0,2,https://xeno-canto.org/978231/download
+Rüppell's Griffon,Gyps rueppelli,https://upload.wikimedia.org/wikipedia/commons/0/00/R%C3%BCppell%27s_Vulture_%28Gyps_rueppelli%29_%2821160089681%29.jpg,0,3,
+Eurasian Griffon,vautour fauve,https://upload.wikimedia.org/wikipedia/commons/4/49/Gyps_fulvus_in_flight_-_Spain.jpg,0,1,
+Bateleur,Bateleur des savanes,https://upload.wikimedia.org/wikipedia/commons/1/12/Bataleur_-_Kruger_National_park_%2837161617713%29.jpg,0,3,https://xeno-canto.org/940364/download
+Lesser Spotted Eagle,Aigle pomarin,https://upload.wikimedia.org/wikipedia/commons/4/44/%D7%A2%D7%99%D7%98_%D7%97%D7%95%D7%A8%D7%A9.jpg,0,2,https://xeno-canto.org/959210/download
+Greater Spotted Eagle,Aigle criard,https://upload.wikimedia.org/wikipedia/commons/f/ff/Aquila_clanga_from_Tal_Chapar_Wildlife_Sanctuary.jpg,0,3,https://xeno-canto.org/608441/download
+Booted Eagle,Aigle botté,https://upload.wikimedia.org/wikipedia/commons/4/49/Booted_eagle_%28India%2C_2012%29.jpg,0,3,https://xeno-canto.org/976336/download
+Steppe Eagle,Aigle des steppes,https://upload.wikimedia.org/wikipedia/commons/4/45/Steppe_Eagle_Portrait.jpg,0,3,https://xeno-canto.org/879526/download
+Spanish Eagle,Aigle ibérique,https://upload.wikimedia.org/wikipedia/commons/e/e4/Aguila_Imperial_Entrando_Al_Posadero_%28125891767%29.jpeg,0,3,
+Golden Eagle,Aigle royal,https://upload.wikimedia.org/wikipedia/commons/c/cc/015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_%28Switzerland%29_Photo_by_Giles_Laurent.jpg,0,1,https://xeno-canto.org/937638/download
+Bonelli's Eagle,Aigle de Bonelli,https://upload.wikimedia.org/wikipedia/commons/7/7f/Bonelli%27s_Eagle_-_Montsonis_-_Spain_S4E8373_%2824849913309%29.jpg,0,3,https://xeno-canto.org/792286/download
+Dark Chanting-Goshawk,Autour sombre,https://upload.wikimedia.org/wikipedia/commons/8/8d/Melierax_metabates_-Kapama_Game_Reserve%2C_South_Africa-8-4c.jpg,0,2,
+Levant Sparrowhawk,Épervier à pieds courts,https://upload.wikimedia.org/wikipedia/commons/8/80/Accipiter_brevipes_1.jpg,0,3,https://xeno-canto.org/143001/download
+Eurasian Sparrowhawk,Épervier d'Europe,https://upload.wikimedia.org/wikipedia/commons/4/4d/%D0%AF%D1%81%D1%82%D1%80%D0%B5%D0%B1-%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D0%B5%D0%BB%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%28Accipiter_nisus%2C_m%29%2C_%D0%98%D0%B7%D0%BC%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BF%D0%B0%D1%80%D0%BA.jpg,0,1,https://xeno-canto.org/976413/download
+Eurasian Goshawk,Autour des palombes,https://upload.wikimedia.org/wikipedia/commons/8/81/Northern_Goshawk_ad_M2.jpg,0,2,
+American Goshawk,Accipiter atricapillus (Autour d'Amérique),https://upload.wikimedia.org/wikipedia/commons/5/58/Accipiter_gentilisAAP045CA.jpg,0,3,
+Western Marsh Harrier,Busard des roseaux,https://upload.wikimedia.org/wikipedia/commons/3/33/Western_Marsh_Harrier-_Bangalore%2C_India.jpg,0,2,https://xeno-canto.org/961137/download
+Hen Harrier,Busard Saint-Martin,https://upload.wikimedia.org/wikipedia/commons/b/bf/Circus_cyaneus%2C_Ballaugh_Curragh%2C_Isle_of_Man_1.jpg,0,3,https://xeno-canto.org/973843/download
+Northern Harrier,Busard des marais,https://upload.wikimedia.org/wikipedia/commons/c/c8/Northern_%28Hen%29_Harrier.jpg,0,2,https://xeno-canto.org/349475/download
+Pallid Harrier,Busard pâle,https://upload.wikimedia.org/wikipedia/commons/e/e0/Pallid_Harrier_imported_from_iNaturalist_photo_389994827_on_16_June_2024.jpg,0,3,https://xeno-canto.org/643655/download
+Montagu's Harrier,Busard cendré,https://upload.wikimedia.org/wikipedia/commons/3/32/Montagu%27s_harrier.jpg,0,3,https://xeno-canto.org/921847/download
+Red Kite,Milan royal,https://upload.wikimedia.org/wikipedia/commons/4/4b/Milvus_milvus_R%28ThKraft%29.jpg,0,2,https://xeno-canto.org/679518/download
+Black Kite,Milan noir,https://upload.wikimedia.org/wikipedia/commons/5/5a/Schwarzmilan.jpg,0,1,https://xeno-canto.org/974971/download
+White-tailed Eagle,Pygargue à queue blanche,https://upload.wikimedia.org/wikipedia/commons/5/5a/White_tailed_eagle_raftsund_square_crop.jpg,0,1,https://xeno-canto.org/961802/download
+Bald Eagle,pygargue à tête blanche,https://upload.wikimedia.org/wikipedia/commons/d/db/Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg,0,1,https://xeno-canto.org/535101/download
+Pallas's Fish-Eagle,Pygargue de Pallas,https://upload.wikimedia.org/wikipedia/commons/5/53/Pallas%27s_Fish_Eagle_%28_Haliaeetus_leucoryphus%29_2.jpg,0,2,
+Steller's Sea-Eagle,Pygargue empereur,https://upload.wikimedia.org/wikipedia/commons/8/85/Haliaeetus_pelagicus_%28Rausu%2C_Japan%29.jpg,0,3,
+Swainson's Hawk,Buse de Swainson,https://upload.wikimedia.org/wikipedia/commons/9/90/Swainson%27s_Hawk_%28Buteo_swainsoni%29_RWD.jpg,0,3,https://xeno-canto.org/529031/download
+Rough-legged Hawk,Buse pattue,https://upload.wikimedia.org/wikipedia/commons/6/65/Fjellv%C3%A5k_%28Buteo_lagopus%29_%28Rough-legged_Buzzard%29_%28Fj%C3%A4llvr%C3%A5k%29.jpg,0,3,
+Common Buzzard,Buse variable,https://upload.wikimedia.org/wikipedia/commons/a/af/Steppe_buzzard_%28Buteo_buteo_vulpinus%29.jpg,0,3,https://xeno-canto.org/980426/download
+Long-legged Buzzard,Buse féroce,https://upload.wikimedia.org/wikipedia/commons/c/cf/Buse_f%C3%A9roce_Ichkeul011.jpg,0,1,https://xeno-canto.org/814970/download
+Upland Buzzard,Buse de Chine,https://upload.wikimedia.org/wikipedia/commons/9/9c/Upland_Buzzard_%28167276301%29_%28cropped%29.jpeg,0,3,https://xeno-canto.org/824432/download
+Western Barn Owl,Effraie des clochers,https://upload.wikimedia.org/wikipedia/commons/1/17/Barn_Owl%2C_Lancashire.jpg,0,1,https://xeno-canto.org/982680/download
+Eastern Barn Owl,Effraie orientale,https://upload.wikimedia.org/wikipedia/commons/f/f2/Eastern_Barn_Owl_%28Tyto_javanica_stertens%29%2C_Raigad%2C_Maharashtra.jpg,0,2,https://xeno-canto.org/980014/download
+American Barn Owl,Effraie d'Amérique,https://upload.wikimedia.org/wikipedia/commons/e/e8/American_Barn_Owl%2C_Bear_River%2C_Utah_%289637780911%29.jpg,0,2,https://xeno-canto.org/965192/download
+Eurasian Scops-Owl,Petit-duc scops,https://upload.wikimedia.org/wikipedia/commons/d/dc/Scops_Owl_%28Otus_scops%29%2C_Kalloni%2C_Lesvos%2C_Greece%2C_19.04.2015_%2816773748434%29.jpg,0,2,
+Snowy Owl,Harfang des neiges,https://upload.wikimedia.org/wikipedia/commons/f/f1/SnowyOwlAmericanBlackDuck.jpg,0,1,https://xeno-canto.org/679718/download
+Eurasian Eagle-Owl,Hibou grand-duc,https://upload.wikimedia.org/wikipedia/commons/1/14/Bubo_bubo_3_%28Martin_Mecnarowski%29.jpg,0,1,https://xeno-canto.org/980674/download
+Northern Hawk Owl,Chouette épervière,https://upload.wikimedia.org/wikipedia/commons/c/c9/Surnia-ulula-002.jpg,0,2,
+Eurasian Pygmy-Owl,Chevêchette d'Europe,https://upload.wikimedia.org/wikipedia/commons/7/79/Eurasian_pygmy_owl_%28Glaucidium_passerinum%29_Bia%C5%82owieza.jpg,0,2,
+Little Owl,Chevêche d'Athéna,https://upload.wikimedia.org/wikipedia/commons/a/a9/Mochuelo_Com%C3%BAn_%28_Athene_noctua_%29%281%29.jpg,0,2,https://xeno-canto.org/981719/download
+Tawny Owl,Chouette hulotte,https://upload.wikimedia.org/wikipedia/commons/5/55/Strix_aluco_3_%28Martin_Mecnarowski%29.jpg,0,1,https://xeno-canto.org/982285/download
+Maghreb Owl,Chouette du Maghreb,https://upload.wikimedia.org/wikipedia/commons/5/5b/Chouette06.jpg,0,3,https://xeno-canto.org/904949/download
+Ural Owl,Chouette de l'Oural,https://upload.wikimedia.org/wikipedia/commons/4/4d/Strix_uralensis%2C_Kotka%2C_Finland_1.jpg,0,2,https://xeno-canto.org/980390/download
+Great Gray Owl,Chouette lapone,https://upload.wikimedia.org/wikipedia/commons/0/0b/%D0%91%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%D1%82%D0%B0%D1%8F_%D0%BD%D0%B5%D1%8F%D1%81%D1%8B%D1%82%D1%8C_%28Strix_nebulosa%2C_m%29%2C_%D0%91%D0%BE%D1%82%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%B0%D0%B4.jpg,0,3,
+Long-eared Owl,Hibou moyen-duc,https://upload.wikimedia.org/wikipedia/commons/e/e2/Long-eared_Owl_-_Kisjuszallas_-_Hungary_S4E0920_%2815671750198%29.jpg,0,2,https://xeno-canto.org/964799/download
+Short-eared Owl,Hibou des marais,https://upload.wikimedia.org/wikipedia/commons/c/c7/Short_Eared_Owl_on_the_Ground.jpg,0,3,https://xeno-canto.org/976185/download
+Marsh Owl,Hibou du Cap,https://upload.wikimedia.org/wikipedia/commons/a/ac/Asio_capensis%2C_Tweeling%2C_a.jpg,0,3,https://xeno-canto.org/713851/download
+Boreal Owl,Nyctale de Tengmalm,https://upload.wikimedia.org/wikipedia/commons/1/17/Aegolius-funereus-001.jpg,0,3,https://xeno-canto.org/978839/download
+Brown Boobook,Ninoxe hirsute,https://upload.wikimedia.org/wikipedia/commons/d/da/Brown_Hawk-Owl_-_Ninox_scutulata.jpg,0,3,
+Northern Boobook,Ninoxe boréale,https://upload.wikimedia.org/wikipedia/commons/2/29/Ninox_japonica%2C_Japan.jpg,0,3,https://xeno-canto.org/951749/download
+Eurasian Hoopoe,Huppe fasciée,https://upload.wikimedia.org/wikipedia/commons/8/80/Eurasian_hoopoe_by_Gunjan_Pandey.jpg,0,1,https://xeno-canto.org/981503/download
+Arabian Green Bee-eater,Merops cyanophrys,https://upload.wikimedia.org/wikipedia/commons/7/73/Bee-eater_Dubai_%28cropped%29.jpg,0,3,https://xeno-canto.org/713215/download
+Asian Green Bee-eater,Guêpier d'Orient,https://upload.wikimedia.org/wikipedia/commons/c/cf/Green_bee-eater_%28Merops_orientalis_ceylonicus%29.jpg,0,2,https://xeno-canto.org/950061/download
+Blue-cheeked Bee-eater,Guêpier de Perse,https://upload.wikimedia.org/wikipedia/commons/0/01/Blue-cheeked_bee-eater_%28Merops_persicus_persicus%29_Namibia.jpg,0,2,https://xeno-canto.org/980507/download
+European Bee-eater,Guêpier d'Europe,https://upload.wikimedia.org/wikipedia/commons/3/3d/Guepier_d%27europe_au_parc_national_Ichkeul.jpg,0,1,https://xeno-canto.org/964005/download
+Common Kingfisher,Martin-pêcheur d'Europe,https://upload.wikimedia.org/wikipedia/commons/b/bc/Alcedo_atthis_-England-8_%28cropped%29.jpg,0,1,https://xeno-canto.org/982037/download
+White-throated Kingfisher,Martin-chasseur de Smyrne,https://upload.wikimedia.org/wikipedia/commons/c/c8/White-throated_kingfisher_%28Halcyon_smyrnensis%29_Galle.jpg,0,2,https://xeno-canto.org/980502/download
+Belted Kingfisher,Martin-pêcheur d'Amérique,https://upload.wikimedia.org/wikipedia/commons/0/0c/BeltedKingfisherJG_Male.jpg,0,2,https://xeno-canto.org/638295/download
+Pied Kingfisher,Martin-pêcheur pie,https://upload.wikimedia.org/wikipedia/commons/c/c8/Pied_kingfisher_%28Ceryle_rudis_leucomelanurus%29_male.jpg,0,2,https://xeno-canto.org/956316/download
+European Roller,Rollier d'Europe,https://upload.wikimedia.org/wikipedia/commons/b/bc/European_Roller_-_Coracias_garrulus.jpg,0,3,https://xeno-canto.org/924564/download
+Abyssinian Roller,Rollier d'Abyssinie,https://upload.wikimedia.org/wikipedia/commons/e/e5/Abyssinian_roller_%28Coracias_abyssinicus%29.jpg,0,3,https://xeno-canto.org/957335/download
+Eurasian Wryneck,Torcol fourmilier,https://upload.wikimedia.org/wikipedia/commons/0/0a/Northern_wryneck_by_David_Raju_%28cropped%29.jpg,0,3,https://xeno-canto.org/919143/download
+Yellow-bellied Sapsucker,Pic maculé,https://upload.wikimedia.org/wikipedia/commons/a/a8/Yellow-bellied_sapsucker_in_CP_%2840484%29.jpg,0,2,https://xeno-canto.org/562030/download
+Eurasian Three-toed Woodpecker,Pic tridactyle,https://upload.wikimedia.org/wikipedia/commons/0/04/Three-toed_Woodpecker_-_Finlandia_0005_%283%29.jpg,0,2,https://xeno-canto.org/927189/download
+Middle Spotted Woodpecker,Pic mar,https://upload.wikimedia.org/wikipedia/commons/5/5f/%D0%A1%D1%80%D0%B5%D0%B4%D0%BD%D0%B8%D0%B9_%D0%BF%D1%91%D1%81%D1%82%D1%80%D1%8B%D0%B9_%D0%B4%D1%8F%D1%82%D0%B5%D0%BB_%28Dendrocoptes_medius%29%2C_%D0%91%D0%B8%D1%82%D1%86%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BB%D0%B5%D1%81.jpg,0,2,https://xeno-canto.org/982351/download
+White-backed Woodpecker,Pic à dos blanc,https://upload.wikimedia.org/wikipedia/commons/b/b6/Dendrocopos_leucotos_2.jpg,0,2,https://xeno-canto.org/981983/download
+Great Spotted Woodpecker,Pic épeiche,https://upload.wikimedia.org/wikipedia/commons/c/c5/Greater_Spotted_Woodpecker_%2841554059345%29.jpg,0,1,https://xeno-canto.org/982353/download
+Syrian Woodpecker,Pic syriaque,https://upload.wikimedia.org/wikipedia/commons/1/13/Dendrocopos_syriacus.jpg,0,2,https://xeno-canto.org/981473/download
+Lesser Spotted Woodpecker,Pic épeichette,https://upload.wikimedia.org/wikipedia/commons/b/bd/%D0%9C%D0%B0%D0%BB%D1%8B%D0%B9_%D0%BF%D1%91%D1%81%D1%82%D1%80%D1%8B%D0%B9_%D0%B4%D1%8F%D1%82%D0%B5%D0%BB_%D0%BD%D0%B0_%D1%80%D0%B5%D0%BF%D0%B5%D0%B9%D0%BD%D0%B8%D0%BA%D0%B5_%28Dendrocopos_minor%2C_fem%29%2C_%D0%9A%D1%80%D1%8B%D0%BB%D0%B0%D1%82%D1%81%D0%BA%D0%B8%D0%B5_%D1%85%D0%BE%D0%BB%D0%BC%D1%8B.jpg,0,2,https://xeno-canto.org/980009/download
+Gray-headed Woodpecker,Pic cendré,https://upload.wikimedia.org/wikipedia/commons/7/79/%D0%A1%D0%B5%D0%B4%D0%BE%D0%B9_%D0%B4%D1%8F%D1%82%D0%B5%D0%BB_%D1%83_%D0%B1%D0%BE%D0%BB%D0%BE%D1%82%D0%B0_%D1%80%D0%B5%D1%87%D0%BA%D0%B8_%D0%97%D0%B8%D0%BC%D1%91%D0%BD%D0%BA%D0%B8.jpg,0,2,
+Eurasian Green Woodpecker,Pic vert,https://upload.wikimedia.org/wikipedia/commons/c/c5/European_green_woodpecker_%28Picus_viridis%29_female_Barnes.jpg,0,1,
+Iberian Green Woodpecker,Picus sharpei,https://upload.wikimedia.org/wikipedia/commons/2/20/Picus_viridis_sharpei_033.jpg,0,3,https://xeno-canto.org/977350/download
+Black Woodpecker,Pic noir,https://upload.wikimedia.org/wikipedia/commons/2/20/%D0%96%D0%B5%D0%BB%D0%BD%D0%B0_%28Dryocopus_martius%2C_fem%29%2C_%C2%AB%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D1%88%D1%83%D0%BC%D0%B0%D1%88%D0%B5%D1%88%D0%B0%D1%8F%C2%BB.jpg,0,2,https://xeno-canto.org/980312/download
+Northern Flicker,Pic flamboyant,https://upload.wikimedia.org/wikipedia/commons/0/02/NorthernFlicker-male.jpg,0,3,https://xeno-canto.org/975331/download
+Lesser Kestrel,Faucon crécerellette,https://upload.wikimedia.org/wikipedia/commons/f/f3/Lesser_Kestrel_%28Male%29.jpg,0,3,https://xeno-canto.org/895705/download
+Eurasian Kestrel,Faucon crécerelle,https://upload.wikimedia.org/wikipedia/commons/2/24/Common_kestrel_falco_tinnunculus.jpg,0,2,
+American Kestrel,Crécerelle d'Amérique,https://upload.wikimedia.org/wikipedia/commons/7/73/AmericanKestrel02.jpg,0,3,https://xeno-canto.org/877035/download
+Red-footed Falcon,Faucon kobez,https://upload.wikimedia.org/wikipedia/commons/c/cc/Falco_vespertinus_2_%28Martin_Mecnarowski%29.jpg,0,3,https://xeno-canto.org/813405/download
+Amur Falcon,Faucon de l'Amour,https://upload.wikimedia.org/wikipedia/commons/2/29/Amur_Falcon_%28male%29_%28vagrant%29.jpg,0,2,https://xeno-canto.org/832536/download
+Eleonora's Falcon,Faucon d'Éléonore,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Eleonora%27s_falcon_%28Falco_eleonorae%29_in_flight_3.jpg/300px-Eleonora%27s_falcon_%28Falco_eleonorae%29_in_flight_3.jpg,0,3,https://xeno-canto.org/893155/download
+Sooty Falcon,Faucon concolore,https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Sooty_Falcon%2C_All%C3%A9e_des_Baobabs_near_Morondava%2C_Madagascar.jpg/300px-Sooty_Falcon%2C_All%C3%A9e_des_Baobabs_near_Morondava%2C_Madagascar.jpg,0,3,https://xeno-canto.org/929946/download
+Merlin (bird),Merlin,https://upload.wikimedia.org/wikipedia/commons/e/e3/Merlin_in_Prospect_Park_%2863386%29.jpg,0,3,
+Eurasian Hobby,Faucon hobereau,https://upload.wikimedia.org/wikipedia/commons/d/df/Eurasian_hobby_%28Falco_subbuteo%29_by_Shantanu_Kuveskar.jpg,0,3,https://xeno-canto.org/960301/download
+Lanner Falcon,Faucon lanier,https://upload.wikimedia.org/wikipedia/commons/7/7d/Lanner_Falcon_800.jpg,0,3,https://xeno-canto.org/577955/download
+Saker Falcon,Faucon sacre,https://upload.wikimedia.org/wikipedia/commons/0/0c/Falco_cherrug_%28Marek_Szczepanek%29.jpg,0,2,https://xeno-canto.org/412094/download
+Gyrfalcon,Faucon gerfaut,https://upload.wikimedia.org/wikipedia/commons/c/c8/Falco_rusticolus_white_cropped.jpg,0,3,https://xeno-canto.org/713307/download
+Peregrine Falcon,faucon pèlerin,https://upload.wikimedia.org/wikipedia/commons/9/9c/Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg,0,1,https://xeno-canto.org/982723/download
+Rose-ringed Parakeet,Perruche à collier,https://upload.wikimedia.org/wikipedia/commons/1/1f/Rose-ringed_parakeet_%28Psittacula_krameri_borealis%29_male_Jaipur_2.jpg,0,1,https://xeno-canto.org/980121/download
+Monk Parakeet,Conure veuve,https://upload.wikimedia.org/wikipedia/commons/5/5c/Monk_Parakeet_%28Myiopsitta_monachus%29_%2828420470712%29.jpg,0,2,https://xeno-canto.org/975931/download
+Olive-sided Flycatcher,Moucherolle à côtés olive,https://upload.wikimedia.org/wikipedia/commons/8/86/Olive-sided_Flycatcher.jpg,0,3,https://xeno-canto.org/962388/download
+Eastern Wood-Pewee,Pioui de l'Est,https://upload.wikimedia.org/wikipedia/commons/6/63/Eastern_wood_pewee_%2871095%29.jpg,0,3,
+Yellow-bellied Flycatcher,Moucherolle à ventre jaune,https://upload.wikimedia.org/wikipedia/commons/b/bc/Yellow-bellied_Flycatcher_-_Empidonax_flaviventris.jpg,0,3,https://xeno-canto.org/562947/download
+Acadian Flycatcher,Moucherolle vert,https://upload.wikimedia.org/wikipedia/commons/7/73/Empidonax_virescens_99136793_%28cropped%29.jpg,0,3,https://xeno-canto.org/950022/download
+Alder Flycatcher,Moucherolle des aulnes,https://upload.wikimedia.org/wikipedia/commons/0/00/Empidonax_alnorum_CT2.jpg,0,2,https://xeno-canto.org/656687/download
+Willow Flycatcher,Moucherolle des saules,https://upload.wikimedia.org/wikipedia/commons/0/00/Southwestern_Willow_Flycatcher.jpg,0,3,https://xeno-canto.org/560030/download
+Least Flycatcher,Moucherolle tchébec,https://upload.wikimedia.org/wikipedia/commons/4/46/Empidonax-minimus-001.jpg,0,3,https://xeno-canto.org/940894/download
+Eastern Phoebe,Moucherolle phébi,https://upload.wikimedia.org/wikipedia/commons/d/d0/Sayornis_phoebe_-Owen_Conservation_Park%2C_Madison%2C_Wisconsin%2C_USA-8.jpg,0,3,https://xeno-canto.org/566104/download
+Western Kingbird,Tyran de l'Ouest,https://upload.wikimedia.org/wikipedia/commons/5/5d/Western_kingbird_%2871748%29.jpg,0,3,https://xeno-canto.org/540019/download
+Eastern Kingbird,Tyran tritri,https://upload.wikimedia.org/wikipedia/commons/f/fb/Easterbn_Kingbird_Heinz.png,0,3,https://xeno-canto.org/343544/download
+Fork-tailed Flycatcher,Tyran des savanes,https://upload.wikimedia.org/wikipedia/commons/4/43/Fork-tailed_flycatcher_%28Tyrannus_savana_monachus%29_male_Orange_Walk.jpg,0,2,https://xeno-canto.org/551103/download
+White-eyed Vireo,Viréo aux yeux blancs,https://upload.wikimedia.org/wikipedia/commons/1/1d/WhiteEyedVireoMaine.jpg,0,3,https://xeno-canto.org/570971/download
+Yellow-throated Vireo,Viréo à gorge jaune,https://upload.wikimedia.org/wikipedia/commons/f/fa/Vireo-flavifrons-001.jpg,0,2,https://xeno-canto.org/914384/download
+Blue-headed Vireo,Viréo à tête bleue,https://upload.wikimedia.org/wikipedia/commons/b/b5/Blue-headed_Vireo_%288088895251%29.jpg,0,3,https://xeno-canto.org/561368/download
+Philadelphia Vireo,Viréo de Philadelphie,https://upload.wikimedia.org/wikipedia/commons/3/32/Vireo_philadelphicus.jpg,0,2,https://xeno-canto.org/474833/download
+Red-eyed Vireo,Viréo aux yeux rouges,https://upload.wikimedia.org/wikipedia/commons/0/03/Vireo_olivaceus_-Madison_-Wisconsin_-USA-8.jpg,0,3,https://xeno-canto.org/972013/download
+Eurasian Golden Oriole,loriot d'Europe,https://upload.wikimedia.org/wikipedia/commons/c/cf/Loriot_d%27Europe_-_Flickr_-_Philippe_Garcelon%2C_crop.jpg,0,2,https://xeno-canto.org/976261/download
+Indian Golden Oriole,Loriot indien,https://upload.wikimedia.org/wikipedia/commons/5/51/IndianGoldenOriole_M.jpg,0,2,https://xeno-canto.org/872517/download
+Ashy Drongo,Drongo cendré,https://upload.wikimedia.org/wikipedia/commons/3/3c/0A2A8011_Ashy_Drongo.jpg,0,2,https://xeno-canto.org/982070/download
+Red-backed Shrike,Pie-grièche écorcheur,https://upload.wikimedia.org/wikipedia/commons/5/5c/Red-backed_shrike.jpg,0,2,https://xeno-canto.org/938986/download
+Red-tailed Shrike,Pie-grièche du Turkestan,https://upload.wikimedia.org/wikipedia/commons/4/4d/0T4A6719.jpg,0,3,https://xeno-canto.org/951342/download
+Isabelline Shrike,Pie-grièche isabelle,https://upload.wikimedia.org/wikipedia/commons/a/a4/Isabelline_Shrike_%2815214160368%29.jpg,0,3,https://xeno-canto.org/975635/download
+Brown Shrike,Pie-grièche brune,https://upload.wikimedia.org/wikipedia/commons/6/64/Lanius_cristatus_-_Surin.jpg,0,3,https://xeno-canto.org/964198/download
+Long-tailed Shrike,Pie-grièche schach,https://upload.wikimedia.org/wikipedia/commons/8/83/Long-tailed_Shrilke_0A2A3080.jpg,0,3,
+Northern Shrike,Pie-grièche boréale,https://upload.wikimedia.org/wikipedia/commons/d/dc/Northern_Shrike%2C_Arvada%2C_Jefferson%2C_Colorado.jpg,0,2,https://xeno-canto.org/982270/download
+Lesser Gray Shrike,Pie-grièche à poitrine rose,https://upload.wikimedia.org/wikipedia/commons/0/0c/Lesser_Grey_Shrike_by_Daniel_Bastaja.jpg,0,3,
+Masked Shrike,Pie-grièche masquée,https://upload.wikimedia.org/wikipedia/commons/6/6a/Lanius_nubicus_%28unmirrored%29.jpg,0,3,https://xeno-canto.org/964017/download
+Woodchat Shrike,Pie-grièche à tête rousse,https://upload.wikimedia.org/wikipedia/commons/4/44/Woodchat_shrike_%28Lanius_senator_senator%29.jpg,0,3,https://xeno-canto.org/982625/download
+Siberian Jay,Mésangeai imitateur,https://upload.wikimedia.org/wikipedia/commons/2/22/Perisoreus_infaustus_Kittil%C3%A4_20180418_01.jpg,0,3,https://xeno-canto.org/871731/download
+Eurasian Jay,geai des chênes,https://upload.wikimedia.org/wikipedia/commons/6/6d/Garrulus_glandarius_1_Luc_Viatour.jpg,0,1,https://xeno-canto.org/975372/download
+Iberian Magpie,Pie-bleue ibérique,https://upload.wikimedia.org/wikipedia/commons/e/e4/Iberian_magpie_%28Cyanopica_cooki%29%2C_Parque_natural_de_la_Sierra_de_And%C3%BAjar%2C_Espa%C3%B1a_%2832602677484%29.jpg,0,2,https://xeno-canto.org/978915/download
+Eurasian Magpie,pie bavarde,https://upload.wikimedia.org/wikipedia/commons/4/4b/%D0%A1%D0%BE%D1%80%D0%BE%D0%BA%D0%B0_%28Pica_pica%29%2C_%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4.jpg,0,1,https://xeno-canto.org/978880/download
+Northern Nutcracker,Cassenoix moucheté,https://upload.wikimedia.org/wikipedia/commons/f/f7/Orzech%C3%B3wka_zwyczajna_nad_Morskim_Okiem.jpg,0,3,
+Red-billed Chough,Crave à bec rouge,https://upload.wikimedia.org/wikipedia/commons/1/12/Bran_goesgoch_Pyrrhocorax_pyrrhocorax.jpg,0,3,https://xeno-canto.org/534503/download
+Yellow-billed Chough,Chocard à bec jaune,https://upload.wikimedia.org/wikipedia/commons/2/2d/Alpine_Chough_by_Jim_Higham.jpg,0,3,
+Eurasian Jackdaw,Choucas des tours,https://upload.wikimedia.org/wikipedia/commons/a/a1/%D0%93%D0%B0%D0%BB%D0%BA%D0%B0_%28Corvus_monedula%29%2C_%D0%A6%D0%B0%D1%80%D0%B8%D1%86%D1%8B%D0%BD%D0%BE.jpg,0,2,
+Daurian Jackdaw,Choucas de Daourie,https://upload.wikimedia.org/wikipedia/commons/7/77/Dwlhany.jpg,0,3,https://xeno-canto.org/824063/download
+House Crow,Corbeau familier,https://upload.wikimedia.org/wikipedia/commons/c/c9/Corvus_splendens.jpg,0,2,https://xeno-canto.org/980341/download
+Carrion Crow,Corneille noire,https://upload.wikimedia.org/wikipedia/commons/a/a9/Corvus_corone_-near_Canford_Cliffs%2C_Poole%2C_England-8.jpg,0,1,https://xeno-canto.org/981452/download
+Hooded Crow,corneille mantelée,https://upload.wikimedia.org/wikipedia/commons/6/63/Corvus_cornix_-Egypt-8.jpg,0,2,https://xeno-canto.org/979058/download
+Fan-tailed Raven,Corbeau à queue courte,https://upload.wikimedia.org/wikipedia/commons/5/56/Fan-tailed_raven_%28Corvus_rhipidurus%29.jpg,0,2,https://xeno-canto.org/981141/download
+Common Raven,grand corbeau,https://upload.wikimedia.org/wikipedia/commons/5/50/Corvus_corax_ad_berlin_090516.jpg,0,1,
+Coal Tit,Mésange noire,https://upload.wikimedia.org/wikipedia/commons/9/92/Coal_tit_UK09.JPG,0,2,https://xeno-canto.org/980800/download
+Crested Tit,Mésange huppée,https://upload.wikimedia.org/wikipedia/commons/d/dc/Lophophanes_cristatus_-_01.jpg,0,2,https://xeno-canto.org/512199/download
+Sombre Tit,Mésange lugubre,https://upload.wikimedia.org/wikipedia/commons/7/7d/Poecile_lugubris%2C_Bulgaria_1.jpg,0,2,https://xeno-canto.org/964687/download
+Marsh Tit,Mésange nonnette,https://upload.wikimedia.org/wikipedia/commons/3/3a/Parus_palustris02.jpg,0,2,https://xeno-canto.org/982787/download
+Willow Tit,Mésange boréale,https://upload.wikimedia.org/wikipedia/commons/1/13/Poecile_montanus_kleinschmidti.jpg,0,2,https://xeno-canto.org/982286/download
+Gray-headed Chickadee,Mésange lapone,https://upload.wikimedia.org/wikipedia/commons/b/bd/Siberian_Tit_Parus_Cinctus_2006_03_07.JPG,0,2,
+Eurasian Blue Tit,Mésange bleue,https://upload.wikimedia.org/wikipedia/commons/8/86/Eurasian_blue_tit_Lancashire.jpg,0,1,https://xeno-canto.org/981094/download
+African Blue Tit,Cyanistes teneriffae,https://upload.wikimedia.org/wikipedia/commons/7/7f/Cyanistes_teneriffae_hedwigae_-Gran_Canaria%2C_Canary_Islands%2C_Spain-8.jpg,0,2,https://xeno-canto.org/974041/download
+Azure Tit,Mésange azurée,https://upload.wikimedia.org/wikipedia/commons/5/59/Azure_Tit_-_Parus_cyanus.jpg,0,3,https://xeno-canto.org/862476/download
+Great Tit,Mésange charbonnière,https://upload.wikimedia.org/wikipedia/commons/e/ef/Great_tit_side-on.jpg,0,1,https://xeno-canto.org/981346/download
+Eurasian Penduline-Tit,Rémiz penduline,https://upload.wikimedia.org/wikipedia/commons/a/a5/Remiz_pendulinus_3_%28Martin_Mecnarowski%29.jpg,0,3,
+Greater Hoopoe-Lark,Sirli du désert,https://upload.wikimedia.org/wikipedia/commons/6/65/Greater_Hoopoe_Lark%2C_crop.jpg,0,3,https://xeno-canto.org/951242/download
+Thick-billed Lark,Alouette de Clot-Bey,https://upload.wikimedia.org/wikipedia/commons/3/34/Thick-billed_lark_%28Ramphocoris_clotbey%29_Kebili.jpg,0,3,https://xeno-canto.org/892457/download
+Bar-tailed Lark,Ammomane élégante,https://upload.wikimedia.org/wikipedia/commons/7/73/Ammomane_%C3%A9l%C3%A9gante_Jbil.jpg,0,3,https://xeno-canto.org/959906/download
+Desert Lark,Ammomane isabelline,https://upload.wikimedia.org/wikipedia/commons/9/97/Steinlerche.jpg,0,3,https://xeno-canto.org/523800/download
+Wood Lark,Alouette lulu,https://upload.wikimedia.org/wikipedia/commons/9/96/Lullula_arborea_%28J%C3%A1n_Svetl%C3%ADk%29.jpg,0,1,
+White-winged Lark,Alouette leucoptère,https://upload.wikimedia.org/wikipedia/commons/5/5d/Alauda_leucoptera_57392188.jpg,0,3,https://xeno-canto.org/813215/download
+Eurasian Skylark,Alouette des champs,https://upload.wikimedia.org/wikipedia/commons/f/f6/Skylark_2%2C_Lake_District%2C_England_-_June_2009.jpg,0,2,https://xeno-canto.org/974883/download
+Oriental Skylark,Alouette gulgule,https://upload.wikimedia.org/wikipedia/commons/b/b1/Oriental_Skylark_Harangi_Coorg_Apr24_D72_26744.jpg,0,3,https://xeno-canto.org/961416/download
+Thekla's Lark,Cochevis de Thékla,https://upload.wikimedia.org/wikipedia/commons/b/be/North_African_Thekla%27s_lark_%28Galerida_theklae_carolinae%29_Kebili.jpg,0,3,https://xeno-canto.org/981034/download
+Crested Lark,Cochevis huppé,https://upload.wikimedia.org/wikipedia/commons/1/15/Cochevis_hupp%C3%A9_Gbollat.jpg,0,2,https://xeno-canto.org/981190/download
+Horned Lark,Alouette hausse-col,https://upload.wikimedia.org/wikipedia/commons/5/54/Shore_Lark.jpg,0,3,https://xeno-canto.org/972226/download
+Temminck's Lark,Alouette bilophe,https://upload.wikimedia.org/wikipedia/commons/9/97/Alouette_bilophe_Jbil001.jpg,0,3,https://xeno-canto.org/892449/download
+Greater Short-toed Lark,Alouette calandrelle,https://upload.wikimedia.org/wikipedia/commons/8/8d/Alouette_calandrelle_ichkeul001.jpg,0,2,https://xeno-canto.org/971540/download
+Bimaculated Lark,Alouette monticole,https://upload.wikimedia.org/wikipedia/commons/f/ff/Melanocorypha_bimaculata_117209398.jpg,0,2,https://xeno-canto.org/972271/download
+Calandra Lark,Alouette calandre,https://upload.wikimedia.org/wikipedia/commons/7/7b/Bere%C5%9Fe.jpg,0,3,https://xeno-canto.org/977975/download
+Black Lark,Alouette nègre,https://upload.wikimedia.org/wikipedia/commons/4/45/Black_Lark_-_Kazakistan_S4E9836_%2816946135312%29-cropped.jpg,0,3,https://xeno-canto.org/813497/download
+Dupont's Lark,Sirli de Dupont,https://upload.wikimedia.org/wikipedia/commons/c/c8/Dupont%27s_Lark%2C_Morocco_1_%28crop%29_%28cropped%29.jpg,0,3,https://xeno-canto.org/973317/download
+Asian Short-toed Lark,Alouette de Swinhoe,https://upload.wikimedia.org/wikipedia/commons/a/a3/Calandrella_cheleensis.JPG,0,3,https://xeno-canto.org/926675/download
+Mediterranean Short-toed Lark,Alouette pispolette,https://upload.wikimedia.org/wikipedia/commons/b/b8/Calandrella_rufescens_-Canary_Islands_-Spain-8.jpg,0,3,https://xeno-canto.org/981616/download
+Turkestan Short-toed Lark,Alaudala heinei,https://upload.wikimedia.org/wikipedia/commons/8/8a/Alaudala_heinei_-_Heinestummellerche_202746307.jpg,0,3,https://xeno-canto.org/773176/download
+Bearded Reedling,Panure à moustaches,https://upload.wikimedia.org/wikipedia/commons/f/fb/Baardman_-_Panurus_biarmicus_%2815147085070%29.jpg,0,3,https://xeno-canto.org/955703/download
+Zitting Cisticola,Cisticole des joncs,https://upload.wikimedia.org/wikipedia/commons/3/31/Zitting_cisticola_2024_04_19_%28cropped%29.jpg,0,3,https://xeno-canto.org/975968/download
+Thick-billed Warbler,Arundinax aedon,https://upload.wikimedia.org/wikipedia/commons/6/6b/Thick-billed_Warbler_1_%40_Kakkadampoil_2-2-14.jpg,0,3,https://xeno-canto.org/972681/download
+Booted Warbler,Iduna caligata,https://upload.wikimedia.org/wikipedia/commons/4/40/Booted_Warbler_-_Kazakistan_S4E0786_%2817330623545%29.jpg,0,3,https://xeno-canto.org/925133/download
+Sykes's Warbler,Iduna rama,https://upload.wikimedia.org/wikipedia/commons/4/4d/Syke%27s_Warbler_%28Hippolais_rama%29_on_Vilaiti_Siris_%28Samanea_saman%29_in_Kolkata_W_IMG_4659.jpg,0,3,https://xeno-canto.org/947018/download
+Eastern Olivaceous Warbler,Hypolaïs pâle,https://upload.wikimedia.org/wikipedia/commons/e/e7/Eastern_olivaceous_warbler_%28Iduna_pallida%29_by_Lior_Kislev.jpg,0,3,https://xeno-canto.org/971411/download
+Western Olivaceous Warbler,Iduna opaca,https://upload.wikimedia.org/wikipedia/commons/8/85/Iduna_opaca_CDC_image.jpg,0,3,https://xeno-canto.org/973884/download
+Upcher's Warbler,Hippolais languida,https://upload.wikimedia.org/wikipedia/commons/2/2c/Upcher%27s_Warbler_%28Hippolais_languida%29_%288079442053%29.jpg,0,3,https://xeno-canto.org/526057/download
+Olive-tree Warbler,Hypolaïs des oliviers,https://upload.wikimedia.org/wikipedia/commons/7/7c/Olive-tree_warbler%2C_Hippolais_olivetorum%2C_at_Mkuze_Game_Reserve%2C_%2839230388474%29.jpg,0,3,https://xeno-canto.org/964911/download
+Melodious Warbler,Hypolaïs polyglotte,https://upload.wikimedia.org/wikipedia/commons/6/6a/Hippolais_polyglotta.jpg,0,3,https://xeno-canto.org/573057/download
+Icterine Warbler,Hypolaïs ictérine,https://upload.wikimedia.org/wikipedia/commons/9/9e/Icterine_warbler_18_06_2022_004_crop.png,0,3,https://xeno-canto.org/923001/download
+Aquatic Warbler,Phragmite aquatique,https://upload.wikimedia.org/wikipedia/commons/1/1d/Seggenrohrsaenger_hand.jpg,0,3,https://xeno-canto.org/976411/download
+Moustached Warbler,Lusciniole à moustaches,https://upload.wikimedia.org/wikipedia/commons/e/ec/Moustached_Warbler_Acrocephalus_melanopogon_by_Dr._Raju_Kasambe_%282%29.jpg,0,3,https://xeno-canto.org/974707/download
+Sedge Warbler,Phragmite des joncs,https://upload.wikimedia.org/wikipedia/commons/6/69/Sedge_warbler_%28Acrocephalus_schoenobaenus%29_3.jpg,0,3,https://xeno-canto.org/978974/download
+Paddyfield Warbler,Rousserolle isabelle,https://upload.wikimedia.org/wikipedia/commons/7/74/Paddyfield_Warbler_%28Acrocephalus_agricola%29_in_Kolkata_Im_IMG_0496.jpg,0,3,https://xeno-canto.org/972260/download
+Blyth's Reed Warbler,Rousserolle des buissons,https://upload.wikimedia.org/wikipedia/commons/3/33/Blyth%27s_Reed_Warbler_I2_IMG_9417.jpg,0,2,https://xeno-canto.org/975218/download
+Marsh Warbler,Rousserolle verderolle,https://upload.wikimedia.org/wikipedia/commons/a/a1/Acrocephalus_palustris_%28Marek_Szczepanek%29b.jpg,0,3,https://xeno-canto.org/971602/download
+Common Reed Warbler,Rousserolle effarvatte,https://upload.wikimedia.org/wikipedia/commons/2/24/PleidelsheimerWiesentalTeichrohrsaenger.jpg,0,3,
+Great Reed Warbler,Rousserolle turdoïde,https://upload.wikimedia.org/wikipedia/commons/0/03/Drosselrohrs%C3%A4nger_Great_reed_warbler.jpg,0,3,https://xeno-canto.org/939912/download
+Clamorous Reed Warbler,Rousserolle stentor,https://upload.wikimedia.org/wikipedia/commons/6/6c/Clamorous_reed_warbler.jpg,0,2,https://xeno-canto.org/977471/download
+Gray's Grasshopper Warbler,Locustelle fasciée,https://upload.wikimedia.org/wikipedia/commons/0/0b/LocustellaFasciolataKeulemans.jpg,0,3,https://xeno-canto.org/927606/download
+Pallas's Grasshopper Warbler,Locustelle de Pallas,https://upload.wikimedia.org/wikipedia/commons/f/f7/Rusty-rumped_Warbler_%28Locustella_certhiola%29_I_IMG_2750.jpg,0,3,https://xeno-canto.org/959711/download
+Lanceolated Warbler,Locustelle lancéolée,https://upload.wikimedia.org/wikipedia/commons/3/37/Locustella_lanceolata_295726934.jpg,0,3,https://xeno-canto.org/974331/download
+River Warbler,Locustelle fluviatile,https://upload.wikimedia.org/wikipedia/commons/d/de/Flodsangare.jpg,0,2,https://xeno-canto.org/921386/download
+Savi's Warbler,Locustelle luscinioïde,https://upload.wikimedia.org/wikipedia/commons/8/84/Locustellaluscinioides.jpg,0,3,https://xeno-canto.org/906030/download
+Common Grasshopper Warbler,Locustelle tachetée,https://upload.wikimedia.org/wikipedia/commons/c/c3/Grashoppsangare-070512.jpg,0,3,https://xeno-canto.org/910697/download
+Bank Swallow,Hirondelle de rivage,https://upload.wikimedia.org/wikipedia/commons/a/a8/Sand_martin_%28Riparia_riparia%29%2C_Guidel-Plage%2C_Brittany%2C_France_%2819765483180%29.jpg,0,2,
+Pale Martin,Hirondelle pâle,https://upload.wikimedia.org/wikipedia/commons/a/a4/Riparia_diluta.JPG,0,2,https://xeno-canto.org/485818/download
+Tree Swallow,Hirondelle bicolore,https://upload.wikimedia.org/wikipedia/commons/d/d0/Tree_swallow_in_JBWR_%2825579%29.jpg,0,2,https://xeno-canto.org/540310/download
+Purple Martin,Hirondelle noire,https://upload.wikimedia.org/wikipedia/commons/b/b9/PurpleMartin_cajay.jpg,0,2,https://xeno-canto.org/379541/download
+Northern Rough-winged Swallow,Hirondelle à ailes hérissées,https://upload.wikimedia.org/wikipedia/commons/c/c6/Stelgidopteryx_serripennis.jpg,0,2,https://xeno-canto.org/542595/download
+Eurasian Crag-Martin,Hirondelle de rochers,https://upload.wikimedia.org/wikipedia/commons/7/79/Eurasian_Crag-Martin_-_Estremadurai_1779_%2816772419967%29.jpg,0,1,
+Barn Swallow,Hirondelle rustique,https://upload.wikimedia.org/wikipedia/commons/7/7d/Rauchschwalbe_Hirundo_rustica.jpg,0,1,https://xeno-canto.org/934498/download
+European Red-rumped Swallow,Hirondelle rousseline,https://upload.wikimedia.org/wikipedia/commons/9/9f/RED-RUMPED_SWALLOW_Hirundo_daurica_rufula_%288467592335%29.jpg,0,2,
+Eastern Red-rumped Swallow,Hirondelle rousseline (Cecropis daurica),https://upload.wikimedia.org/wikipedia/commons/a/a1/Red-rumped_Swallow_%28Cecropis_daurica%29_Photograph_by_Shantanu_Kuveskar.jpg,0,2,
+Rufous-chested Swallow,Hirondelle à ventre roux,https://upload.wikimedia.org/wikipedia/commons/5/5a/Red-breasted_Swallow_%28Hirundo_semirufa%29_%2830987147586%29.jpg,0,2,
+Cliff Swallow,Petrochelidon (Hirondelles),https://upload.wikimedia.org/wikipedia/commons/5/50/Cliff_Swallow_Builder.jpg,0,3,https://xeno-canto.org/937133/download
+Common Bulbul,Bulbul des jardins,https://upload.wikimedia.org/wikipedia/commons/c/c9/Common_bulbul_%28Pycnonotus_barbatus_barbatus%29.jpg,0,3,https://xeno-canto.org/981310/download
+White-eared Bulbul,Bulbul à oreillons blancs,https://upload.wikimedia.org/wikipedia/commons/2/28/Pycnonotus_leucotis_1.jpg,0,3,https://xeno-canto.org/977055/download
+Wood Warbler,Pouillot siffleur,https://upload.wikimedia.org/wikipedia/commons/e/e0/Flickr_-_Rainbirder_-_Wood_Warbler_%28Phylloscopus_sibilatrix%29.jpg,0,2,https://xeno-canto.org/976778/download
+Western Bonelli's Warbler,Pouillot de Bonelli,https://upload.wikimedia.org/wikipedia/commons/6/6f/Phylloscopus_bonelli_in_the_wild.jpg,0,2,https://xeno-canto.org/965847/download
+Eastern Bonelli's Warbler,Pouillot oriental,https://upload.wikimedia.org/wikipedia/commons/c/cb/Eastern_Bonelli%27s_Warbler.jpg,0,3,https://xeno-canto.org/964688/download
+Yellow-browed Warbler,Pouillot à grands sourcils,https://upload.wikimedia.org/wikipedia/commons/8/8b/Yellow-browed_warbler_%28Phylloscopus_inornatus%29%2C_Parc_du_Slot%2C_Woluw%C3%A9-St.-Lambert%2C_Brussels_%2834053989676%29.jpg,0,3,https://xeno-canto.org/978291/download
+Hume's Warbler,Pouillot de Hume,https://upload.wikimedia.org/wikipedia/commons/1/1d/Hume%27s_Warbler_I2_IMG_3401.jpg,0,3,
+Brooks's Leaf Warbler,Phylloscopus subviridis (Pouillot),https://upload.wikimedia.org/wikipedia/commons/8/8b/PhylloscopusKeulemans.jpg,0,3,https://xeno-canto.org/810923/download
+Pallas's Leaf Warbler,Pouillot de Pallas,https://upload.wikimedia.org/wikipedia/commons/0/04/Pallas%27s_Leaf_Warbler%2C_Tunkinskiy_Rayon%2C_Buryat%2C_Russia_2.jpg,0,3,https://xeno-canto.org/982563/download
+Radde's Warbler,Pouillot de Schwarz,https://upload.wikimedia.org/wikipedia/commons/7/7f/Radde%27s_Warbler_-_Thailand_S4E1407_%2818645038584%29_%282%29.jpg,0,3,https://xeno-canto.org/961183/download
+Sulphur-bellied Warbler,Phylloscopus griseolus (Pouillot),https://upload.wikimedia.org/wikipedia/commons/f/f8/Sulpher-bellied_Warbler_%28Phylloscopus_griseolus%29at_Sindhrot_near_Vadodara%2C_Gujrat_Pix_175.jpg,0,3,https://xeno-canto.org/940233/download
+Dusky Warbler,Pouillot brun,https://upload.wikimedia.org/wikipedia/commons/d/d6/DuskyWarbler_Cropped.jpg,0,2,https://xeno-canto.org/956755/download
+Plain Leaf Warbler,Pouillot modeste,https://upload.wikimedia.org/wikipedia/commons/e/ee/Plain_leaf_warbler_%28phylloscopus_neglectus%29.JPG,0,3,https://xeno-canto.org/528985/download
+Willow Warbler,Pouillot fitis,https://upload.wikimedia.org/wikipedia/commons/5/5b/Willow_Warbler_Phylloscopus_trochilus.jpg,0,3,https://xeno-canto.org/975235/download
+Mountain Chiffchaff,Pouillot montagnard,https://upload.wikimedia.org/wikipedia/commons/4/43/Mountain_Chiffchaff_-_Shreeram_M_V_-_Suru_Valley.jpg,0,2,https://xeno-canto.org/972283/download
+Canary Islands Chiffchaff,Pouillot des Canaries,https://upload.wikimedia.org/wikipedia/commons/c/c4/Phylloscopus_canariensis_-Drago%2C_Gran_Canaria%2C_Canary_Islands%2C_Spain-8_%281%29.jpg,0,3,https://xeno-canto.org/952025/download
+Common Chiffchaff,pouillot véloce,https://upload.wikimedia.org/wikipedia/commons/c/cc/Chiffchaff_-_Phylloscopus_collybita.jpg,0,2,https://xeno-canto.org/982605/download
+Iberian Chiffchaff,Pouillot ibérique,https://upload.wikimedia.org/wikipedia/commons/2/24/Phylloscopus_ibericus.jpg,0,3,https://xeno-canto.org/977960/download
+Eastern Crowned Warbler,Phylloscopus coronatus (Pouillot),https://upload.wikimedia.org/wikipedia/commons/3/39/Eastern_crowned_warbler.jpg,0,3,https://xeno-canto.org/934471/download
+Green Warbler,Phylloscopus nitidus (Pouillot),https://upload.wikimedia.org/wikipedia/commons/8/88/Green_warbler.jpg,0,3,https://xeno-canto.org/972285/download
+Greenish Warbler,Pouillot verdâtre,https://upload.wikimedia.org/wikipedia/commons/4/4e/Greenish_Warbler_Sikkim_India_11.05.2014.jpg,0,3,https://xeno-canto.org/979913/download
+Two-barred Warbler,Pouillot à deux barres,https://upload.wikimedia.org/wikipedia/commons/0/0c/Two-barred_Warbler_imported_from_iNaturalist_photo_262018284_on_20_June_2024.jpg,0,3,https://xeno-canto.org/962927/download
+Large-billed Leaf Warbler,Phylloscopus magnirostris (Pouillot),https://upload.wikimedia.org/wikipedia/commons/d/dc/Large-billed_Leaf_Warbler_%28Phylloscopus_magnirostris%29.jpg,0,3,https://xeno-canto.org/319931/download
+Pale-legged Leaf Warbler,Phylloscopus tenellipes (Pouillot),https://upload.wikimedia.org/wikipedia/commons/2/2a/Pale-legged_Leaf_Warbler_0A2A8189_%28cropped%29.jpg,0,3,https://xeno-canto.org/978641/download
+Arctic Warbler,Pouillot boréal,https://upload.wikimedia.org/wikipedia/commons/3/33/Arctic_Warbler_4683b.jpg,0,3,https://xeno-canto.org/962917/download
+Kamchatka Leaf Warbler,Phylloscopus examinandus (Pouillot),https://upload.wikimedia.org/wikipedia/commons/a/aa/Kamchatka_Leaf_Warbler_imported_from_iNaturalist_photo_313019515_on_20_June_2024.jpg,0,3,https://xeno-canto.org/952880/download
+Cetti's Warbler,Bouscarle de Cetti,https://upload.wikimedia.org/wikipedia/commons/7/73/37-090505-cettis-warbler-at-Kalloni-east-river.jpg,0,3,https://xeno-canto.org/979317/download
+Long-tailed Tit,Mésange à longue queue,https://upload.wikimedia.org/wikipedia/commons/d/df/Aegithalos_caudatus_side-on.jpg,0,1,https://xeno-canto.org/980798/download
+Eurasian Blackcap,Fauvette à tête noire,https://upload.wikimedia.org/wikipedia/commons/f/f5/Blackcap_%28Sylvia_atricapilla%29_male.jpg,0,2,https://xeno-canto.org/981812/download
+Garden Warbler,Fauvette des jardins,https://upload.wikimedia.org/wikipedia/commons/0/07/Sylvia_borin_%28%C3%96rebro_County%29.jpg,0,2,https://xeno-canto.org/964111/download
+Barred Warbler,Fauvette épervière,https://upload.wikimedia.org/wikipedia/commons/c/ca/Curruca_nisoria_378155893_%28cropped%29.jpg,0,2,https://xeno-canto.org/925636/download
+Lesser Whitethroat,Fauvette babillarde,https://upload.wikimedia.org/wikipedia/commons/b/ba/Lesser_whitethroat_%2840735963543%29.jpg,0,3,https://xeno-canto.org/982463/download
+Western Orphean Warbler,Fauvette orphée,https://upload.wikimedia.org/wikipedia/commons/3/3c/Western_Orphean_Warbler.jpg,0,3,https://xeno-canto.org/961703/download
+Eastern Orphean Warbler,Fauvette orphéane,https://upload.wikimedia.org/wikipedia/commons/8/84/Curruca_crassirostris_91619419_%28cropped%29.jpg,0,3,https://xeno-canto.org/973093/download
+African Desert Warbler,Curruca deserti,https://upload.wikimedia.org/wikipedia/commons/4/49/Fauvette_du_d%C3%A9sert_Jebil_NP.jpg,0,3,https://xeno-canto.org/892806/download
+Asian Desert Warbler,Fauvette naine,https://upload.wikimedia.org/wikipedia/commons/c/c9/Asian_Desert_Warbler_%28Sylvia_nana%29_%2853678154976%29_%28cropped%29.jpg,0,3,https://xeno-canto.org/951279/download
+Tristram's Warbler,Fauvette de l’Atlas,https://upload.wikimedia.org/wikipedia/commons/d/d1/SylviaDeserticolaKeulemans.jpg,0,3,https://xeno-canto.org/892415/download
+Menetries's Warbler,Fauvette de Ménétries,https://upload.wikimedia.org/wikipedia/commons/d/de/Sylvia_mystacea.jpg,0,3,https://xeno-canto.org/977388/download
+Rüppell's Warbler,Fauvette de Rüppell,https://upload.wikimedia.org/wikipedia/commons/0/08/Ruppell%27s_warbler.jpg,0,3,https://xeno-canto.org/964684/download
+Cyprus Warbler,Fauvette de Chypre,https://upload.wikimedia.org/wikipedia/commons/4/42/Cyprus_Warbler_%28Sylvia_melanothorax%29.jpg,0,3,https://xeno-canto.org/962257/download
+Sardinian Warbler,Fauvette mélanocéphale,https://upload.wikimedia.org/wikipedia/commons/e/e1/Sardinian_Warbler.jpg,0,3,https://xeno-canto.org/982577/download
+Moltoni's Warbler,Fauvette de Moltoni,https://upload.wikimedia.org/wikipedia/commons/5/53/Moltoni%27s_Warbler_-_Castelletto_Merli_-_Italy_%2842866907560%29.jpg,0,3,https://xeno-canto.org/953770/download
+Western Subalpine Warbler,Fauvette passerinette,https://upload.wikimedia.org/wikipedia/commons/5/5c/Subalpine_Warbler_-_Monfrague_-_Spain_2669_%2819110069408%29.jpg,0,2,https://xeno-canto.org/942008/download
+Eastern Subalpine Warbler,Fauvette des Balkans,https://upload.wikimedia.org/wikipedia/commons/a/a9/%CE%9A%CE%BF%CE%BA%CE%BA%CE%B9%CE%BD%CE%BF%CF%84%CF%83%CE%B9%CF%81%CE%BF%CE%B2%CE%AC%CE%BA%CE%BF%CF%82.jpg,0,3,https://xeno-canto.org/925685/download
+Greater Whitethroat,Fauvette grisette,https://upload.wikimedia.org/wikipedia/commons/9/91/Common_Whitethroat.jpg,0,3,
+Spectacled Warbler,Fauvette à lunettes,https://upload.wikimedia.org/wikipedia/commons/c/c1/Fauvette_%C3%A0_lunettes_Aqueduc_de_Zaghouan.jpg,0,2,https://xeno-canto.org/892188/download
+Marmora's Warbler,Fauvette sarde,https://upload.wikimedia.org/wikipedia/commons/d/d2/Marmora%27s_Warbler_-_Sardinia_-_Italy_S4E1036.jpg,0,3,https://xeno-canto.org/930125/download
+Dartford Warbler,Fauvette pitchou,https://upload.wikimedia.org/wikipedia/commons/4/47/Dartford_Warbler_-_Ligura_-_Italy_S4E3711_%2818675159154%29.jpg,0,3,https://xeno-canto.org/980082/download
+Balearic Warbler,Fauvette des Baléares,https://upload.wikimedia.org/wikipedia/commons/0/03/Balearic_Warbler.jpg,0,3,https://xeno-canto.org/897494/download
+Ashy-throated Parrotbill,Paradoxornis à gorge cendrée,https://upload.wikimedia.org/wikipedia/commons/6/6b/Ashy-throated_Parrotbill_%28Sinosuthora_alphonsiana%29_%288077153987%29.jpg,0,3,https://xeno-canto.org/916584/download
+Red-billed Leiothrix,Léiothrix jaune,https://upload.wikimedia.org/wikipedia/commons/0/09/Red-billed_Leiothrix_Mangoli_Nainital_Uttarakhand_03.02.2015.jpg,0,3,
+Ruby-crowned Kinglet,Roitelet à couronne rubis,https://upload.wikimedia.org/wikipedia/commons/f/fb/Regulus_calendula_MP_3.jpg,0,2,https://xeno-canto.org/941510/download
+Goldcrest,Roitelet huppé,https://upload.wikimedia.org/wikipedia/commons/f/fe/Goldcrest_1.jpg,0,1,https://xeno-canto.org/937581/download
+Madeira Firecrest,Roitelet de Madère,https://upload.wikimedia.org/wikipedia/commons/f/f3/Madeira_firecrest.jpg,0,2,https://xeno-canto.org/962017/download
+Common Firecrest,Roitelet à triple bandeau,https://upload.wikimedia.org/wikipedia/commons/b/b9/Common_firecrest_Franconville_03.jpg,0,2,https://xeno-canto.org/982684/download
+Wallcreeper,Tichodrome échelette,https://upload.wikimedia.org/wikipedia/commons/d/dd/Wallcreeper_%28Tichodroma_muraria%29_female_Piatra_Craiului.jpg,0,3,https://xeno-canto.org/573620/download
+Krüper's Nuthatch,Sittelle de Krüper,https://upload.wikimedia.org/wikipedia/commons/c/cd/Kr%C3%BCper%27s_Nuthatch_%28Sitta_krueperi%29%2C_Achladeri_Forest%2C_Lesvos%2C_Greece%2C_16.04.2015_%282%29.jpg,0,2,https://xeno-canto.org/964903/download
+Red-breasted Nuthatch,Sittelle à poitrine rousse,https://upload.wikimedia.org/wikipedia/commons/d/d2/Sitta_canadensis_CT2.jpg,0,2,https://xeno-canto.org/965511/download
+Corsican Nuthatch,Sittelle corse,https://upload.wikimedia.org/wikipedia/commons/2/2d/Sitta_whiteheadi_-_Christoph_Moning_-_4_%28cropped%29.jpeg,0,3,https://xeno-canto.org/471647/download
+Western Rock Nuthatch,Sittelle de Neumayer,https://upload.wikimedia.org/wikipedia/commons/b/bc/Westernrocknuthatch_Sitta_neumayer.jpg,0,3,https://xeno-canto.org/964156/download
+Eurasian Nuthatch,Sittelle torchepot,https://upload.wikimedia.org/wikipedia/commons/9/91/Kleiber_Sitta_europaea-0447.jpg,0,3,https://xeno-canto.org/979824/download
+Eurasian Treecreeper,Grimpereau des bois,https://upload.wikimedia.org/wikipedia/commons/e/e1/Eurasian_Treecreeper_in_the_snow%2C_cropped_version.jpg,0,3,https://xeno-canto.org/980236/download
+Short-toed Treecreeper,Grimpereau des jardins,https://upload.wikimedia.org/wikipedia/commons/0/0d/Short-toed_treecreeper_%28Certhia_brachydactyla_megarhynchos%29.jpg,0,3,https://xeno-canto.org/981091/download
+Eurasian Wren,Troglodyte mignon,https://upload.wikimedia.org/wikipedia/commons/6/6c/Ein_neugieriger_Zaunk%C3%B6nig.jpg,0,1,https://xeno-canto.org/982665/download
+Marsh Wren,Troglodyte des marais,https://upload.wikimedia.org/wikipedia/commons/8/85/Cistothorus_palustris_-Reifel_Island%2C_Vancouver-8.jpg,0,2,https://xeno-canto.org/978121/download
+White-throated Dipper,Cincle plongeur,https://upload.wikimedia.org/wikipedia/commons/f/f5/Cinclus_cinclus_-Kirkcudbright%2C_Scotland-8.jpg,0,3,https://xeno-canto.org/944124/download
+European Starling,Étourneau sansonnet,https://upload.wikimedia.org/wikipedia/commons/7/7d/Toulouse_-_Sturnus_vulgaris_-_2012-02-26_-_3.jpg,0,1,
+Spotless Starling,Étourneau unicolore,https://upload.wikimedia.org/wikipedia/commons/a/a3/Estornino_Negro._Casa_de_Campo._Madrid_%283%29.jpg,0,2,https://xeno-canto.org/541787/download
+Rosy Starling,Étourneau roselin,https://upload.wikimedia.org/wikipedia/commons/1/1d/Pastor_roseus_2023.jpg,0,3,https://xeno-canto.org/920038/download
+Daurian Starling,Etourneau de Daourie,https://upload.wikimedia.org/wikipedia/commons/c/c8/Agropsar_sturninus_-_Kent_Ridge_Park.jpg,0,3,https://xeno-canto.org/574135/download
+Crested Myna,Martin huppé,https://upload.wikimedia.org/wikipedia/commons/0/07/Crested_myna%2C_Osaka%2C_Japan.jpg,0,2,https://xeno-canto.org/67698/download
+Gray Catbird,Moqueur chat,https://upload.wikimedia.org/wikipedia/commons/9/91/Gray_catbird_%2885315%29.jpg,0,2,
+Brown Thrasher,Moqueur roux,https://upload.wikimedia.org/wikipedia/commons/f/fb/Brown_thrasher_in_CP_%2802147%29.jpg,0,3,https://xeno-canto.org/982365/download
+Tropical Mockingbird,Moqueur des savanes,https://upload.wikimedia.org/wikipedia/commons/9/9e/TropicalMockingbird.jpg,0,3,https://xeno-canto.org/972767/download
+Northern Mockingbird,Moqueur polyglotte,https://upload.wikimedia.org/wikipedia/commons/6/6b/Mockingbird_in_Bay_Ridge_%2885082%29.jpg,0,2,https://xeno-canto.org/559555/download
+White's Thrush,Grive dorée,https://upload.wikimedia.org/wikipedia/commons/2/29/Zoothera_aurea%2C_Hong_Kong_1.jpg,0,3,https://xeno-canto.org/977933/download
+Scaly Thrush,Grive dama,https://upload.wikimedia.org/wikipedia/commons/8/83/Scaly_Thrush_0A2A8657.jpg,0,3,https://xeno-canto.org/489637/download
+Varied Thrush,Grive à collier,https://upload.wikimedia.org/wikipedia/commons/2/2c/Ixoreus_naevius_1.jpg,0,3,https://xeno-canto.org/770780/download
+Veery,Grive fauve,https://upload.wikimedia.org/wikipedia/commons/e/e8/Veery_in_CP_%2843277%29.jpg,0,3,https://xeno-canto.org/531130/download
+Gray-cheeked Thrush,Grive à joues grises,https://upload.wikimedia.org/wikipedia/commons/f/ff/Gray-cheeked_thrush_%2871096%29.jpg,0,3,
+Swainson's Thrush,Grive à dos olive,https://upload.wikimedia.org/wikipedia/commons/3/35/Catharus_ustulatus_-North_Dakota-8a.jpg,0,2,https://xeno-canto.org/544557/download
+Hermit Thrush,Grive solitaire,https://upload.wikimedia.org/wikipedia/commons/d/d3/Hermit_thrush_qmnonic.jpg,0,3,https://xeno-canto.org/963177/download
+Wood Thrush,Grive des bois,https://upload.wikimedia.org/wikipedia/commons/f/fd/Wood_thrush_%28Hylocichla_mustelina%29_Peten.jpg,0,2,https://xeno-canto.org/934452/download
+Siberian Thrush,Grive de Sibérie,https://upload.wikimedia.org/wikipedia/commons/6/6d/Siberian_Thrush_0A2A2890.jpg,0,3,https://xeno-canto.org/833165/download
+Mistle Thrush,Grive draine,https://upload.wikimedia.org/wikipedia/commons/9/9e/Turdus_viscivorus.001_-_Cardiff.jpg,0,3,https://xeno-canto.org/972391/download
+Song Thrush,Grive musicienne,https://upload.wikimedia.org/wikipedia/commons/1/1e/%D0%9F%D0%B5%D0%B2%D1%87%D0%B8%D0%B9_%D0%B4%D1%80%D0%BE%D0%B7%D0%B4_%D0%BD%D0%B0_%D0%BF%D0%B5%D0%BD%D1%8C%D0%BA%D0%B5_%28Turdus_philomelos%29%2C_%D0%91%D0%B8%D1%82%D1%86%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BB%D0%B5%D1%81.jpg,0,3,https://xeno-canto.org/980582/download
+Redwing,Grive mauvis,https://upload.wikimedia.org/wikipedia/commons/c/c1/Redwing_Turdus_iliacus.jpg,0,3,https://xeno-canto.org/973547/download
+Eurasian Blackbird,Merle noir,https://upload.wikimedia.org/wikipedia/commons/a/a9/Common_Blackbird.jpg,0,1,
+American Robin,Merle d'Amérique,https://upload.wikimedia.org/wikipedia/commons/9/97/American_robin_%2871307%29.jpg,0,2,https://xeno-canto.org/524659/download
+Austral Thrush,Merle austral,https://upload.wikimedia.org/wikipedia/commons/3/39/Turdus_falcklandii.jpg,0,2,https://xeno-canto.org/573536/download
+Tickell's Thrush,Merle unicolore,https://upload.wikimedia.org/wikipedia/commons/d/d6/Tickells.jpg,0,2,https://xeno-canto.org/655458/download
+Pale Thrush,Merle pâle,https://upload.wikimedia.org/wikipedia/commons/b/bc/Pale_Thrush_-_Taiwan_S4E8071_%2817027483687%29.jpg,0,2,https://xeno-canto.org/978196/download
+Eyebrowed Thrush,Merle obscur,https://upload.wikimedia.org/wikipedia/commons/c/c6/Eyebrowed_Thrush.jpg,0,2,https://xeno-canto.org/963407/download
+Fieldfare,Grive litorne,https://upload.wikimedia.org/wikipedia/commons/a/af/Fieldfare_on_branch.jpg,0,3,https://xeno-canto.org/972709/download
+Ring Ouzel,Merle à plastron,https://upload.wikimedia.org/wikipedia/commons/5/5d/Turdus_torquatus%2C_Spain_1.jpg,0,2,https://xeno-canto.org/976403/download
+Black-throated Thrush,grive à gorge noire,https://upload.wikimedia.org/wikipedia/commons/2/28/A_dark-throated_Thrush_female_-_Dhanachuli%2C_Uttarakhand_India.jpg,0,3,https://xeno-canto.org/979318/download
+Red-throated Thrush,Grive à gorge rousse,https://upload.wikimedia.org/wikipedia/commons/1/16/Red-throated_thrush_in_Nepal_%281%29_%28cropped%29.jpg,0,3,https://xeno-canto.org/979329/download
+Dusky Thrush,Grive à ailes rousses,https://upload.wikimedia.org/wikipedia/commons/c/c9/Turdus_eunomus_-Japan-8.jpg,0,3,https://xeno-canto.org/893034/download
+Naumann's Thrush,Grive de Naumann,https://upload.wikimedia.org/wikipedia/commons/7/77/Naumann%27s_Thrush_imported_from_iNaturalist_photo_181639461_on_21_June_2024.jpg,0,3,https://xeno-canto.org/893035/download
+Dark-sided Flycatcher,Gobemouche de Sibérie,https://upload.wikimedia.org/wikipedia/commons/1/1b/Muscicapa_sibirica.jpg,0,3,https://xeno-canto.org/955124/download
+Asian Brown Flycatcher,Gobemouche brun,https://upload.wikimedia.org/wikipedia/commons/d/df/Asian_Brown_Flycatcher_%28Muscicapa_dauurica%29_at_Periyar_National_Park.jpg,0,2,https://xeno-canto.org/959602/download
+Spotted Flycatcher,Gobemouche gris,https://upload.wikimedia.org/wikipedia/commons/2/25/Muscicapa_striata_1_%28Martin_Mecnarowski%29.jpg,0,2,https://xeno-canto.org/982698/download
+Rufous-tailed Scrub-Robin,Agrobate roux,https://upload.wikimedia.org/wikipedia/commons/b/b0/Agrobate_roux_au_Parc_National_de_l%27Ichkeul_%28Tunisia%29%2C_crop.jpg,0,3,
+European Robin,rouge-gorge familier,https://upload.wikimedia.org/wikipedia/commons/f/f3/Erithacus_rubecula_with_cocked_head.jpg,0,1,https://xeno-canto.org/982667/download
+Rufous-tailed Robin,Rossignol siffleur,https://upload.wikimedia.org/wikipedia/commons/7/72/Luscinia_sibilans_-_Khao_Yai.jpg,0,1,https://xeno-canto.org/897491/download
+Siberian Blue Robin,Rossignol bleu,https://upload.wikimedia.org/wikipedia/commons/e/e6/Luscinia_cyane_-_Khao_Yai.jpg,0,2,https://xeno-canto.org/975563/download
+White-throated Robin,Iranie à gorge blanche,https://upload.wikimedia.org/wikipedia/commons/a/a2/BessornisAlbigularisWolf%2C_crop.jpg,0,3,https://xeno-canto.org/460560/download
+Thrush Nightingale,Rossignol progné,https://upload.wikimedia.org/wikipedia/commons/f/f9/Nightingale_of_ancient_Uglich.JPG,0,3,https://xeno-canto.org/978236/download
+Common Nightingale,Rossignol philomèle,https://upload.wikimedia.org/wikipedia/commons/c/c8/Luscinia_megarhynchos_-_01.jpg,0,2,https://xeno-canto.org/957861/download
+Bluethroat,Gorgebleue à miroir,https://upload.wikimedia.org/wikipedia/commons/e/e8/Bluethroat_%28Luscinia_svecica_svecica%29_male_Oppdal.jpg,0,2,https://xeno-canto.org/934764/download
+Siberian Rubythroat,Rossignol calliope,https://upload.wikimedia.org/wikipedia/commons/3/36/Luscinia_calliope_-_Pak_Chong_2.jpg,0,2,https://xeno-canto.org/974332/download
+Red-flanked Bluetail,Rossignol à flancs roux,https://upload.wikimedia.org/wikipedia/commons/b/b2/Tarsiger_cyanurus.jpg,0,3,https://xeno-canto.org/980778/download
+Mugimaki Flycatcher,Ficedula mugimaki (Gobemouche),https://upload.wikimedia.org/wikipedia/commons/4/4c/Ficedula_mugimaki_243653507.jpg,0,3,https://xeno-canto.org/981466/download
+Taiga Flycatcher,Gobemouche de la taïga,https://upload.wikimedia.org/wikipedia/commons/6/66/Taiga_Flycatcher.jpg,0,3,https://xeno-canto.org/975564/download
+Red-breasted Flycatcher,Gobemouche nain,https://upload.wikimedia.org/wikipedia/commons/7/74/Red_brested_flycatcher_by_David_Raju_%28cropped%29.jpg,0,3,https://xeno-canto.org/915724/download
+Semicollared Flycatcher,Gobemouche à demi-collier,https://upload.wikimedia.org/wikipedia/commons/d/d7/Ficedula_semitorquata_NAUMANN.jpg,0,3,https://xeno-canto.org/905474/download
+European Pied Flycatcher,Gobemouche noir,https://upload.wikimedia.org/wikipedia/commons/5/53/Ficedula_hypoleuca_-Wood_of_Cree_Nature_Reserve%2C_Scotland_-male-8a.jpg,0,3,https://xeno-canto.org/940448/download
+Atlas Flycatcher,Atlas pied flycatcher,https://upload.wikimedia.org/wikipedia/commons/b/be/Atlas_Flycatcher_%28Ficedula_speculigera%29.jpg,0,3,
+Collared Flycatcher,Gobemouche à collier,https://upload.wikimedia.org/wikipedia/commons/0/00/Collared_flycatcher_%28Ficedula_albicollis%29.jpg,0,3,https://xeno-canto.org/905474/download
+Plumbeous Redstart,Nymphée fuligineuse,https://upload.wikimedia.org/wikipedia/commons/4/4e/Rhyacornis_fuliginosus_-_Doi_Inthanon.jpg,0,3,
+Rufous-backed Redstart,Rougequeue d'Eversmann,https://upload.wikimedia.org/wikipedia/commons/1/15/Eversmann%27s_Redstart_-_Kazakistan_S4E3844_%2819357362412%29.jpg,0,2,
+Moussier's Redstart,Rougequeue de Moussier,https://upload.wikimedia.org/wikipedia/commons/d/d4/Moussier%27s_redstart_%28Phoenicurus_moussieri%29_male.jpg,0,2,https://xeno-canto.org/889934/download
+Common Redstart,Rougequeue à front blanc,https://upload.wikimedia.org/wikipedia/commons/4/40/Gartenrotschwanz_1.jpg,0,2,https://xeno-canto.org/981987/download
+White-winged Redstart,Rougequeue de Güldenstädt,https://upload.wikimedia.org/wikipedia/commons/1/1f/Guldenstadt%27s_Redstart_-_Shreeram_M_V_-_Ladakh%2C_India.jpg,0,3,
+Black Redstart,Rougequeue noir,https://upload.wikimedia.org/wikipedia/commons/1/14/Hausrotschwanz_Brutpflege_2006-05-21-05.jpg,0,1,https://xeno-canto.org/978548/download
+Daurian Redstart,Rougequeue aurore,https://upload.wikimedia.org/wikipedia/commons/c/cc/Daurian_redstart_at_Daisen_Park_in_Osaka%2C_January_2016.jpg,0,2,https://xeno-canto.org/978956/download
+Rufous-tailed Rock-Thrush,Monticole merle-de-roche,https://upload.wikimedia.org/wikipedia/commons/f/f9/Monsax.jpg,0,3,
+Blue Rock-Thrush,Monticole merle-bleu,https://upload.wikimedia.org/wikipedia/commons/4/4d/Monticola_solitarius%2C_Spain_1.jpg,0,3,
+Whinchat,Tarier des prés,https://upload.wikimedia.org/wikipedia/commons/c/cb/Whinchat_-_Saxicola_rubetra_%28Male%29_%2852943525534%29.jpg,0,3,https://xeno-canto.org/942827/download
+Fuerteventura Stonechat,Tarier des Canaries,https://upload.wikimedia.org/wikipedia/commons/c/cc/Saxicola_dacotiae_-Fuerteventura%2C_Canary_Islands%2C_Spain-8.jpg,0,3,
+European Stonechat,Tarier pâtre,https://upload.wikimedia.org/wikipedia/commons/d/d7/Stonechat_%28Saxicola_rubicola%29_male%2C_Beaulieu%2C_Hampshire.jpg,0,3,https://xeno-canto.org/979687/download
+Siberian Stonechat,Tarier de Sibérie,https://upload.wikimedia.org/wikipedia/commons/d/de/Siberian_stonechat_Male.jpg,0,3,https://xeno-canto.org/809429/download
+Amur Stonechat,Saxicola stejnegeri (Tarier),https://upload.wikimedia.org/wikipedia/commons/7/7d/Stejneger%27s_Stonechat.jpg,0,3,
+African Stonechat,Saxicola torquatus (Tarier),https://upload.wikimedia.org/wikipedia/commons/d/de/Saxicola_torquatus_-South_Africa_-male-8_%283%29.jpg,0,3,https://xeno-canto.org/929774/download
+Pied Bushchat,Tarier pie,https://upload.wikimedia.org/wikipedia/commons/d/df/Pied_bush_chat_%28Saxicola_caprata%29male_from_nilgiris_DSC_1123.jpg,0,3,
+Northern Wheatear,Traquet motteux,https://upload.wikimedia.org/wikipedia/commons/0/0c/Steinschmaetzer_Northern_wheatear_male.jpg,0,3,https://xeno-canto.org/982401/download
+Atlas Wheatear,Traquet de Seebohm,https://upload.wikimedia.org/wikipedia/commons/1/13/Oenanthe_seebohmi%2C_Morocco_1.jpg,0,3,https://xeno-canto.org/164205/download
+Isabelline Wheatear,Traquet isabelle,https://upload.wikimedia.org/wikipedia/commons/b/b4/Isabelline_wheatear_%28Oenanthe_isabellina%29_male%2C_non-breeding.jpg,0,3,https://xeno-canto.org/951185/download
+Desert Wheatear,Traquet du désert,https://upload.wikimedia.org/wikipedia/commons/6/64/Desert_Wheatear_%28Oenanthe_deserti%29_Photograph_by_Shantanu_Kuveskar.jpg,0,2,https://xeno-canto.org/954439/download
+Western Black-eared Wheatear,Traquet oreillard,https://upload.wikimedia.org/wikipedia/commons/d/d4/CollalbaRubia.jpg,0,3,https://xeno-canto.org/935693/download
+Cyprus Wheatear,Traquet de Chypre,https://upload.wikimedia.org/wikipedia/commons/f/f3/Cyprus_wheatear_%28Oenanthe_cypriaca%29.jpg,0,2,https://xeno-canto.org/962264/download
+Eastern Black-eared Wheatear,Traquet noir et blanc,https://upload.wikimedia.org/wikipedia/commons/5/58/45-090506-black-eared-wheatear-at-Ipsilou-Monastery-.jpg,0,2,https://xeno-canto.org/972255/download
+Pied Wheatear,Traquet pie,https://upload.wikimedia.org/wikipedia/commons/5/5d/Pied_Wheatear_%28Oenanthe_pleschanka%29_%288079431820%29.jpg,0,3,https://xeno-canto.org/951247/download
+Red-rumped Wheatear,Traquet à tête grise,https://upload.wikimedia.org/wikipedia/commons/b/b7/Red-rumped_wheatear_%28Oenanthe_moesta_moesta%29_male_Kebili.jpg,0,3,https://xeno-canto.org/771433/download
+Variable Wheatear,Traquet variable,https://upload.wikimedia.org/wikipedia/commons/0/01/Variable_wheatear_%28Oenanthe_picata_picata%29_male.jpg,0,3,https://xeno-canto.org/165823/download
+Black Wheatear,Traquet rieur,https://upload.wikimedia.org/wikipedia/commons/d/db/Black_Wheatear_-_Merzouga_Marocco_07_3429_%2819400616192%29.jpg,0,2,https://xeno-canto.org/955342/download
+White-crowned Wheatear,Traquet à tête blanche,https://upload.wikimedia.org/wikipedia/commons/e/e0/Red-rumped_wheatear_%28Oenanthe_moesta%29_Kebili.jpg,0,2,https://xeno-canto.org/916870/download
+Finsch's Wheatear,Traquet de Finsch,https://upload.wikimedia.org/wikipedia/commons/8/89/%C3%87ilfer%C5%9Fik.jpg,0,3,https://xeno-canto.org/966182/download
+Kurdish Wheatear,Traquet kurde,https://upload.wikimedia.org/wikipedia/commons/d/d7/Oenanthe_xanthoprymna_-_Kurdish_Wheatear%2C_Osmaniye%2C_Turkey_01.jpg,0,3,https://xeno-canto.org/346453/download
+Bohemian Waxwing,Jaseur boréal,https://upload.wikimedia.org/wikipedia/commons/1/16/Bombycilla_garrulus%2C_Novosibirsk_1.jpg,0,2,https://xeno-canto.org/962616/download
+Cedar Waxwing,Jaseur d'Amérique,https://upload.wikimedia.org/wikipedia/commons/7/73/Cedar_Waxwing_-_Bombycilla_cedrorum%2C_George_Washington%27s_Birthplace_National_Monument%2C_Colonial_Beach%2C_Virginia_%2839997434862%29.jpg,0,2,https://xeno-canto.org/823171/download
+Copper Sunbird,Souïmanga cuivré,https://upload.wikimedia.org/wikipedia/commons/6/6d/Copper_sunbird_%28Cinnyris_cupreus_cupreus%29_female_on_Persian_silk_tree_%28Albizia_julibrissin%29.jpg,0,3,https://xeno-canto.org/687588/download
+Black-headed Weaver,Tisserin à tête noire,https://upload.wikimedia.org/wikipedia/commons/d/d7/Yellow_backed_weaver.jpg,0,3,https://xeno-canto.org/931708/download
+Yellow-crowned Bishop,Euplecte vorabé,https://upload.wikimedia.org/wikipedia/commons/7/7e/Euplectes_afer_-Lake_Baringo%2C_Kenya_-male-8_CROP.jpg,0,3,https://xeno-canto.org/829316/download
+Indian Silverbill,Euodice malabarica,https://upload.wikimedia.org/wikipedia/commons/1/11/Indian_Silverbill3.jpg,0,3,https://xeno-canto.org/471526/download
+Scaly-breasted Munia,Capucin damier,https://upload.wikimedia.org/wikipedia/commons/e/e7/Lonchura_punctulata_%28Nagarhole%2C_2004%29.jpg,0,3,https://xeno-canto.org/953742/download
+Tricolored Munia,Capucin à dos marron,https://upload.wikimedia.org/wikipedia/commons/7/73/Tricoloured_munia_%28cropped%29.jpg,0,2,https://xeno-canto.org/256442/download
+Chestnut Munia,Capucin à tête noire,https://upload.wikimedia.org/wikipedia/commons/0/04/Lonchura_atricapilla_jagori_-Cebu-8-3c.jpg,0,2,https://xeno-canto.org/917048/download
+Orange-cheeked Waxbill,Astrild à joues orange,https://upload.wikimedia.org/wikipedia/commons/5/5a/Orange-Cheeked_Waxbill_zackandzill.jpg,0,3,https://xeno-canto.org/747962/download
+Common Waxbill,Astrild ondulé,https://upload.wikimedia.org/wikipedia/commons/3/36/Common_waxbill_%28Estrilda_astrild_jagoensis%29.jpg,0,3,https://xeno-canto.org/927211/download
+Red Avadavat,Bengali rouge,https://upload.wikimedia.org/wikipedia/commons/7/7c/A_pair_of_Red_avadavat_%28Amandava_amandava%29_Photograph_by_Shantanu_Kuveskar.jpg,0,3,https://xeno-canto.org/972682/download
+Alpine Accentor,Accenteur alpin,https://upload.wikimedia.org/wikipedia/commons/d/df/Alpine_accentor_saganta.jpg,0,3,https://xeno-canto.org/982627/download
+Siberian Accentor,Accenteur montanelle,https://upload.wikimedia.org/wikipedia/commons/e/e2/Siberian_Accentor_%28Prunella_montanella%29_-_%D0%A1%D0%B8%D0%B1%D0%B8%D1%80%D0%B8%D0%B9%D0%BD_%D1%85%D0%B0%D0%B9%D1%80%D1%83%D1%83%D0%BB%D0%B4%D0%B0%D0%B9_%2816435139700%29.jpg,0,3,https://xeno-canto.org/676021/download
+Radde's Accentor,Accenteur de Radde,https://upload.wikimedia.org/wikipedia/commons/7/7c/Prunella_ocularis_1a.jpg,0,3,https://xeno-canto.org/971533/download
+Black-throated Accentor,Accenteur à gorge noire,https://upload.wikimedia.org/wikipedia/commons/d/d0/Black-throated_Accentor_%28Prunella_atrogularis%29_%2815275386173%29.jpg,0,3,https://xeno-canto.org/832235/download
+Dunnock,Accenteur mouchet,https://upload.wikimedia.org/wikipedia/commons/4/4e/Dunnock_%28Prunella_modularis%29_3.jpg,0,3,https://xeno-canto.org/982393/download
+House Sparrow,Moineau domestique,https://upload.wikimedia.org/wikipedia/commons/9/9b/House_sparrow_male_in_Prospect_Park_%2853532%29.jpg,0,1,https://xeno-canto.org/981633/download
+Italian Sparrow,Moineau cisalpin,https://upload.wikimedia.org/wikipedia/commons/0/00/Passer_italiae_1_%28loz%29.jpg,0,2,https://xeno-canto.org/472061/download
+Spanish Sparrow,Moineau espagnol,https://upload.wikimedia.org/wikipedia/commons/7/7d/Passer_Hispaniolensis_Male.JPG,0,1,https://xeno-canto.org/521496/download
+Dead Sea Sparrow,Moineau de la mer Morte,https://upload.wikimedia.org/wikipedia/commons/7/70/Passer_moabiticus.jpg,0,3,https://xeno-canto.org/972237/download
+Cape Verde Sparrow,Moineau du Cap-Vert,https://upload.wikimedia.org/wikipedia/commons/f/f8/Passer_iagoensis_male.jpg,0,2,
+Eurasian Tree Sparrow,Moineau friquet,https://upload.wikimedia.org/wikipedia/commons/9/98/Tree_Sparrow_August_2007_Osaka_Japan.jpg,0,2,https://xeno-canto.org/966257/download
+Rock Sparrow,Moineau soulcie,https://upload.wikimedia.org/wikipedia/commons/d/dc/Petronia_petronia_-Ariege%2C_Midi-Pyrenee%2C_France-8-4c.jpg,0,2,https://xeno-canto.org/971454/download
+Pale Rockfinch,Moineau pâle,https://upload.wikimedia.org/wikipedia/commons/c/ce/Carpospiza_brachydactyla.jpg,0,3,https://xeno-canto.org/971538/download
+White-winged Snowfinch,Niverolle alpine,https://upload.wikimedia.org/wikipedia/commons/3/38/Snowfinch.jpg,0,3,https://xeno-canto.org/972224/download
+Gray Wagtail,Bergeronnette des ruisseaux,https://upload.wikimedia.org/wikipedia/commons/d/d3/Grey_wagtail_-_Fulzar_Dam%2C_Jamnagar_2023-11-13.jpg,0,3,
+Western Yellow Wagtail,Bergeronnette printanière,https://upload.wikimedia.org/wikipedia/commons/6/67/Wiesenschafstelze.JPG,0,3,https://xeno-canto.org/977468/download
+Eastern Yellow Wagtail,Bergeronnette de Béringie,https://upload.wikimedia.org/wikipedia/commons/a/a4/Eastern_Yellow_Wagtail_%28Motacilla_tschutschensis_tschutschensis%29%2C_Kamchatka%2C_Russia_06.jpg,0,2,https://xeno-canto.org/964206/download
+Citrine Wagtail,Bergeronnette citrine,https://upload.wikimedia.org/wikipedia/commons/e/ed/Citrine_Wagtail_%28Motacilla_citreola%29-_Breeding_Male_of_calcarata_race_at_Bharatpur_I_IMG_5752.jpg,0,2,https://xeno-canto.org/980485/download
+White Wagtail,Bergeronnette grise,https://upload.wikimedia.org/wikipedia/commons/6/60/20180415_015_Winterswijk_Witte_kwikstaart_%2840785272624%29.jpg,0,1,https://xeno-canto.org/979151/download
+Richard's Pipit,Pipit de Richard,https://upload.wikimedia.org/wikipedia/commons/5/50/Anthus_richardi_-_Laem_Pak_Bia.jpg,0,2,https://xeno-canto.org/979500/download
+Paddyfield Pipit,Pipit rousset,https://upload.wikimedia.org/wikipedia/commons/4/4e/Paddyfield_pipit_%28Anthus_rufulus_rufulus%29.jpg,0,2,https://xeno-canto.org/964215/download
+Long-billed Pipit,Pipit à long bec,https://upload.wikimedia.org/wikipedia/commons/0/0b/Long-billed_pipit_%28cropped%29.jpg,0,3,https://xeno-canto.org/951035/download
+Blyth's Pipit,Pipit de Godlewski,https://upload.wikimedia.org/wikipedia/commons/d/d5/Blyth%27s_Pipit_Pangolakha_Wildlife_Sanctuary_East_Sikkim_05.05.2016.jpg,0,3,https://xeno-canto.org/942303/download
+Tawny Pipit,Pipit rousseline,https://upload.wikimedia.org/wikipedia/commons/f/f4/Tawny_pipit_47.jpg,0,3,https://xeno-canto.org/972999/download
+Berthelot's Pipit,Pipit de Berthelot,https://upload.wikimedia.org/wikipedia/commons/6/67/Kanarenpieper.jpg,0,3,https://xeno-canto.org/980487/download
+Meadow Pipit,Pipit farlouse,https://upload.wikimedia.org/wikipedia/commons/b/b7/Wiesenpieper_Meadow_pipit.jpg,0,3,https://xeno-canto.org/982670/download
+Tree Pipit,Pipit des arbres,https://upload.wikimedia.org/wikipedia/commons/6/6d/Tree_pipit_-_Jamnagar_2021-10-16.jpg,0,3,https://xeno-canto.org/973515/download
+Olive-backed Pipit,Pipit à dos olive,https://upload.wikimedia.org/wikipedia/commons/d/d9/Olive-backed_pipit_%28Anthus_hodgsoni_hodgsoni%29_Phulchowki.jpg,0,3,https://xeno-canto.org/978939/download
+Pechora Pipit,Pipit de la Petchora,https://upload.wikimedia.org/wikipedia/commons/8/84/Anthus_gustavi_214075656.jpg,0,3,https://xeno-canto.org/945790/download
+Red-throated Pipit,Pipit à gorge rousse,https://upload.wikimedia.org/wikipedia/commons/7/75/Red-throated_Pipit.jpg,0,3,https://xeno-canto.org/977384/download
+Water Pipit,Pipit spioncelle,https://upload.wikimedia.org/wikipedia/commons/2/24/Anthus_spinoletta_-_Water_Pipit%2C_Kahramanmara%C5%9F_2016-11-18_01-10.jpg,0,3,https://xeno-canto.org/982396/download
+Siberian Pipit,pipit de Sibérie,https://upload.wikimedia.org/wikipedia/commons/5/5c/Siberian_Pipit_%28Anthus_japonicus%29_%2849270701118%29_%28cropped%29.jpg,0,3,
+American Pipit,pipit d'Amérique,https://upload.wikimedia.org/wikipedia/commons/0/07/Anthus_rubescens_-Harney_County%2C_Oregon%2C_USA-8.jpg,0,2,
+Common Chaffinch,pinson des arbres,https://upload.wikimedia.org/wikipedia/commons/a/a0/Male_Chaffinch_-_Fringilla_coelebs.jpg,0,3,https://xeno-canto.org/982810/download
+Azores Chaffinch,Fringilla coelebs moreletti (Pinson des arbres),https://upload.wikimedia.org/wikipedia/commons/5/58/A%C3%A7ores_452A1626_%2835867036050%29.jpg,0,3,
+Madeira Chaffinch,Fringilla maderensis (Pinsson),https://upload.wikimedia.org/wikipedia/commons/b/bd/FringillaCoelebsMadeirensis_3749.jpg,0,3,
+Canary Islands Chaffinch,Fringilla canariensis (Pinsson),https://upload.wikimedia.org/wikipedia/commons/e/e1/Fringilla_coelebs_palmae_-_Los_Tilos.jpg,0,3,
+African Chaffinch,Pinson des arbres africain,https://upload.wikimedia.org/wikipedia/commons/2/2b/African_Chaffinch_%28Fringilla_spodiogenys%29_male_Morocco.jpg,0,3,
+Tenerife Blue Chaffinch,Pinson bleu,https://upload.wikimedia.org/wikipedia/commons/e/e4/Teidefink.jpg,0,3,https://xeno-canto.org/565833/download
+Gran Canaria Blue Chaffinch,Fringilla polatzeki (Pinsson),https://upload.wikimedia.org/wikipedia/commons/9/9a/Pinz%C3%B3n_azul_de_Gran_Canaria_%28macho%29%2C_M._A._Pe%C3%B1a.jpg,0,3,
+Brambling,Pinson du Nord,https://upload.wikimedia.org/wikipedia/commons/c/c9/Fringilla_montifringilla_-Poland_-male-8.jpg,0,2,https://xeno-canto.org/978000/download
+Evening Grosbeak,Gros-bec Errant,https://upload.wikimedia.org/wikipedia/commons/a/ac/Hesperiphona_vespertina_CT3.jpg,0,3,https://xeno-canto.org/567736/download
+Hawfinch,Gros-bec casse-noyaux,https://upload.wikimedia.org/wikipedia/commons/8/85/Coccothraustes_coccothraustes_Parco_Della_Piana_around_Firenze%2C_Italy.jpg,0,2,https://xeno-canto.org/981504/download
+Common Rosefinch,Roselin cramoisi,https://upload.wikimedia.org/wikipedia/commons/1/19/Carpodacus_erythrinus_284921386.jpg,0,3,https://xeno-canto.org/975326/download
+Great Rosefinch,Roselin tacheté,https://upload.wikimedia.org/wikipedia/commons/5/55/Great_Rosefinch.jpg,0,2,https://xeno-canto.org/920192/download
+Pallas's Rosefinch,Roselin rose,https://upload.wikimedia.org/wikipedia/commons/d/d0/Carpodacus_roseus.jpg,0,2,https://xeno-canto.org/884669/download
+Pine Grosbeak,Durbec des sapins,https://upload.wikimedia.org/wikipedia/commons/2/22/Pine_Grosbeak_%28Pinicola_enucleator%29_%2813667564073%29.jpg,0,3,https://xeno-canto.org/944125/download
+Azores Bullfinch,Bouvreuil des Açores,https://upload.wikimedia.org/wikipedia/commons/7/72/Pyrrhula_murina.jpg,0,2,https://xeno-canto.org/831199/download
+Eurasian Bullfinch,bouvreuil pivoine,https://upload.wikimedia.org/wikipedia/commons/d/de/Bullfinch_male.jpg,0,1,https://xeno-canto.org/965743/download
+Trumpeter Finch,Roselin githagine,https://upload.wikimedia.org/wikipedia/commons/a/a5/Trumpeter_finch_%28Bucanetes_githagineus_zedlitzi%29_male_Kebili.jpg,0,3,https://xeno-canto.org/890131/download
+Mongolian Finch,Roselin de Mongolie,https://upload.wikimedia.org/wikipedia/commons/3/38/Bucanetes_mongolicus.JPG,0,3,https://xeno-canto.org/840333/download
+Gray-crowned Rosy-Finch,Roselin à tête grise,https://upload.wikimedia.org/wikipedia/commons/d/d9/Gray-Crowned_Rosy-Finch.jpg,0,3,
+House Finch,Roselin familier,https://upload.wikimedia.org/wikipedia/commons/f/f1/House_finch_%2833688%292.jpg,0,2,https://xeno-canto.org/941235/download
+Desert Finch,Roselin de Lichtenstein,https://upload.wikimedia.org/wikipedia/commons/6/6b/Rhodospiza_obsoleta_in_Iran.jpg,0,3,https://xeno-canto.org/471597/download
+European Greenfinch,Verdier d'Europe,https://upload.wikimedia.org/wikipedia/commons/3/32/Carduelis_chloris_3_%28Marek_Szczepanek%29.jpg,0,1,https://xeno-canto.org/979188/download
+Twite,Linotte à bec jaune,https://upload.wikimedia.org/wikipedia/commons/9/9b/Twite_%28Linaria_flavirostris%29%2C_Zinc_Road%2C_Teesside_%2853540824279%29.jpg,0,2,https://xeno-canto.org/971846/download
+Eurasian Linnet,Linotte mélodieuse,https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Carduelis_cannabina_-England_-male-8.jpg/330px-Carduelis_cannabina_-England_-male-8.jpg,0,3,
+Parrot Crossbill,Bec-croisé perroquet,https://upload.wikimedia.org/wikipedia/commons/2/2c/Loxia_pytyopsittacus%2C_Budby_Common_3.jpg,0,3,https://xeno-canto.org/979705/download
+Scottish Crossbill,Bec-croisé d'Écosse,https://upload.wikimedia.org/wikipedia/commons/0/07/Scottish_Crossbill_from_the_Crossley_ID_Guide_Britain_and_Ireland.jpg,0,2,https://xeno-canto.org/878392/download
+Red Crossbill,Bec-croisé des sapins,https://upload.wikimedia.org/wikipedia/commons/4/49/Red_Crossbills_%28Male%29.jpg,0,1,https://xeno-canto.org/491029/download
+White-winged Crossbill,Bec-croisé bifascié,https://upload.wikimedia.org/wikipedia/commons/4/46/Whitewingedcrossbillmale09.jpg,0,2,
+European Goldfinch,Chardonneret élégant,https://upload.wikimedia.org/wikipedia/commons/f/fd/European_Goldfinch_on_Spear_Thistle.jpg,0,2,https://xeno-canto.org/883327/download
+Citril Finch,Venturon montagnard,https://upload.wikimedia.org/wikipedia/commons/c/cf/Carduelis_citrinella.jpg,0,3,https://xeno-canto.org/972844/download
+Corsican Finch,Venturon corse,https://upload.wikimedia.org/wikipedia/commons/3/32/Carduelis_corsicana.JPG,0,3,https://xeno-canto.org/471879/download
+European Serin,Serin cini,https://upload.wikimedia.org/wikipedia/commons/6/65/European_serin_%28Serinus_serinus%29_male.jpg,0,3,https://xeno-canto.org/982096/download
+Island Canary,Serinus canaria,https://upload.wikimedia.org/wikipedia/commons/8/89/Serinus_canaria_-Parque_Rural_del_Nublo%2C_Gran_Canaria%2C_Spain_-male-8a.jpg,0,2,
+Fire-fronted Serin,Serin à front d'or,https://upload.wikimedia.org/wikipedia/commons/5/5f/Fire-fronted_Serin_Nainital_Uttarakhand_India_31.01.2015.jpg,0,3,
+Eurasian Siskin,Tarin des aulnes,https://upload.wikimedia.org/wikipedia/commons/9/9e/Carduelis_spinus_male.jpg,0,1,https://xeno-canto.org/980284/download
+Pine Siskin,Tarin des pins,https://upload.wikimedia.org/wikipedia/commons/2/2e/Carduelis_pinus_CT7.jpg,0,2,https://xeno-canto.org/946742/download
+Lapland Longspur,Bruant lapon,https://upload.wikimedia.org/wikipedia/commons/6/61/Lapland_Longspur_-_Calcarius_lapponicus_-_Sportittlingur_1.jpg,0,2,https://xeno-canto.org/796051/download
+Snow Bunting,Bruant des neiges,https://upload.wikimedia.org/wikipedia/commons/5/57/Snow_Bunting_%28Plectrophenax_nivalis%29%2C_Thule%2C_Greenland_1.jpg,0,3,https://xeno-canto.org/981083/download
+Black-headed Bunting,Bruant mélanocéphale,https://upload.wikimedia.org/wikipedia/commons/d/df/28-090504-black-headed-bunting-at-first-layby.jpg,0,3,https://xeno-canto.org/980996/download
+Red-headed Bunting,Bruant à tête rousse,https://upload.wikimedia.org/wikipedia/commons/3/35/Red-headed_bunting_-_Timbi_Lake%2C_Vadodara_2020-01-01.jpg,0,2,https://xeno-canto.org/912612/download
+Corn Bunting,Bruant proyer,https://upload.wikimedia.org/wikipedia/commons/8/8d/Bruant_proyer_Ichkeul018.jpg,0,3,https://xeno-canto.org/982323/download
+Chestnut-eared Bunting,Bruant à oreillons,https://upload.wikimedia.org/wikipedia/commons/7/75/Chestnut-eared_Bunting_imported_from_iNaturalist_photo_135699996_on_26_June_2024.jpg,0,3,https://xeno-canto.org/805186/download
+Rock Bunting,Bruant fou,https://upload.wikimedia.org/wikipedia/commons/d/df/Rock_Bunting_%28Cochem%29.jpg,0,2,https://xeno-canto.org/982387/download
+Godlewski's Bunting,Bruant de Godlewski,https://upload.wikimedia.org/wikipedia/commons/9/9d/Godlewski%27s_Bunting_%28Emberiza_godlewskii%29_%2816804118611%29.jpg,0,3,https://xeno-canto.org/975576/download
+Meadow Bunting,Bruant à longue queue,https://upload.wikimedia.org/wikipedia/commons/b/bf/Emberiza_cioides_male.JPG,0,3,https://xeno-canto.org/920464/download
+Cirl Bunting,Bruant zizi,https://upload.wikimedia.org/wikipedia/commons/8/88/Cirl_bunting_cropped.jpg,0,3,https://xeno-canto.org/982587/download
+Yellowhammer,Bruant jaune,https://upload.wikimedia.org/wikipedia/commons/6/62/Goldammer_Emberiza_citrinella.jpg,0,3,https://xeno-canto.org/982702/download
+Pine Bunting,Bruant à calotte blanche,https://upload.wikimedia.org/wikipedia/commons/6/68/Pine_Bunting_%28Emberiza_leucocephalos%29_-_%D0%A6%D0%B0%D0%B3%D0%B0%D0%B0%D0%BD%D1%88%D0%B0%D0%BD%D0%B0%D0%B0%D1%82_%D1%85%D3%A9%D0%BC%D1%80%D3%A9%D0%B3_%2815617685422%29.jpg,0,3,https://xeno-canto.org/927854/download
+Cinereous Bunting,Bruant cendré,https://upload.wikimedia.org/wikipedia/commons/8/80/Cinereous_Bunting_%28Emberiza_cineracea%29%2C_Lesvos%2C_Greece%2C_17.04.2015_%2817284201896%29_%28cropped%29.jpg,0,2,https://xeno-canto.org/972227/download
+Ortolan Bunting,Bruant ortolan,https://upload.wikimedia.org/wikipedia/commons/f/fc/Ortolan_bunting_in_Sierra_de_Guara%2C_Aragon%2C_Spain.jpg,0,3,https://xeno-canto.org/961590/download
+Cretzschmar's Bunting,Bruant cendrillard,https://upload.wikimedia.org/wikipedia/commons/b/b8/Emberiza_caesia.jpg,0,3,https://xeno-canto.org/962241/download
+House Bunting,Bruant du Sahara,https://upload.wikimedia.org/wikipedia/commons/d/dc/Bruant_du_sahara_Gabes.jpg,0,3,https://xeno-canto.org/916859/download
+Striolated Bunting,Bruant striolé,https://upload.wikimedia.org/wikipedia/commons/2/2b/Israel._Striolated_bunting_%2815356301994%29.jpg,0,3,https://xeno-canto.org/982500/download
+Pallas's Bunting,Bruant de Pallas,https://upload.wikimedia.org/wikipedia/commons/f/f4/Emberiza_pallasi_%2810%29.jpg,0,3,
+Reed Bunting,Bruant des roseaux,https://upload.wikimedia.org/wikipedia/commons/4/4e/Common_reed_bunting_%28emberiza_schoeniclus%29_m.jpg,0,3,https://xeno-canto.org/835665/download
+Yellow-breasted Bunting,Bruant auréole,https://upload.wikimedia.org/wikipedia/commons/1/10/Yellow-breasted_bunting_in_Nepal_02_-Cropped.jpg,0,3,
+Little Bunting,Bruant nain,https://upload.wikimedia.org/wikipedia/commons/3/38/Zwergammer.jpg,0,2,https://xeno-canto.org/978914/download
+Rustic Bunting,Bruant rustique,https://upload.wikimedia.org/wikipedia/commons/8/85/Emberiza_rustica2.jpg,0,3,https://xeno-canto.org/916023/download
+Black-faced Bunting,Bruant masqué,https://upload.wikimedia.org/wikipedia/commons/5/53/Black_Face_%2816077787174%29.jpg,0,3,https://xeno-canto.org/978535/download
+Chestnut Bunting,Bruant roux,https://upload.wikimedia.org/wikipedia/commons/4/4b/Emberiza_rutila_190226429_%28cropped%29.jpg,0,3,
+Yellow-browed Bunting,Bruant à sourcils jaunes,https://upload.wikimedia.org/wikipedia/commons/1/15/Yellow-browed_bunting_%28Emberiza_chrysophrys%29_Eocheong_Island_Korea_2012.jpg,0,3,https://xeno-canto.org/980786/download
+Lark Sparrow,Bruant à joues marron,https://upload.wikimedia.org/wikipedia/commons/7/79/LarkSparrow.jpg,0,3,https://xeno-canto.org/423752/download
+American Tree Sparrow,Bruant hudsonien,https://upload.wikimedia.org/wikipedia/commons/c/c4/American_Tree_Sparrow_-_Flickr_-_Fyn_Kynd.jpg,0,3,https://xeno-canto.org/855371/download
+Fox Sparrow,Bruant fauve,https://upload.wikimedia.org/wikipedia/commons/1/13/Passerella_iliaca-001.jpg,0,3,https://xeno-canto.org/481147/download
+Dark-eyed Junco,Junco ardoisé,https://upload.wikimedia.org/wikipedia/commons/5/55/Junco_hyemalis_hyemalis_CT1_%28cropped%29.jpg,0,3,https://xeno-canto.org/554463/download
+White-crowned Sparrow,Bruant à couronne blanche,https://upload.wikimedia.org/wikipedia/commons/9/92/White-crowned-Sparrow.jpg,0,3,https://xeno-canto.org/553412/download
+White-throated Sparrow,Bruant à gorge blanche,https://upload.wikimedia.org/wikipedia/commons/f/f3/Zonotrichia_albicollis_CT1.jpg,0,3,https://xeno-canto.org/979754/download
+Savannah Sparrow,Bruant des prés,https://upload.wikimedia.org/wikipedia/commons/a/af/Passerculus_sandwichensis_crop.jpg,0,3,https://xeno-canto.org/963203/download
+Song Sparrow,Bruant chanteur,https://upload.wikimedia.org/wikipedia/commons/0/00/Song_sparrow_in_Prospect_Park_%2893031%29.jpg,0,2,https://xeno-canto.org/550704/download
+Lincoln's Sparrow,Bruant de Lincoln,https://upload.wikimedia.org/wikipedia/commons/3/39/Lincoln_Sparrow_%2834945695136%29_%28cropped%29.jpg,0,3,https://xeno-canto.org/558323/download
+Eastern Towhee,Tohi à flancs roux,https://upload.wikimedia.org/wikipedia/commons/5/5f/Av_Eastern_Towhee_JG.jpg,0,3,https://xeno-canto.org/559342/download
+Yellow-breasted Chat,Paruline polyglotte,https://upload.wikimedia.org/wikipedia/commons/f/fb/Yellow-Breasted-Chat-Oregon.jpg,0,2,https://xeno-canto.org/974825/download
+Yellow-headed Blackbird,Carouge à tête jaune,https://upload.wikimedia.org/wikipedia/commons/3/3b/Male_Yellow-headed_Blackbird.jpg,0,3,https://xeno-canto.org/411393/download
+Bobolink,Goglu des prés,https://upload.wikimedia.org/wikipedia/commons/f/f5/Bobolink_%2827239680521%29_%28cropped%29.jpg,0,3,https://xeno-canto.org/451243/download
+Baltimore Oriole,Oriole de Baltimore,https://upload.wikimedia.org/wikipedia/commons/f/f5/Baltimore_Oriole-_dorsum.jpg,0,3,https://xeno-canto.org/562404/download
+Red-winged Blackbird,Carouge à épaulettes,https://upload.wikimedia.org/wikipedia/commons/e/e6/Red-Winged_Blackbird.png,0,3,https://xeno-canto.org/972032/download
+Brown-headed Cowbird,Vacher à tête brune,https://upload.wikimedia.org/wikipedia/commons/8/88/Molothrus_ater_2.jpg,0,3,https://xeno-canto.org/557298/download
+Rusty Blackbird,Quiscale rouilleux,https://upload.wikimedia.org/wikipedia/commons/b/b7/Euphagus-carolinus-001.jpg,0,3,https://xeno-canto.org/544790/download
+Brewer's Blackbird,quiscale de Brewer,https://upload.wikimedia.org/wikipedia/commons/3/33/Brewers_Blackbird_Esquimalt_Lagoon.jpg,0,3,https://xeno-canto.org/764039/download
+Common Grackle,Quiscale bronzé,https://upload.wikimedia.org/wikipedia/commons/f/fd/Quiscalus-quiscula-001.jpg,0,3,https://xeno-canto.org/542164/download
+Boat-tailed Grackle,Quiscale des marais,https://upload.wikimedia.org/wikipedia/commons/7/74/Boat_Tailed_Grackle_Male_JG.jpg,0,3,https://xeno-canto.org/941307/download
+Ovenbird,Paruline couronnée,https://upload.wikimedia.org/wikipedia/commons/3/3c/Ovenbird_%2890497%29.jpg,0,2,https://xeno-canto.org/964345/download
+Louisiana Waterthrush,Parkesia motacilla,https://upload.wikimedia.org/wikipedia/commons/b/b8/Louisiana_waterthrush_%28Parkesia_motacilla%29_Orange_Walk.jpg,0,3,https://xeno-canto.org/560658/download
+Northern Waterthrush,Paruline des ruisseaux,https://upload.wikimedia.org/wikipedia/commons/c/c6/Northern_waterthrush_in_Central_Park_%2814717%29.jpg,0,3,https://xeno-canto.org/554810/download
+Golden-winged Warbler,Paruline à ailes dorées,https://upload.wikimedia.org/wikipedia/commons/3/37/Golden-winged_Warbler_-_52345913454.jpg,0,3,https://xeno-canto.org/570956/download
+Blue-winged Warbler,Paruline à ailes bleues,https://upload.wikimedia.org/wikipedia/commons/1/13/Vermivora_cyanoptera_-North_Berwick%2C_Maine%2C_USA-8.jpg,0,3,https://xeno-canto.org/839511/download
+Black-and-white Warbler,Paruline noir et blanc,https://upload.wikimedia.org/wikipedia/commons/0/07/Black-and-white_warbler_in_Prospect_Park_%2806193%292.jpg,0,3,https://xeno-canto.org/979279/download
+Prothonotary Warbler,Paruline orangée,https://upload.wikimedia.org/wikipedia/commons/5/55/Protonotaria-citrea-002_edit.jpg,0,3,https://xeno-canto.org/839864/download
+Tennessee Warbler,Paruline obscure,https://upload.wikimedia.org/wikipedia/commons/e/ee/Leiothlypis_peregrina_Malus_sp_JRVdH_01.jpg,0,3,https://xeno-canto.org/908347/download
+Orange-crowned Warbler,Paruline verdâtre,https://upload.wikimedia.org/wikipedia/commons/4/48/Orangecrownedwarbler27.jpg,0,3,https://xeno-canto.org/540565/download
+Nashville Warbler,Paruline à joues grises,https://upload.wikimedia.org/wikipedia/commons/8/86/Vermivora_ruficapilla_Winema_National_Forest_%28cropped%29.jpg,0,3,https://xeno-canto.org/239566/download
+Connecticut Warbler,Paruline à gorge grise,https://upload.wikimedia.org/wikipedia/commons/5/5f/Oporornis_agilis_Youghiogheny_River_MD.jpg,0,2,https://xeno-canto.org/658535/download
+Common Yellowthroat,Paruline masquée,https://upload.wikimedia.org/wikipedia/commons/9/91/Common_yellowthroat_in_PP_%2814155%29.jpg,0,3,https://xeno-canto.org/531276/download
+Hooded Warbler,Paruline à capuchon,https://upload.wikimedia.org/wikipedia/commons/d/db/Hooded_Warbler.jpg,0,3,https://xeno-canto.org/950784/download
+American Redstart,Paruline flamboyante,https://upload.wikimedia.org/wikipedia/commons/c/cd/Setophaga_ruticilla_-Chiquimula%2C_Guatemala_-male-8-4c.jpg,0,2,https://xeno-canto.org/939900/download
+Cape May Warbler,Paruline tigrée,https://upload.wikimedia.org/wikipedia/commons/a/a1/Dendroica_tigrina_FWS.jpg,0,3,https://xeno-canto.org/821708/download
+Cerulean Warbler,Paruline azurée,https://upload.wikimedia.org/wikipedia/commons/c/cb/Cerulean_Warbler%2C_Rondeau_Provincial_Park%2C_Ontario%2C_Canada.jpg,0,3,https://xeno-canto.org/558054/download
+Northern Parula,Paruline à collier,https://upload.wikimedia.org/wikipedia/commons/3/3d/Northernparalua20.jpg,0,3,https://xeno-canto.org/564372/download
+Magnolia Warbler,Paruline à tête cendrée,https://upload.wikimedia.org/wikipedia/commons/7/72/Dendroica_magnolia_MN.jpg,0,3,https://xeno-canto.org/964446/download
+Bay-breasted Warbler,Paruline à poitrine baie,https://upload.wikimedia.org/wikipedia/commons/a/af/Dendroica-castanea-001.jpg,0,3,https://xeno-canto.org/917327/download
+Blackburnian Warbler,Paruline à gorge orangée,https://upload.wikimedia.org/wikipedia/commons/5/53/Blackburnian_warbler_%2871064%29.jpg,0,3,https://xeno-canto.org/564802/download
+Yellow Warbler,Paruline jaune,https://upload.wikimedia.org/wikipedia/commons/a/a3/Dendroica-aestiva-001.jpg,0,2,https://xeno-canto.org/527097/download
+Chestnut-sided Warbler,Paruline à flancs marron,https://upload.wikimedia.org/wikipedia/commons/9/95/Dendroica-pensylvanica-003.jpg,0,3,https://xeno-canto.org/862421/download
+Blackpoll Warbler,Paruline rayée,https://upload.wikimedia.org/wikipedia/commons/4/46/Dendroica_striata_MN.jpg,0,3,https://xeno-canto.org/386747/download
+Black-throated Blue Warbler,Paruline bleue,https://upload.wikimedia.org/wikipedia/commons/3/3c/Black-throated_Blue_Warbler%2C_Parc_%C3%89coforestier_de_Johnville%2C_Quebec%2C_Canada.jpg,0,3,https://xeno-canto.org/933480/download
+Palm Warbler,Paruline à couronne rousse,https://upload.wikimedia.org/wikipedia/commons/7/7d/Palm_Warbler_JG.jpg,0,3,https://xeno-canto.org/941412/download
+Pine Warbler,Paruline des pins,https://upload.wikimedia.org/wikipedia/commons/8/8e/Dendroica_pinus.jpg,0,3,https://xeno-canto.org/942008/download
+Yellow-rumped Warbler,Setophaga coronata (Paruline),https://upload.wikimedia.org/wikipedia/commons/b/b4/Yellow-rumped_warbler_singing_%2841612%29_%28cropped%29.jpg,0,3,
+Yellow-throated Warbler,Paruline à gorge jaune,https://upload.wikimedia.org/wikipedia/commons/8/8a/Yellow-throated_Warbler_2.jpg,0,3,https://xeno-canto.org/552486/download
+Prairie Warbler,Paruline des prés,https://upload.wikimedia.org/wikipedia/commons/0/08/Prairie_Warbler_FL_Male_JG.jpg,0,3,https://xeno-canto.org/893266/download
+Black-throated Green Warbler,Paruline à gorge noire,https://upload.wikimedia.org/wikipedia/commons/1/13/Black-throated_green_warbler_in_PP_%2814050%29.jpg,0,3,https://xeno-canto.org/552497/download
+Canada Warbler,Paruline du Canada,https://upload.wikimedia.org/wikipedia/commons/b/b1/8G7D5475-Canada.jpg,0,3,https://xeno-canto.org/560545/download
+Wilson's Warbler,Paruline à calotte noire,https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Wilsonia_pusilla.jpg/300px-Wilsonia_pusilla.jpg,0,3,https://xeno-canto.org/936459/download
+Summer Tanager,Piranga vermillon,https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Summer_tanager_%28Piranga_rubra%29_male_Copan_3.jpg/330px-Summer_tanager_%28Piranga_rubra%29_male_Copan_3.jpg,0,3,https://xeno-canto.org/559482/download
+Scarlet Tanager,Piranga écarlate,https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Scarlet_tanager_in_GWC_%2850867%29.jpg/300px-Scarlet_tanager_in_GWC_%2850867%29.jpg,0,3,https://xeno-canto.org/564227/download
+Rose-breasted Grosbeak,Cardinal à poitrine rose,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/RosebreastedGrosbeak08.jpg/330px-RosebreastedGrosbeak08.jpg,0,3,https://xeno-canto.org/962174/download
+Blue Grosbeak,Guiraca bleu,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Blue_Grosbeak_by_Dan_Pancamo.jpg/300px-Blue_Grosbeak_by_Dan_Pancamo.jpg,0,3,https://xeno-canto.org/972577/download
+Indigo Bunting,Passerin indigo,https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Indigo_Bunting_by_Dan_Pancamo_4.jpg/300px-Indigo_Bunting_by_Dan_Pancamo_4.jpg,0,3,https://xeno-canto.org/941144/download
+Dickcissel,Dickcissel d'Amérique,https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/927_-_DICKCISSEL_%285-28-2018%29_rick_evans_prairie_w_m_a%2C_hemstead_co%2C_ar_-01_%283%29_%2842677954221%29.jpg/300px-927_-_DICKCISSEL_%285-28-2018%29_rick_evans_prairie_w_m_a%2C_hemstead_co%2C_ar_-01_%283%29_%2842677954221%29.jpg,0,3,https://xeno-canto.org/936318/download

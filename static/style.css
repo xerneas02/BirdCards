@@ -1,0 +1,149 @@
+
+:root {
+    --bg-color: #f5f5f5;
+    --text-color: #333;
+    --link-color: #2F8894;
+    --button-default-bg: #2F8894;
+    --button-default-text: #fff;
+    --button-default-hover: #246d7a;
+    --reset-bg: #e74c3c; 
+    --reset-hover: #c0392b;
+    --sidebar-width: 250px;
+  }
+  [data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #eee;
+    --link-color: #0099ff;
+    --button-default-bg: #007acc;
+    --button-default-text: #fff;
+    --button-default-hover: #005fa3;
+  }
+  
+  /* Mise en page générale */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Barre latérale */
+  .sidebar {
+    width: var(--sidebar-width);
+    background-color: var(--bg-color);
+    border-right: 1px solid #ccc;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  .sidebar h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  .sidebar .button-group,
+  .sidebar form {
+    margin-bottom: 20px;
+  }
+  .sidebar a, .sidebar button, .sidebar input[type="submit"] {
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-default-bg);
+    color: var(--button-default-text);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  .sidebar a:hover, .sidebar button:hover, .sidebar input[type="submit"]:hover {
+    background-color: var(--button-default-hover);
+  }
+  /* Bouton Reset spécifique */
+  .reset-button {
+    background-color: var(--reset-bg);
+  }
+  .reset-button:hover {
+    background-color: var(--reset-hover);
+  }
+  
+  /* Contenu principal */
+  .main-content {
+    margin-left: var(--sidebar-width);
+    padding: 20px;
+    width: calc(100% - var(--sidebar-width));
+    text-align: center;
+  }
+  #imageContainer {
+    position: relative;
+    margin: 20px auto;
+  }
+  #imageContainer.loading {
+    background-color: #d0e7f9;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  img {
+    max-width: 400px;
+    border: 5px solid var(--button-default-bg);
+    border-radius: 10px;
+  }
+  audio {
+    margin-top: 10px;
+  }
+  .score-buttons form {
+    display: inline-block;
+    margin: 5px;
+  }
+  /* Boutons arrondis pour actions */
+  .btn-wrong, .btn-inbetween, .btn-right, #revealButton {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .btn-wrong {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  .btn-wrong:hover {
+    background-color: #c0392b;
+  }
+  .btn-inbetween {
+    background-color: #f1c40f;
+    color: #fff;
+  }
+  .btn-inbetween:hover {
+    background-color: #f39c12;
+  }
+  .btn-right {
+    background-color: #27ae60;
+    color: #fff;
+  }
+  .btn-right:hover {
+    background-color: #1e8449;
+  }
+  /* Boutons de difficulté dans le formulaire */
+  .difficulty-buttons button {
+    width: 100%;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .btn-diff1 {
+    background-color: #2ecc71;
+  }
+  .btn-diff2 {
+    background-color: #f1c40f;
+    color: #000;
+  }
+  .btn-diff3 {
+    background-color: #e67e22;
+  }
+  
