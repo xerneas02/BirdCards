@@ -106,10 +106,18 @@ def init_user_scores():
 def weighted_random_bird(birds_list):
     init_user_scores()
     if session.get("no_repetition", False):
+        # Construire la liste des noms d'oiseaux correspondant aux filtres
         filtered_names = [bird["Bird Name"] for bird in birds_list]
-        remaining = session.get("remaining_birds", [])
-        if not remaining or set(remaining) != set(filtered_names):
+        # Vérifier si les filtres ont changé
+        stored_filter = session.get("filtered_names")
+        if stored_filter is None or set(stored_filter) != set(filtered_names):
+            # Réinitialiser la liste et stocker les filtres actuels
             remaining = filtered_names.copy()
+            session["filtered_names"] = filtered_names
+        else:
+            remaining = session.get("remaining_birds", [])
+            if not remaining:
+                remaining = filtered_names.copy()
         chosen_name = random.choice(remaining)
         remaining.remove(chosen_name)
         session["remaining_birds"] = remaining
@@ -119,6 +127,7 @@ def weighted_random_bird(birds_list):
         scores = session["scores"]
         weights = [math.exp(-ALPHA * scores.get(bird["Bird Name"], 0)) for bird in birds_list]
         return random.choices(birds_list, weights=weights, k=1)[0]
+
 
 @app.route("/")
 def index():

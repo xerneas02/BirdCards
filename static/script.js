@@ -60,6 +60,11 @@ const translations = {
       const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
       setTheme(systemPrefersDark ? "dark" : "light");
     }
+
+    if (window.innerWidth < 768) {
+      document.getElementById("sidebar").classList.remove("active");
+    }
+
     const container = document.getElementById("imageContainer");
     if (container) {
       container.classList.add("loading");
