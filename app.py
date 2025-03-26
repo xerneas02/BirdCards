@@ -1,9 +1,16 @@
 from flask import Flask, render_template, request, redirect, url_for, session, jsonify
 import csv, random, math, requests
 from abc import ABC, abstractmethod
+from flask_session import Session  # Import de Flask-Session
 
 app = Flask(__name__)
-app.secret_key = "supersecretkey"  # Nécessaire pour la gestion de session
+app.secret_key = "supersecretkey"  # Nécessaire pour la sécurité des sessions
+
+# Configuration de Flask-Session pour stocker les données côté serveur (ici dans le système de fichiers)
+app.config["SESSION_TYPE"] = "filesystem"
+app.config["SESSION_FILE_DIR"] = "./flask_session"  # Dossier de stockage (à créer ou adapter)
+app.config["SESSION_PERMANENT"] = False
+Session(app)
 
 CSV_FILE = "europe_bird_list_valid.csv"  # Doit contenir : Bird Name, French Name, Image URL, Sound URL, Score, Difficulty
 ALPHA = 0.5  # Poids : exp(-ALPHA * score)
@@ -75,7 +82,7 @@ def load_birds():
         print(f"Error loading CSV: {e}")
     return birds
 
-# Sauvegarde des oiseaux dans le CSV.
+# La sauvegarde globale reste inchangée.
 def save_birds(birds):
     try:
         with open(CSV_FILE, "w", newline="", encoding="utf-8") as outfile:
@@ -89,28 +96,41 @@ def save_birds(birds):
 
 birds = load_birds()
 
+# Initialiser les scores pour l'utilisateur dans la session.
+def init_user_scores():
+    if "scores" not in session:
+        session["scores"] = { bird["Bird Name"]: bird["Score"] for bird in birds }
+
 # Sélection aléatoire pondérée d'un oiseau dans la liste filtrée.
+# En mode sans répétition, la liste des oiseaux restants est stockée dans la session.
 def weighted_random_bird(birds_list):
-    weights = [math.exp(-ALPHA * bird["Score"]) for bird in birds_list]
-    return random.choices(birds_list, weights=weights, k=1)[0]
+    init_user_scores()
+    if session.get("no_repetition", False):
+        filtered_names = [bird["Bird Name"] for bird in birds_list]
+        remaining = session.get("remaining_birds", [])
+        if not remaining or set(remaining) != set(filtered_names):
+            remaining = filtered_names.copy()
+        chosen_name = random.choice(remaining)
+        remaining.remove(chosen_name)
+        session["remaining_birds"] = remaining
+        bird = next(b for b in birds_list if b["Bird Name"] == chosen_name)
+        return bird
+    else:
+        scores = session["scores"]
+        weights = [math.exp(-ALPHA * scores.get(bird["Bird Name"], 0)) for bird in birds_list]
+        return random.choices(birds_list, weights=weights, k=1)[0]
 
 @app.route("/")
 def index():
     language = session.get("language", "EN")
-    # Récupération du filtre de difficulté via GET ("diff")
-    diff_list = request.args.getlist("diff")
-    if not diff_list:
-        diff_list = ["1", "2", "3"]
+    diff_list = request.args.getlist("diff") or ["1", "2", "3"]
     try:
         diff_list_int = [int(x) for x in diff_list]
     except Exception:
         diff_list_int = [1, 2, 3]
     filtered_birds = [bird for bird in birds if int(bird.get("Difficulty", 3)) in diff_list_int]
     
-    # Filtrer par média
-    media_filters = request.args.getlist("media")
-    if not media_filters:
-        media_filters = ["image", "sound"]
+    media_filters = request.args.getlist("media") or ["image", "sound"]
     def media_ok(bird):
         ok = True
         if "image" in media_filters:
@@ -122,10 +142,19 @@ def index():
     if not filtered_birds:
         filtered_birds = birds
 
-    bird = weighted_random_bird(filtered_birds)
-    session["current_bird"] = bird["Bird Name"]
+    no_rep = request.args.get("noRep", "off")
+    session["no_repetition"] = (no_rep == "on")
+    
+    current_bird_name = session.get("current_bird")
+    bird = None
+    if current_bird_name:
+        bird_obj = next((b for b in filtered_birds if b["Bird Name"] == current_bird_name), None)
+        if bird_obj is not None:
+            bird = bird_obj
+    if bird is None:
+        bird = weighted_random_bird(filtered_birds)
+        session["current_bird"] = bird["Bird Name"]
 
-    # Récupération d'une image haute résolution via WikipediaBirdAPI.
     wiki_api = WikipediaBirdAPI(thumb_size=1024)
     high_res_url = wiki_api.get_bird_image(bird["Bird Name"], high_quality=True)
     if high_res_url and high_res_url != "No image found" and not high_res_url.startswith("Error"):
@@ -133,6 +162,16 @@ def index():
 
     return render_template("index.html", bird=bird, language=language,
                            selected_diff=diff_list, selected_media=media_filters)
+
+@app.route("/toggle_no_repetition")
+def toggle_no_repetition():
+    current = session.get("no_repetition", False)
+    session["no_repetition"] = not current
+    session.pop("remaining_birds", None)
+    diff = request.args.getlist("diff")
+    media = request.args.getlist("media")
+    noRep = "on" if session["no_repetition"] else "off"
+    return redirect(url_for("index", diff=diff, media=media, noRep=noRep))
 
 @app.route("/set_language")
 def set_language():
@@ -149,17 +188,22 @@ def set_language():
 
 @app.route("/score", methods=["POST"])
 def update_score():
+    init_user_scores()
     change = int(request.form.get("change", 0))
     current_bird_name = session.get("current_bird")
-    global birds
-    for bird in birds:
-        if bird["Bird Name"] == current_bird_name:
-            bird["Score"] = int(bird["Score"]) + change
-            break
-    save_birds(birds)
+    scores = session["scores"]
+    if current_bird_name in scores:
+        scores[current_bird_name] += change
+    else:
+        scores[current_bird_name] = change
+    session["scores"] = scores
+    # Supprime l'oiseau courant pour forcer la sélection d'un nouvel oiseau
+    session.pop("current_bird", None)
     diff = request.args.getlist("diff")
     media = request.args.getlist("media")
-    return redirect(url_for("index", diff=diff, media=media))
+    noRep = "on" if session.get("no_repetition", False) else "off"
+    return redirect(url_for("index", diff=diff, media=media, noRep=noRep))
+
 
 @app.route("/reveal")
 def reveal():
@@ -181,13 +225,12 @@ def reveal():
 
 @app.route("/reset")
 def reset():
-    global birds
-    for bird in birds:
-        bird["Score"] = 0
-    save_birds(birds)
+    session["scores"] = { bird["Bird Name"]: 0 for bird in birds }
+    session.pop("remaining_birds", None)
     diff = request.args.getlist("diff")
     media = request.args.getlist("media")
-    return redirect(url_for("index", diff=diff, media=media))
+    noRep = "on" if session.get("no_repetition", False) else "off"
+    return redirect(url_for("index", diff=diff, media=media, noRep=noRep))
 
 @app.route("/toggle_language")
 def toggle_language():
@@ -195,13 +238,13 @@ def toggle_language():
     session["language"] = "FR" if current == "EN" else "EN"
     diff = request.args.getlist("diff")
     media = request.args.getlist("media")
-    return redirect(url_for("index", diff=diff, media=media))
+    noRep = "on" if session.get("no_repetition", False) else "off"
+    return redirect(url_for("index", diff=diff, media=media, noRep=noRep))
 
 @app.route("/update", methods=["POST"])
 def update():
     new_french_name = request.form.get("french_name", "").strip()
     chosen_difficulty = request.form.get("difficulty", None)
-    global birds
     current_bird_name = session.get("current_bird")
     for bird in birds:
         if bird["Bird Name"] == current_bird_name:
@@ -212,10 +255,10 @@ def update():
                 except ValueError:
                     bird["Difficulty"] = 3
             break
-    save_birds(birds)
-    filter_diff = request.form.getlist("diff")
-    filter_media = request.form.getlist("media")
-    return redirect(url_for("index", diff=filter_diff, media=filter_media))
+    diff = request.form.getlist("diff")
+    media = request.form.getlist("media")
+    noRep = "on" if session.get("no_repetition", False) else "off"
+    return redirect(url_for("index", diff=diff, media=media, noRep=noRep))
 
 if __name__ == "__main__":
     app.run(debug=True)

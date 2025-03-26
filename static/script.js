@@ -35,25 +35,24 @@ const translations = {
        "lightTheme": "Passer au thème clair",
        "darkTheme": "Passer au thème sombre"
     }
-};
+  };
   
-function setTheme(theme) {
+  function setTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
     updateThemeButton();
-}
+  }
   
-function updateThemeButton() {
+  function updateThemeButton() {
     const btn = document.getElementById("themeToggle");
     const currentTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
     const currentLang = document.getElementById("currentLanguage").value || "EN";
     if (btn) {
-      // Si le thème actuel est dark, on propose de passer au thème clair, sinon l'inverse.
       btn.textContent = currentTheme === "dark" ? translations[currentLang]["lightTheme"] : translations[currentLang]["darkTheme"];
     }
-}
+  }
   
-window.onload = function() {
+  window.onload = function() {
     const storedTheme = localStorage.getItem('theme');
     if (storedTheme) {
       setTheme(storedTheme);
@@ -77,20 +76,19 @@ window.onload = function() {
       }
       asyncImage.src = imgUrl;
     }
-};
+  };
   
-function toggleTheme() {
+  function toggleTheme() {
     const currentTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
     setTheme(currentTheme === "dark" ? "light" : "dark");
-}
+  }
   
-function toggleLanguage() {
+  function toggleLanguage() {
     const currentLangElem = document.getElementById("currentLanguage");
     if (!currentLangElem) return;
     const currentLang = currentLangElem.value;
     const newLang = currentLang === "EN" ? "FR" : "EN";
     currentLangElem.value = newLang;
-    // Mise à jour des textes pour chaque élément
     const elementsToUpdate = [
       { id: "resetButton", key: "reset" },
       { selector: "h1", key: "title" },
@@ -117,7 +115,6 @@ function toggleLanguage() {
         }
       }
     });
-    // Mise à jour du nom affiché via une requête
     fetch("/set_language?lang=" + newLang)
       .then(response => response.text())
       .then(translatedBirdName => {
@@ -125,13 +122,12 @@ function toggleLanguage() {
         if (birdNameElem) {
           birdNameElem.innerText = translatedBirdName;
         }
-        // Mise à jour du bouton de thème après changement de langue
         updateThemeButton();
       })
       .catch(error => console.error("Language toggle error:", error));
-}
+  }
   
-function revealName() {
+  function revealName() {
     fetch("/reveal")
       .then(response => response.json())
       .then(data => {
@@ -156,5 +152,20 @@ function revealName() {
         }
       })
       .catch(error => console.error("Error revealing data:", error));
-}
+  }
+  
+  function toggleMenu() {
+    const sidebar = document.getElementById("sidebar");
+    const menuToggle = document.getElementById("menuToggle");
+    if (sidebar) {
+      sidebar.classList.toggle("active");
+      // Masquer le bouton burger quand le menu est ouvert, et le réafficher quand il est fermé
+      if (sidebar.classList.contains("active")) {
+        menuToggle.style.display = "none";
+      } else {
+        menuToggle.style.display = "block";
+      }
+    }
+  }
+  
   

@@ -2,15 +2,21 @@
 <html lang="en" data-theme="">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bird Learning App</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <script src="{{ url_for('static', filename='script.js') }}"></script>
 </head>
 <body>
-  <div class="sidebar">
+  <!-- Bouton burger visible sur mobile -->
+  <button id="menuToggle" onclick="toggleMenu()">☰</button>
+
+  <div class="sidebar" id="sidebar">
+    <!-- Bouton de fermeture du menu -->
+    <button id="menuClose" onclick="toggleMenu()">✖</button>
     <h2>Options</h2>
     <!-- Bouton Reset -->
-    <a href="{{ url_for('reset', diff=selected_diff, media=selected_media) }}" class="reset-button" id="resetButton">
+    <a href="{{ url_for('reset', diff=selected_diff, media=selected_media, noRep=('on' if session.get('no_repetition') else 'off')) }}" class="reset-button" id="resetButton">
       {% if language == "EN" %}
         Reset Data
       {% else %}
@@ -69,6 +75,16 @@
           Son
         {% endif %}
       </label><br><br>
+      <!-- Nouvelle case pour le mode sans répétition -->
+      <label id="noRepLabel">
+        {% if language == "EN" %}
+          No Repetition Mode
+        {% else %}
+          Mode sans répétition
+        {% endif %}
+      </label><br>
+      <input type="checkbox" name="noRep" id="noRep" value="on" {% if session.get('no_repetition') %} checked {% endif %}>
+      <br><br>
       <input type="submit" id="filterButton" value="{% if language == 'EN' %}Filter{% else %}Filtrer{% endif %}">
     </form>
     <!-- Bouton pour changer de langue -->
@@ -81,14 +97,13 @@
     </button>
     <input type="hidden" id="currentLanguage" value="{{ language }}">
   </div>
+
   <div class="main-content">
-    <!-- Affichage conditionnel de l'image -->
     {% if 'image' in selected_media %}
     <div id="imageContainer">
       <img id="birdImage" data-src="{{ bird['Image URL'] }}" alt="Image de l'oiseau">
     </div>
     {% endif %}
-    <!-- Affichage conditionnel du son -->
     {% if 'sound' in selected_media and bird['Sound URL']|trim != "" %}
     <div id="audioContainer">
       <audio controls>
@@ -108,7 +123,6 @@
       {% endif %}
     </button>
     <br><br>
-    <!-- Boutons de score -->
     <div class="score-buttons">
       <form action="{{ url_for('update_score', diff=selected_diff, media=selected_media) }}" method="post" style="display:inline;">
           <button id="wrongButton" type="submit" name="change" value="-1" class="btn-wrong">
