@@ -108,8 +108,8 @@
   <div class="main-content">
     {% if 'image' in selected_media %}
     <div id="imageContainer">
-      <img id="birdImage" data-src="{{ bird['Image URL'] }}" alt="Image de l'oiseau">
-    </div>
+      <img id="birdImage" src="{{ bird['Image URL'] }}" data-src="{{ bird['High Image URL'] }}" alt="Image de l'oiseau">
+    </div>    
     {% endif %}
     {% if 'sound' in selected_media and bird['Sound URL']|trim != "" %}
     <div id="audioContainer">

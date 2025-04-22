@@ -69,17 +69,17 @@ const translations = {
     if (container) {
       container.classList.add("loading");
       const imgElement = document.getElementById("birdImage");
-      const imgUrl = imgElement.getAttribute("data-src");
+      const highResUrl = imgElement.getAttribute("data-src");
       const asyncImage = new Image();
       asyncImage.onload = function() {
-        imgElement.src = asyncImage.src;
+        imgElement.src = asyncImage.src; // Remplace l'image basse résolution par la haute
         container.classList.remove("loading");
       }
       asyncImage.onerror = function() {
-        imgElement.alt = "Failed to load image";
+        imgElement.alt = "Failed to load high resolution image";
         container.classList.remove("loading");
       }
-      asyncImage.src = imgUrl;
+      asyncImage.src = highResUrl;
     }
   };
   

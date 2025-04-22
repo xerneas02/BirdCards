@@ -164,13 +164,25 @@ def index():
         bird = weighted_random_bird(filtered_birds)
         session["current_bird"] = bird["Bird Name"]
 
-    wiki_api = WikipediaBirdAPI(thumb_size=1024)
-    high_res_url = wiki_api.get_bird_image(bird["Bird Name"], high_quality=True)
+    # Obtenir une image basse résolution pour un affichage immédiat
+    wiki_api_low = WikipediaBirdAPI(thumb_size=300)
+    low_res_url = wiki_api_low.get_bird_image(bird["Bird Name"], high_quality=False)
+    if low_res_url and low_res_url != "No image found":
+        bird["Image URL"] = low_res_url
+    else:
+        bird["Image URL"] = ""
+
+    # Obtenir ensuite l'image haute résolution
+    wiki_api_high = WikipediaBirdAPI(thumb_size=1024)
+    high_res_url = wiki_api_high.get_bird_image(bird["Bird Name"], high_quality=True)
     if high_res_url and high_res_url != "No image found" and not high_res_url.startswith("Error"):
-         bird["Image URL"] = high_res_url
+         bird["High Image URL"] = high_res_url
+    else:
+         bird["High Image URL"] = bird["Image URL"]
 
     return render_template("index.html", bird=bird, language=language,
                            selected_diff=diff_list, selected_media=media_filters)
+
 
 @app.route("/toggle_no_repetition")
 def toggle_no_repetition():
@@ -227,7 +239,7 @@ def reveal():
         name_to_display = bird_obj["Bird Name"]
     result = {
         "name": name_to_display,
-        "image_url": bird_obj.get("Image URL", ""),
+        "image_url": bird_obj.get("High Image URL", bird_obj.get("Image URL", "")),
         "sound_url": bird_obj.get("Sound URL", "")
     }
     return jsonify(result)
