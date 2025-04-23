@@ -119,8 +119,9 @@
       </audio>
     </div>
     {% endif %}
-    <div>
-      <p id="birdName" style="font-size:20px; font-weight:bold;"></p>
+    <div id="birdInfo">
+      <p id="birdName" style="font-size:20px; font-weight:bold; display:inline;"></p>
+      <a id="wikiLink" href="#" target="_blank" style="margin-left:8px; font-size:18px; text-decoration:none;">ℹ</a>
     </div>
     <button id="revealButton" onclick="revealName()">
       {% if language == "EN" %}
@@ -136,7 +137,7 @@
             {% if language == "EN" %}
               Got it Wrong
             {% else %}
-              Faux
+              Mauvaise réponse
             {% endif %}
           </button>
       </form>
@@ -145,7 +146,7 @@
             {% if language == "EN" %}
               In Between
             {% else %}
-              Neutre
+              Réponse partielle
             {% endif %}
           </button>
       </form>
@@ -154,7 +155,7 @@
             {% if language == "EN" %}
               Got it Right
             {% else %}
-              Correct
+              Bonne réponse
             {% endif %}
           </button>
       </form>

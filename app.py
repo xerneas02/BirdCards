@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, session, j
 import csv, random, math, requests
 from abc import ABC, abstractmethod
 from flask_session import Session  # Import de Flask-Session
+import urllib.parse  # Ajoutez ceci en haut du fichier
 
 app = Flask(__name__)
 app.secret_key = "supersecretkey"  # Nécessaire pour la sécurité des sessions
@@ -151,8 +152,10 @@ def index():
     if not filtered_birds:
         filtered_birds = birds
 
-    no_rep = request.args.get("noRep", "off")
-    session["no_repetition"] = (no_rep == "on")
+    # Mettez à jour la session seulement si le paramètre noRep est présent
+    no_rep = request.args.get("noRep")
+    if no_rep is not None:
+        session["no_repetition"] = (no_rep == "on")
     
     current_bird_name = session.get("current_bird")
     bird = None
@@ -164,15 +167,32 @@ def index():
         bird = weighted_random_bird(filtered_birds)
         session["current_bird"] = bird["Bird Name"]
 
-    # Obtenir une image basse résolution pour un affichage immédiat
+    # Pré-calcul des liens Wikipédia en anglais et en français
+    wiki_title_en = bird["Bird Name"].strip().replace(" ", "_")
+    wiki_url_en = "https://en.wikipedia.org/wiki/" + urllib.parse.quote(wiki_title_en)
+    if "French Name" in bird and bird["French Name"].strip():
+        wiki_title_fr = bird["French Name"].strip().replace(" ", "_")
+        has_fr = french_page_exists(wiki_title_fr)
+        if has_fr:
+            wiki_url_fr = "https://fr.wikipedia.org/wiki/" + urllib.parse.quote(wiki_title_fr)
+        else:
+            wiki_url_fr = wiki_url_en
+    else:
+        has_fr = False
+        wiki_url_fr = wiki_url_en
+
+    # Enregistrer ces valeurs pour usage ultérieur (par exemple dans /reveal)
+    bird["wiki_url_en"] = wiki_url_en
+    bird["wiki_url_fr"] = wiki_url_fr
+    bird["has_french_wiki"] = has_fr
+
+    # Gestion des images (inchangée)
     wiki_api_low = WikipediaBirdAPI(thumb_size=300)
     low_res_url = wiki_api_low.get_bird_image(bird["Bird Name"], high_quality=False)
     if low_res_url and low_res_url != "No image found":
         bird["Image URL"] = low_res_url
     else:
         bird["Image URL"] = ""
-
-    # Obtenir ensuite l'image haute résolution
     wiki_api_high = WikipediaBirdAPI(thumb_size=1024)
     high_res_url = wiki_api_high.get_bird_image(bird["Bird Name"], high_quality=True)
     if high_res_url and high_res_url != "No image found" and not high_res_url.startswith("Error"):
@@ -226,6 +246,30 @@ def update_score():
     return redirect(url_for("index", diff=diff, media=media, noRep=noRep))
 
 
+
+
+# Helper to check if a French Wikipedia page exists
+def french_page_exists(wiki_title: str) -> bool:
+    url = "https://fr.wikipedia.org/w/api.php"
+    params = {
+        "action": "query",
+        "titles": wiki_title,
+        "format": "json",
+        "redirects": 1
+    }
+    try:
+        response = requests.get(url, params=params, timeout=5)
+        response.raise_for_status()
+        data = response.json()
+        pages = data.get("query", {}).get("pages", {})
+        for page in pages.values():
+            if "missing" not in page:  # page exists
+                return True
+        return False
+    except Exception as e:
+        print("Error checking French Wiki page:", e)
+        return False
+
 @app.route("/reveal")
 def reveal():
     language = session.get("language", "EN")
@@ -233,14 +277,19 @@ def reveal():
     bird_obj = next((bird for bird in birds if bird["Bird Name"] == current_bird_name), None)
     if not bird_obj:
         return jsonify({"error": "Bird not found"}), 404
+
+    # Utilisation des liens pré-calculés.
     if language == "FR" and "French Name" in bird_obj and bird_obj["French Name"].strip():
         name_to_display = bird_obj["French Name"]
+        wiki_url = bird_obj.get("wiki_url_fr", bird_obj.get("wiki_url_en"))
     else:
         name_to_display = bird_obj["Bird Name"]
+        wiki_url = bird_obj.get("wiki_url_en")
     result = {
         "name": name_to_display,
         "image_url": bird_obj.get("High Image URL", bird_obj.get("Image URL", "")),
-        "sound_url": bird_obj.get("Sound URL", "")
+        "sound_url": bird_obj.get("Sound URL", ""),
+        "wiki_url": wiki_url
     }
     return jsonify(result)
 

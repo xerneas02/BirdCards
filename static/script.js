@@ -15,15 +15,16 @@ const translations = {
       "mediaSoundLabel": "Sound",
       "filter": "Filter",
       "lightTheme": "Switch to Light Theme",
-      "darkTheme": "Switch to Dark Theme"
+      "darkTheme": "Switch to Dark Theme",
+      "noRepetition": "No Repetition Mode"
   },
   "FR": {
       "reset": "Réinitialiser les scores",
       "title": "Appli d'apprentissage des oiseaux",
       "reveal": "Révéler le nom",
-      "wrong": "Faux",
-      "inbetween": "Neutre",
-      "right": "Correct",
+      "wrong": "Mauvaise réponse",
+      "inbetween": "Réponse partielle",
+      "right": "Bonne réponse",
       "switch": "Passer en anglais",
       "diffLabel": "Sélectionnez la difficulté :",
       "diff1Label": "Facile",
@@ -33,7 +34,8 @@ const translations = {
       "mediaSoundLabel": "Son",
       "filter": "Filtrer",
       "lightTheme": "Passer au thème clair",
-      "darkTheme": "Passer au thème sombre"
+      "darkTheme": "Passer au thème sombre",
+      "noRepetition": "Mode sans répétition"
   }
 };
 
@@ -108,7 +110,8 @@ function toggleLanguage() {
     { id: "diff3Label", key: "diff3Label" },
     { id: "mediaLabel", key: "mediaLabel" },
     { id: "mediaSoundLabel", key: "mediaSoundLabel" },
-    { id: "filterButton", key: "filter" }
+    { id: "filterButton", key: "filter" },
+    { id: "noRepLabel", key: "noRepetition" } // Ajout de la mise à jour pour "Mode sans répétition"
   ];
   elementsToUpdate.forEach(item => {
     let elem = item.id ? document.getElementById(item.id) : document.querySelector(item.selector);
@@ -120,19 +123,21 @@ function toggleLanguage() {
       }
     }
   });
-  // Remove updating the birdName to avoid unintentionally revealing it
-
+  // Ne pas modifier le nom de l'oiseau s'il n'est pas révélé
   fetch("/set_language?lang=" + newLang)
     .then(response => response.text())
     .then(() => {
       updateThemeButton();
-      // If the bird name is already revealed (non-empty), update its text according to the new language
       const birdNameElem = document.getElementById("birdName");
       if (birdNameElem && birdNameElem.innerText.trim() !== "") {
         fetch("/reveal")
           .then(response => response.json())
           .then(data => {
             birdNameElem.innerText = data.name;
+            const wikiLinkElem = document.getElementById("wikiLink");
+            if (wikiLinkElem && data.wiki_url) {
+              wikiLinkElem.href = data.wiki_url;
+            }
           })
           .catch(error => console.error("Error updating bird name:", error));
       }
@@ -146,6 +151,13 @@ function revealName() {
     .then(data => {
       const birdNameElem = document.getElementById("birdName");
       if (birdNameElem) birdNameElem.innerText = data.name;
+      const wikiLinkElem = document.getElementById("wikiLink");
+      if (wikiLinkElem && data.wiki_url) {
+        wikiLinkElem.href = data.wiki_url;
+        // Afficher le lien info après révélation du nom
+        wikiLinkElem.style.display = 'inline-block';
+      }
+      // Actualisation des images et sons (inchangée)
       const imageContainer = document.getElementById("imageContainer");
       if (imageContainer && imageContainer.style.display === "none") {
         imageContainer.style.display = "block";
@@ -163,11 +175,11 @@ function revealName() {
         audioElem.src = data.sound_url;
         audioContainer.querySelector("audio").load();
       }
-
       const revealButton = document.getElementById("revealButton");
       if (revealButton) {
         revealButton.style.display = "none";
       }
+      document.body.classList.add("revealed");
     })
     .catch(error => console.error("Error revealing data:", error));
 }

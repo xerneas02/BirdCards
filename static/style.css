@@ -188,6 +188,45 @@
     background-color: #e67e22;
   }
   
+  /* Responsive : en dessous de 1400px, le menu passe en mode burger */
+  @media (max-width: 1400px) {
+    /* Afficher le bouton burger sur mobile */
+    #menuToggle {
+      display: block;
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      z-index: 1100;
+      width: 40px;
+      height: 40px;
+      background-color: var(--button-default-bg);
+      color: var(--button-default-text);
+      border: none;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    #menuToggle:hover {
+      background-color: var(--button-default-hover);
+    }
+    /* Sidebar masquée par défaut en mobile */
+    .sidebar {
+      transform: translateX(-100%);
+      visibility: hidden;
+    }
+    /* Sidebar active s'affiche en overlay */
+    .sidebar.active {
+      transform: translateX(0);
+      visibility: visible;
+    }
+    /* Afficher le bouton de fermeture quand la sidebar est active */
+    .sidebar.active #menuClose {
+      display: block;
+    }
+  
+  }
+  
   /* Responsive : en dessous de 768px, le menu passe en mode burger */
   @media (max-width: 768px) {
     /* Afficher le bouton burger sur mobile */
@@ -224,6 +263,15 @@
     .sidebar.active #menuClose {
       display: block;
     }
+
+  }
+
+  @media (max-width: 600px) {
+    .score-buttons button {
+      padding: 8px 12px;
+      font-size: 14px;
+      flex: 1 1 auto; /* Permet aux boutons de s’ajuster en largeur */
+    }
   }
   
 /* Section de contact en bas de la sidebar */
@@ -251,5 +299,36 @@
   margin-bottom: 0px;
 }
 
+#birdInfo {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
 
-  
+/* Nouveau style pour le lien info (ℹ) */
+#wikiLink {
+  display: none;  /* Caché par défaut jusqu'à la révélation du nom */
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 50%;
+  background-color: var(--button-default-bg);
+  color: var(--button-default-text);
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+/* Afficher le lien info lorsqu'on a révélé le nom */
+.revealed #wikiLink {
+  display: inline-block;
+}
+
+/* Ajoutez ou modifiez ceci dans style.css */
+.score-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+}
+
