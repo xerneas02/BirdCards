@@ -12,7 +12,7 @@ app.config["SESSION_FILE_DIR"] = "./flask_session"  # Dossier de stockage (à cr
 app.config["SESSION_PERMANENT"] = False
 Session(app)
 
-CSV_FILE = "europe_bird_list_valid.csv"  # Doit contenir : Bird Name, French Name, Image URL, Sound URL, Score, Difficulty
+CSV_FILE = "europe_bird_list.csv"
 ALPHA = 0.5  # Poids : exp(-ALPHA * score)
 
 # Interface BirdAPI et implémentation WikipediaBirdAPI.
@@ -282,4 +282,4 @@ def update():
     return redirect(url_for("index", diff=diff, media=media, noRep=noRep))
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=8080)
+    app.run(debug=True)#, host="0.0.0.0", port=8080)
