@@ -331,4 +331,4 @@ def update():
     return redirect(url_for("index", diff=diff, media=media, noRep=noRep))
 
 if __name__ == "__main__":
-    app.run(debug=True)#, host="0.0.0.0", port=8080)
+    app.run(debug=True, host="0.0.0.0", port=8080)

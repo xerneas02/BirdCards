@@ -94,7 +94,7 @@ Laurel Pigeon,Pigeon des lauriers,https://upload.wikimedia.org/wikipedia/commons
 Passenger Pigeon,Tourte voyageuse,https://upload.wikimedia.org/wikipedia/commons/0/03/Bird_lore_%281913%29_%2814562557107%29.jpg,,0,2,16510
 European Turtle-Dove,Tourterelle des bois,https://upload.wikimedia.org/wikipedia/commons/e/ec/Turtle_dove_%28Streptopelia_turtur_turtur%29_Hungary.jpg,,0,2,19771
 Oriental Turtle-Dove,Tourterelle orientale,https://upload.wikimedia.org/wikipedia/commons/9/9f/Av_Oriental_Turtle-Dove_JG.jpg,,0,3,1818
-Eurasian Collared-Dove,Tourterelle turque,https://upload.wikimedia.org/wikipedia/commons/f/fa/2022-04-06_Streptopelia_decaocto%2C_Plovdiv%2C_Bulgaria_1.jpg,,0,1,69793
+Eurasian Collared-Dove,Tourterelle turque,https://upload.wikimedia.org/wikipedia/commons/f/fa/2022-04-06_Streptopelia_decaocto%2C_Plovdiv%2C_Bulgaria_1.jpg,https://xeno-canto.org/972518/download,0,1,69793
 African Collared-Dove,Tourterelle rieuse,https://upload.wikimedia.org/wikipedia/commons/1/11/Streptopelia_roseogrisea%2C_Waza_NP%2C_Cameroon_%28cropped%29.jpg,,0,2,5435
 Laughing Dove,Tourterelle maillée,https://upload.wikimedia.org/wikipedia/commons/6/6c/Laughing_dove_-_Vadodara_2022-01-28.jpg,https://xeno-canto.org/954435/download,0,2,4213
 Namaqua Dove,Tourterelle masquée,https://upload.wikimedia.org/wikipedia/commons/b/ba/Oena_capensis_-near_Kambi_ya_Tembo%2C_Arusha%2C_Tanzania-8%2C_crop.jpg,https://xeno-canto.org/951388/download,0,3,1356
@@ -506,7 +506,7 @@ Great Spotted Woodpecker,Pic épeiche,https://upload.wikimedia.org/wikipedia/com
 Syrian Woodpecker,Pic syriaque,https://upload.wikimedia.org/wikipedia/commons/1/13/Dendrocopos_syriacus.jpg,https://xeno-canto.org/981473/download,0,3,1012
 Lesser Spotted Woodpecker,Pic épeichette,https://upload.wikimedia.org/wikipedia/commons/b/bd/%D0%9C%D0%B0%D0%BB%D1%8B%D0%B9_%D0%BF%D1%91%D1%81%D1%82%D1%80%D1%8B%D0%B9_%D0%B4%D1%8F%D1%82%D0%B5%D0%BB_%D0%BD%D0%B0_%D1%80%D0%B5%D0%BF%D0%B5%D0%B9%D0%BD%D0%B8%D0%BA%D0%B5_%28Dendrocopos_minor%2C_fem%29%2C_%D0%9A%D1%80%D1%8B%D0%BB%D0%B0%D1%82%D1%81%D0%BA%D0%B8%D0%B5_%D1%85%D0%BE%D0%BB%D0%BC%D1%8B.jpg,https://xeno-canto.org/980009/download,0,2,16968
 Gray-headed Woodpecker,Pic cendré,https://upload.wikimedia.org/wikipedia/commons/7/79/%D0%A1%D0%B5%D0%B4%D0%BE%D0%B9_%D0%B4%D1%8F%D1%82%D0%B5%D0%BB_%D1%83_%D0%B1%D0%BE%D0%BB%D0%BE%D1%82%D0%B0_%D1%80%D0%B5%D1%87%D0%BA%D0%B8_%D0%97%D0%B8%D0%BC%D1%91%D0%BD%D0%BA%D0%B8.jpg,,0,2,4198
-Eurasian Green Woodpecker,Pic vert,https://upload.wikimedia.org/wikipedia/commons/c/c5/European_green_woodpecker_%28Picus_viridis%29_female_Barnes.jpg,,0,1,119298
+Eurasian Green Woodpecker,Pic vert,https://upload.wikimedia.org/wikipedia/commons/c/c5/European_green_woodpecker_%28Picus_viridis%29_female_Barnes.jpg,https://xeno-canto.org/976587/download,0,1,119298
 Iberian Green Woodpecker,Picus sharpei,https://upload.wikimedia.org/wikipedia/commons/2/20/Picus_viridis_sharpei_033.jpg,https://xeno-canto.org/977350/download,0,3,62
 Black Woodpecker,Pic noir,https://upload.wikimedia.org/wikipedia/commons/2/20/%D0%96%D0%B5%D0%BB%D0%BD%D0%B0_%28Dryocopus_martius%2C_fem%29%2C_%C2%AB%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D1%88%D1%83%D0%BC%D0%B0%D1%88%D0%B5%D1%88%D0%B0%D1%8F%C2%BB.jpg,https://xeno-canto.org/980312/download,0,2,31704
 Northern Flicker,Pic flamboyant,https://upload.wikimedia.org/wikipedia/commons/0/02/NorthernFlicker-male.jpg,https://xeno-canto.org/975331/download,0,2,19555
@@ -517,7 +517,7 @@ Red-footed Falcon,Faucon kobez,https://upload.wikimedia.org/wikipedia/commons/c/
 Amur Falcon,Faucon de l'Amour,https://upload.wikimedia.org/wikipedia/commons/2/29/Amur_Falcon_%28male%29_%28vagrant%29.jpg,https://xeno-canto.org/832536/download,0,3,1007
 Eleonora's Falcon,Faucon d'Éléonore,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Eleonora%27s_falcon_%28Falco_eleonorae%29_in_flight_3.jpg/300px-Eleonora%27s_falcon_%28Falco_eleonorae%29_in_flight_3.jpg,https://xeno-canto.org/893155/download,0,2,5157
 Sooty Falcon,Faucon concolore,https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Sooty_Falcon%2C_All%C3%A9e_des_Baobabs_near_Morondava%2C_Madagascar.jpg/300px-Sooty_Falcon%2C_All%C3%A9e_des_Baobabs_near_Morondava%2C_Madagascar.jpg,https://xeno-canto.org/929946/download,0,3,783
-Merlin (bird),Merlin,https://upload.wikimedia.org/wikipedia/commons/e/e3/Merlin_in_Prospect_Park_%2863386%29.jpg,,0,1,104609
+Merlin (bird),Faucon émerillon,https://upload.wikimedia.org/wikipedia/commons/e/e3/Merlin_in_Prospect_Park_%2863386%29.jpg,,0,2,1609
 Eurasian Hobby,Faucon hobereau,https://upload.wikimedia.org/wikipedia/commons/d/df/Eurasian_hobby_%28Falco_subbuteo%29_by_Shantanu_Kuveskar.jpg,https://xeno-canto.org/960301/download,0,2,9769
 Lanner Falcon,Faucon lanier,https://upload.wikimedia.org/wikipedia/commons/7/7d/Lanner_Falcon_800.jpg,https://xeno-canto.org/577955/download,0,2,5431
 Saker Falcon,Faucon sacre,https://upload.wikimedia.org/wikipedia/commons/0/0c/Falco_cherrug_%28Marek_Szczepanek%29.jpg,https://xeno-canto.org/412094/download,0,2,5200
@@ -560,7 +560,7 @@ Eurasian Magpie,Pie bavarde,https://upload.wikimedia.org/wikipedia/commons/4/4b/
 Northern Nutcracker,Cassenoix moucheté,https://upload.wikimedia.org/wikipedia/commons/f/f7/Orzech%C3%B3wka_zwyczajna_nad_Morskim_Okiem.jpg,,0,2,10817
 Red-billed Chough,Crave à bec rouge,https://upload.wikimedia.org/wikipedia/commons/1/12/Bran_goesgoch_Pyrrhocorax_pyrrhocorax.jpg,https://xeno-canto.org/534503/download,0,2,12861
 Yellow-billed Chough,Chocard à bec jaune,https://upload.wikimedia.org/wikipedia/commons/2/2d/Alpine_Chough_by_Jim_Higham.jpg,,0,2,36384
-Eurasian Jackdaw,Choucas des tours,https://upload.wikimedia.org/wikipedia/commons/a/a1/%D0%93%D0%B0%D0%BB%D0%BA%D0%B0_%28Corvus_monedula%29%2C_%D0%A6%D0%B0%D1%80%D0%B8%D1%86%D1%8B%D0%BD%D0%BE.jpg,,0,1,111911
+Eurasian Jackdaw,Choucas des tours,https://upload.wikimedia.org/wikipedia/commons/a/a1/%D0%93%D0%B0%D0%BB%D0%BA%D0%B0_%28Corvus_monedula%29%2C_%D0%A6%D0%B0%D1%80%D0%B8%D1%86%D1%8B%D0%BD%D0%BE.jpg,https://xeno-canto.org/971837/download,0,1,111911
 Daurian Jackdaw,Choucas de Daourie,https://upload.wikimedia.org/wikipedia/commons/7/77/Dwlhany.jpg,https://xeno-canto.org/824063/download,0,3,1
 House Crow,Corbeau familier,https://upload.wikimedia.org/wikipedia/commons/c/c9/Corvus_splendens.jpg,https://xeno-canto.org/980341/download,0,2,6262
 Carrion Crow,Corneille noire,https://upload.wikimedia.org/wikipedia/commons/a/a9/Corvus_corone_-near_Canford_Cliffs%2C_Poole%2C_England-8.jpg,https://xeno-canto.org/981452/download,0,1,76810
@@ -722,7 +722,7 @@ Siberian Thrush,Grive de Sibérie,https://upload.wikimedia.org/wikipedia/commons
 Mistle Thrush,Grive draine,https://upload.wikimedia.org/wikipedia/commons/9/9e/Turdus_viscivorus.001_-_Cardiff.jpg,https://xeno-canto.org/972391/download,0,2,32628
 Song Thrush,Grive musicienne,https://upload.wikimedia.org/wikipedia/commons/1/1e/%D0%9F%D0%B5%D0%B2%D1%87%D0%B8%D0%B9_%D0%B4%D1%80%D0%BE%D0%B7%D0%B4_%D0%BD%D0%B0_%D0%BF%D0%B5%D0%BD%D1%8C%D0%BA%D0%B5_%28Turdus_philomelos%29%2C_%D0%91%D0%B8%D1%82%D1%86%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BB%D0%B5%D1%81.jpg,https://xeno-canto.org/980582/download,0,1,106516
 Redwing,Grive mauvis,https://upload.wikimedia.org/wikipedia/commons/c/c1/Redwing_Turdus_iliacus.jpg,https://xeno-canto.org/973547/download,0,2,11160
-Eurasian Blackbird,Merle noir,https://upload.wikimedia.org/wikipedia/commons/a/a9/Common_Blackbird.jpg,,0,1,203857
+Eurasian Blackbird,Merle noir,https://upload.wikimedia.org/wikipedia/commons/a/a9/Common_Blackbird.jpg,https://xeno-canto.org/990996/download,0,1,203857
 American Robin,Merle d'Amérique,https://upload.wikimedia.org/wikipedia/commons/9/97/American_robin_%2871307%29.jpg,https://xeno-canto.org/524659/download,0,2,38449
 Austral Thrush,Merle austral,https://upload.wikimedia.org/wikipedia/commons/3/39/Turdus_falcklandii.jpg,https://xeno-canto.org/573536/download,0,3,821
 Tickell's Thrush,Merle unicolore,https://upload.wikimedia.org/wikipedia/commons/d/d6/Tickells.jpg,https://xeno-canto.org/655458/download,0,3,205
