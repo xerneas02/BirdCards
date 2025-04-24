@@ -144,7 +144,7 @@ def index():
     def media_ok(bird):
         ok = True
         if "image" in media_filters:
-            ok = ok and (bird.get("Image URL", "").strip() != "")
+            ok = ok and (bird.get("Image Low", "").strip() != "")
         if "sound" in media_filters:
             ok = ok and (bird.get("Sound URL", "").strip() != "")
         return ok
@@ -152,7 +152,7 @@ def index():
     if not filtered_birds:
         filtered_birds = birds
 
-    # Mettez à jour la session seulement si le paramètre noRep est présent
+    # Mettez à jour la session pour le mode sans répétition
     no_rep = request.args.get("noRep")
     if no_rep is not None:
         session["no_repetition"] = (no_rep == "on")
@@ -167,38 +167,19 @@ def index():
         bird = weighted_random_bird(filtered_birds)
         session["current_bird"] = bird["Bird Name"]
 
-    # Pré-calcul des liens Wikipédia en anglais et en français
-    wiki_title_en = bird["Bird Name"].strip().replace(" ", "_")
-    wiki_url_en = "https://en.wikipedia.org/wiki/" + urllib.parse.quote(wiki_title_en)
-    if "French Name" in bird and bird["French Name"].strip():
-        wiki_title_fr = bird["French Name"].strip().replace(" ", "_")
-        has_fr = french_page_exists(wiki_title_fr)
-        if has_fr:
-            wiki_url_fr = "https://fr.wikipedia.org/wiki/" + urllib.parse.quote(wiki_title_fr)
-        else:
-            wiki_url_fr = wiki_url_en
-    else:
-        has_fr = False
-        wiki_url_fr = wiki_url_en
-
-    # Enregistrer ces valeurs pour usage ultérieur (par exemple dans /reveal)
+    # Utilisation des nouvelles colonnes pré-calculées dans le CSV
+    wiki_url_en = bird.get("URL anglais", "")
+    wiki_url_fr = bird.get("URL français", "")
+    has_fr = bool(wiki_url_fr and wiki_url_fr != wiki_url_en)
     bird["wiki_url_en"] = wiki_url_en
     bird["wiki_url_fr"] = wiki_url_fr
     bird["has_french_wiki"] = has_fr
 
-    # Gestion des images (inchangée)
-    wiki_api_low = WikipediaBirdAPI(thumb_size=300)
-    low_res_url = wiki_api_low.get_bird_image(bird["Bird Name"], high_quality=False)
-    if low_res_url and low_res_url != "No image found":
-        bird["Image URL"] = low_res_url
-    else:
-        bird["Image URL"] = ""
-    wiki_api_high = WikipediaBirdAPI(thumb_size=1024)
-    high_res_url = wiki_api_high.get_bird_image(bird["Bird Name"], high_quality=True)
-    if high_res_url and high_res_url != "No image found" and not high_res_url.startswith("Error"):
-         bird["High Image URL"] = high_res_url
-    else:
-         bird["High Image URL"] = bird["Image URL"]
+    # Utilisation des images pré-calculées dans le CSV
+    low_res_url = bird.get("Image Low", "")
+    high_res_url = bird.get("Image High", "")
+    bird["Image URL"] = low_res_url  # Ancienne colonne pour compatibilité, si nécessaire
+    bird["High Image URL"] = high_res_url
 
     return render_template("index.html", bird=bird, language=language,
                            selected_diff=diff_list, selected_media=media_filters)
