@@ -80,12 +80,13 @@ def is_url_valid(url):
     except Exception:
         return False
 
-def get_bird_image(bird_name, high_quality=False):
+def get_bird_image(bird_name, high_quality=False, retries=3):
     """
-    Récupère l'image d'une page Wikipedia via API, 
-    en utilisant le paramètre pithumbsize (500 pour basse qualité,
-    1024 pour haute qualité).
+    Récupère l'image d'une page Wikipedia via API, en utilisant le paramètre pithumbsize
+    (500 pour basse qualité, 1024 pour haute qualité).
+    Effectue jusqu'à 'retries' tentatives en cas d'échec.
     """
+    import time  # si ce n'est pas déjà importé
     base_url = "https://en.wikipedia.org/w/api.php"
     size = 1024 if high_quality else 500
     params = {
@@ -96,17 +97,23 @@ def get_bird_image(bird_name, high_quality=False):
         "pithumbsize": size,
         "redirects": 1
     }
-    try:
-        response = requests.get(base_url, params=params, timeout=10)
-        response.raise_for_status()
-        data = response.json()
-        pages = data.get("query", {}).get("pages", {})
-        for page in pages.values():
-            thumbnail = page.get("thumbnail", {})
-            if thumbnail:
-                return thumbnail.get("source", "")
-    except Exception as e:
-        print(f"Erreur lors de la récupération de l'image pour '{bird_name}': {e}")
+    attempt = 0
+    while attempt < retries:
+        try:
+            response = requests.get(base_url, params=params, timeout=10)
+            response.raise_for_status()
+            data = response.json()
+            pages = data.get("query", {}).get("pages", {})
+            for page in pages.values():
+                thumbnail = page.get("thumbnail", {})
+                if thumbnail:
+                    return thumbnail.get("source", "")
+            # Si aucune image n'est trouvée dans la réponse, on arrête les tentatives
+            break
+        except Exception as e:
+            print(f"Erreur lors de la récupération de l'image pour '{bird_name}' (tentative {attempt+1}/{retries}) : {e}")
+            time.sleep(1)
+        attempt += 1
     return ""
 
 def fetch_sound_url(bird_name):
@@ -396,14 +403,15 @@ def get_bird_info_by_english(english_name):
         "Difficulty": difficulty
     }
 
-def add_bird_by_latin(latin_name, csv_file):
+def add_bird_by_latin(latin_name, csv_file, security_level=3):
     """
-    Prend en paramètre le nom latin d'un oiseau, vérifie qu'il n'est pas déjà présent
-    dans le fichier CSV et ajoute une nouvelle ligne avec les informations récupérées :
-      - Bird Name, French Name et Latin Name
-      - URL anglais et URL français (validée)
-      - Image Low et Image High (Image High = Image Low si non disponible)
-      - Sound URL, Score, View Count et Difficulty.
+    Ajoute un nouvel oiseau via son nom latin si celui-ci n'est pas déjà présent dans le CSV.
+    Champs requis : Latin Name, Bird Name et French Name.
+    
+    security_level=1 (strict) : Tous les trois champs doivent être non nuls ET le French Name 
+         ne doit pas être identique (insensible à la casse) au Bird Name ou au Latin Name.
+    security_level=2 (vérification minimale) : Les trois champs doivent être non nuls.
+    security_level=3 (très réduit) : Aucun contrôle.
     """
     try:
         with open(csv_file, mode='r', newline='', encoding="utf-8") as f:
@@ -415,7 +423,7 @@ def add_bird_by_latin(latin_name, csv_file):
         fieldnames = ["Bird Name", "French Name", "Latin Name", "URL anglais", "URL français",
                       "Image Low", "Image High", "Sound URL", "Score", "View Count", "Difficulty"]
 
-    # Vérifier si l'oiseau existe déjà (comparaison par Latin Name, insensible à la casse)
+    # Vérification préliminaire : l'oiseau ne doit pas exister (comparaison par Latin Name)
     for row in rows:
         if row.get("Latin Name", "").strip().lower() == latin_name.strip().lower():
             print(f"L'oiseau avec le nom latin '{latin_name}' existe déjà.")
@@ -426,6 +434,27 @@ def add_bird_by_latin(latin_name, csv_file):
         print(f"Echec de récupération des informations pour '{latin_name}'.")
         return
 
+    if security_level == 1:
+        # Vérifier que les trois champs sont non nuls
+        if (not bird_info.get("Latin Name", "").strip() or
+            not bird_info.get("Bird Name", "").strip() or
+            not bird_info.get("French Name", "").strip()):
+            print("Security Level 1: Un ou plusieurs champs requis (Latin Name, Bird Name, French Name) sont absents. Oiseau non ajouté.")
+            return
+        # Vérifier que le French Name n'est pas le même que le Bird Name ou le Latin Name
+        if (bird_info.get("French Name", "").strip().lower() == bird_info.get("Bird Name", "").strip().lower() or
+            bird_info.get("French Name", "").strip().lower() == bird_info.get("Latin Name", "").strip().lower()):
+            print("Security Level 1: French Name identique à Bird Name ou Latin Name. Oiseau non ajouté.")
+            return
+    elif security_level == 2:
+        # Vérifier que tous les trois champs sont non nuls (mais sans comparer leur contenu)
+        if (not bird_info.get("Latin Name", "").strip() or
+            not bird_info.get("Bird Name", "").strip() or
+            not bird_info.get("French Name", "").strip()):
+            print("Security Level 2: Un ou plusieurs champs requis (Latin Name, Bird Name, French Name) sont absents. Oiseau non ajouté.")
+            return
+    # security_level == 3 : pas de vérification
+
     rows.append(bird_info)
     # S'assurer que toutes les clés sont présentes
     keys = set()
@@ -437,12 +466,17 @@ def add_bird_by_latin(latin_name, csv_file):
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows)
-    print(f"L'oiseau '{latin_name}' a été ajouté au fichier CSV '{csv_file}'.")
+    print(f"L'oiseau '{latin_name}' a été ajouté au fichier CSV '{csv_file}' avec security_level = {security_level}.")
 
-def add_bird_by_english(english_name, csv_file):
+def add_bird_by_english(english_name, csv_file, security_level=3):
     """
-    Prend en paramètre le nom anglais d'un oiseau, vérifie qu'il n'est pas déjà présent
-    dans le fichier CSV et ajoute une nouvelle ligne avec les informations récupérées via get_bird_info_by_english.
+    Ajoute un nouvel oiseau via son nom anglais si celui-ci n'est pas déjà présent dans le CSV.
+    Champs requis : Bird Name, French Name et Latin Name.
+    
+    security_level=1 (strict) : Les trois champs doivent être non nuls ET le French Name ne doit pas 
+         être identique au Bird Name ou au Latin Name.
+    security_level=2 (vérification minimale) : Les trois champs doivent être non nuls.
+    security_level=3 (très réduit) : Aucun contrôle.
     """
     try:
         with open(csv_file, mode='r', newline='', encoding="utf-8") as f:
@@ -454,7 +488,7 @@ def add_bird_by_english(english_name, csv_file):
         fieldnames = ["Bird Name", "French Name", "Latin Name", "URL anglais", "URL français",
                       "Image Low", "Image High", "Sound URL", "Score", "View Count", "Difficulty"]
 
-    # Vérifier si l'oiseau existe déjà (comparaison par Bird Name, insensible à la casse)
+    # Vérification préliminaire : l'oiseau ne doit pas exister (comparaison par Bird Name)
     for row in rows:
         if row.get("Bird Name", "").strip().lower() == english_name.strip().lower():
             print(f"L'oiseau avec le nom anglais '{english_name}' existe déjà.")
@@ -465,8 +499,25 @@ def add_bird_by_english(english_name, csv_file):
         print(f"Echec de récupération des informations pour '{english_name}'.")
         return
 
+    if security_level == 1:
+        if (not bird_info.get("Bird Name", "").strip() or
+            not bird_info.get("French Name", "").strip() or
+            not bird_info.get("Latin Name", "").strip()):
+            print("Security Level 1: Un ou plusieurs champs requis (Bird Name, French Name, Latin Name) sont absents. Oiseau non ajouté.")
+            return
+        if (bird_info.get("French Name", "").strip().lower() == bird_info.get("Bird Name", "").strip().lower() or
+            bird_info.get("French Name", "").strip().lower() == bird_info.get("Latin Name", "").strip().lower()):
+            print("Security Level 1: French Name identique à Bird Name ou Latin Name. Oiseau non ajouté.")
+            return
+    elif security_level == 2:
+        if (not bird_info.get("Bird Name", "").strip() or
+            not bird_info.get("French Name", "").strip() or
+            not bird_info.get("Latin Name", "").strip()):
+            print("Security Level 2: Un ou plusieurs champs requis (Bird Name, French Name, Latin Name) sont absents. Oiseau non ajouté.")
+            return
+    # security_level == 3 : aucun contrôle
+
     rows.append(bird_info)
-    # S'assurer que toutes les clés sont présentes
     keys = set()
     for row in rows:
         keys.update(row.keys())
@@ -476,7 +527,7 @@ def add_bird_by_english(english_name, csv_file):
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows)
-    print(f"L'oiseau '{english_name}' a été ajouté au fichier CSV '{csv_file}'.")
+    print(f"L'oiseau '{english_name}' a été ajouté au fichier CSV '{csv_file}' avec security_level = {security_level}.")
 
 def sort_csv_by_latin(csv_file, output_file=None):
     """
@@ -509,8 +560,8 @@ def sort_csv_by_latin(csv_file, output_file=None):
     print(f"Fichier CSV trié par ordre alphabétique (Latin Name) et réorganisé, enregistré dans '{output_file}'.")
 
 if __name__ == "__main__":
-    english_name_input = "Kea"
-    csv_file = "europe_bird_list.csv"
+    english_name_input = "Madagascar hoopoe"
+    csv_file = "europe_bird_list_exp.csv"
     # Pour ajouter un nouvel oiseau par nom anglais, décommentez la ligne suivante :
-    add_bird_by_english(english_name_input, csv_file)
+    add_bird_by_english(english_name_input, csv_file, 1)
     sort_csv_by_latin(csv_file)
