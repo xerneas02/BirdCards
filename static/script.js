@@ -16,7 +16,7 @@ const translations = {
       "diff3Label": "Difficult",
       "mediaLabel": "Select media type:",
       "mediaSoundLabel": "Sound",
-      "filter": "Filter",
+      "filter": "Apply",
       "lightTheme": "Switch to Light Theme",
       "darkTheme": "Switch to Dark Theme",
       "noRepetition": "No Repetition Mode"
@@ -38,7 +38,7 @@ const translations = {
       "diff3Label": "Difficile",
       "mediaLabel": "Sélectionnez le type de média :",
       "mediaSoundLabel": "Son",
-      "filter": "Filtrer",
+      "filter": "Appliquer",
       "lightTheme": "Passer au thème clair",
       "darkTheme": "Passer au thème sombre",
       "noRepetition": "Mode sans répétition"
