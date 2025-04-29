@@ -7,7 +7,7 @@ BirdCards is a personal project—born out of a desire to create a simple and us
 - **Bird Learning Interface:**  
   Display bird names (in English or French) along with images and sounds.  
 - **Filtering Options:**  
-  Users can filter birds by difficulty level and media type. The filters are saved and applied automatically for each new bird, without needing to reapply them manually.
+  Users can filter birds by difficulty level and media type.
 - **No Repetition Mode:**  
   A mode that ensures birds are not repeated until all have been seen.
 - **Dynamic Theme:**  
