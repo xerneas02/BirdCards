@@ -1,57 +1,57 @@
 const translations = {
   "EN": {
-      "reset": "Reset Data",
-      "title": "Bird Learning App",
-      "reveal": "Reveal Name",
-      "wrong": "Got it Wrong",
-      "wrongShort": "Wrong",            // Nouveau : version courte
-      "inbetween": "In Between",
-      "inbetweenShort": "Neutral",      // Nouveau : version courte
-      "right": "Got it Right",
-      "rightShort": "Right",            // Nouveau : version courte (identique à Right)
-      "switch": "Switch to French",
-      "diffLabel": "Select difficulty:",
-      "diff1Label": "Easy",
-      "diff2Label": "Medium",
-      "diff3Label": "Difficult",
-      "mediaLabel": "Select media type:",
-      "mediaSoundLabel": "Sound",
-      "filter": "Apply",
-      "lightTheme": "Switch to Light Theme",
-      "darkTheme": "Switch to Dark Theme",
-      "noRepetition": "No Repetition Mode"
+    "reset": "Reset Data",
+    "title": "Bird Learning App",
+    "reveal": "Reveal Name",
+    "wrong": "Got it Wrong",
+    "wrongShort": "Wrong",
+    "inbetween": "In Between",
+    "inbetweenShort": "Neutral",
+    "right": "Got it Right",
+    "rightShort": "Right",
+    "switch": "Switch to French",
+    "diffLabel": "Select difficulty:",
+    "diff1Label": "Easy",
+    "diff2Label": "Medium",
+    "diff3Label": "Difficult",
+    "mediaLabel": "Select media type:",
+    "mediaSoundLabel": "Sound",
+    "filter": "Apply",
+    "lightTheme": "Switch to Light Theme",
+    "darkTheme": "Switch to Dark Theme",
+    "noRepetition": "No Repetition Mode"
   },
   "FR": {
-      "reset": "Réinitialiser les scores",
-      "title": "Appli d'apprentissage des oiseaux",
-      "reveal": "Révéler le nom",
-      "wrong": "Mauvaise réponse",
-      "wrongShort": "Faux",              // Nouveau : version courte
-      "inbetween": "Réponse partielle",
-      "inbetweenShort": "Neutre",         // Nouveau : version courte
-      "right": "Bonne réponse",
-      "rightShort": "Correct",            // Nouveau : version courte
-      "switch": "Passer en anglais",
-      "diffLabel": "Sélectionnez la difficulté :",
-      "diff1Label": "Facile",
-      "diff2Label": "Moyen",
-      "diff3Label": "Difficile",
-      "mediaLabel": "Sélectionnez le type de média :",
-      "mediaSoundLabel": "Son",
-      "filter": "Appliquer",
-      "lightTheme": "Passer au thème clair",
-      "darkTheme": "Passer au thème sombre",
-      "noRepetition": "Mode sans répétition"
+    "reset": "Réinitialiser les scores",
+    "title": "Appli d'apprentissage des oiseaux",
+    "reveal": "Révéler le nom",
+    "wrong": "Mauvaise réponse",
+    "wrongShort": "Faux",
+    "inbetween": "Réponse partielle",
+    "inbetweenShort": "Neutre",
+    "right": "Bonne réponse",
+    "rightShort": "Correct",
+    "switch": "Passer en anglais",
+    "diffLabel": "Sélectionnez la difficulté :",
+    "diff1Label": "Facile",
+    "diff2Label": "Moyen",
+    "diff3Label": "Difficile",
+    "mediaLabel": "Sélectionnez le type de média :",
+    "mediaSoundLabel": "Son",
+    "filter": "Appliquer",
+    "lightTheme": "Passer au thème clair",
+    "darkTheme": "Passer au thème sombre",
+    "noRepetition": "Mode sans répétition"
   }
 };
 
 function setTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
   localStorage.setItem('theme', theme);
-  updateThemeButton();
+  refreshThemeButton();
 }
 
-function updateThemeButton() {
+function refreshThemeButton() {
   const btn = document.getElementById("themeToggle");
   const currentTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
   const currentLang = document.getElementById("currentLanguage")?.value || "EN";
@@ -68,33 +68,16 @@ window.onload = function() {
     const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
     setTheme(systemPrefersDark ? "dark" : "light");
   }
-
+  
   if (window.innerWidth < 768) {
-    document.getElementById("sidebar").classList.remove("active");
-  }
-
-  const container = document.getElementById("imageContainer");
-  if (container) {
-    container.classList.add("loading");
-    const imgElement = document.getElementById("birdImage");
-    const highResUrl = imgElement.getAttribute("data-src");
-    const asyncImage = new Image();
-    asyncImage.onload = function() {
-      imgElement.src = asyncImage.src; // Remplace l'image basse résolution par la haute
-      container.classList.remove("loading");
-    }
-    asyncImage.onerror = function() {
-      imgElement.alt = "Failed to load high resolution image";
-      container.classList.remove("loading");
-    }
-    asyncImage.src = highResUrl;
+    document.getElementById("sidebar")?.classList.remove("active");
   }
   
-  // Mettre à jour les boutons au chargement
-  updateButtonLabels();
+  loadHighResImage();
+  refreshButtonLabels();
 };
 
-window.addEventListener("resize", updateButtonLabels);
+window.addEventListener("resize", refreshButtonLabels);
 
 function toggleTheme() {
   const currentTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
@@ -107,6 +90,16 @@ function toggleLanguage() {
   const currentLang = currentLangElem.value;
   const newLang = currentLang === "EN" ? "FR" : "EN";
   currentLangElem.value = newLang;
+  updateInterfaceLanguage(newLang);
+  fetch("/set_language?lang=" + newLang)
+    .then(() => {
+      refreshThemeButton();
+      updateBirdName();
+    })
+    .catch(error => console.error("Language toggle error:", error));
+}
+
+function updateInterfaceLanguage(lang) {
   const elementsToUpdate = [
     { id: "resetButton", key: "reset" },
     { selector: "h1", key: "title" },
@@ -122,77 +115,85 @@ function toggleLanguage() {
     { id: "mediaLabel", key: "mediaLabel" },
     { id: "mediaSoundLabel", key: "mediaSoundLabel" },
     { id: "filterButton", key: "filter" },
-    { id: "noRepLabel", key: "noRepetition" } // Ajout de la mise à jour pour "Mode sans répétition"
+    { id: "noRepLabel", key: "noRepetition" }
   ];
   elementsToUpdate.forEach(item => {
     let elem = item.id ? document.getElementById(item.id) : document.querySelector(item.selector);
     if (elem) {
       if (elem.tagName === "INPUT" && elem.type === "submit") {
-        elem.value = translations[newLang][item.key];
+        elem.value = translations[lang][item.key];
       } else {
-        elem.innerText = translations[newLang][item.key];
+        elem.innerText = translations[lang][item.key];
       }
     }
   });
-  // Ne pas modifier le nom de l'oiseau s'il n'est pas révélé
-  fetch("/set_language?lang=" + newLang)
-    .then(response => response.text())
-    .then(() => {
-      updateThemeButton();
-      const birdNameElem = document.getElementById("birdName");
-      if (birdNameElem && birdNameElem.innerText.trim() !== "") {
-        fetch("/reveal")
-          .then(response => response.json())
-          .then(data => {
-            birdNameElem.innerText = data.name;
-            const wikiLinkElem = document.getElementById("wikiLink");
-            if (wikiLinkElem && data.wiki_url) {
-              wikiLinkElem.href = data.wiki_url;
-            }
-          })
-          .catch(error => console.error("Error updating bird name:", error));
-      }
-    })
-    .catch(error => console.error("Language toggle error:", error));
+}
+
+function updateBirdName() {
+  const birdNameElem = document.getElementById("birdName");
+  if (birdNameElem && birdNameElem.innerText.trim() !== "") {
+    fetch("/reveal")
+      .then(response => response.json())
+      .then(data => {
+        birdNameElem.innerText = data.name;
+        const wikiLinkElem = document.getElementById("wikiLink");
+        if (wikiLinkElem && data.wiki_url) {
+          wikiLinkElem.href = data.wiki_url;
+        }
+      })
+      .catch(error => console.error("Error updating bird name:", error));
+  }
+}
+
+function loadHighResImage() {
+  const container = document.getElementById("imageContainer");
+  if (!container) return;
+  container.classList.add("loading");
+  const imgElement = document.getElementById("birdImage");
+  const highResUrl = imgElement.getAttribute("data-src");
+  const asyncImage = new Image();
+  asyncImage.onload = function() {
+    imgElement.src = asyncImage.src;
+    container.classList.remove("loading");
+  };
+  asyncImage.onerror = function() {
+    imgElement.alt = "Failed to load high resolution image";
+    container.classList.remove("loading");
+  };
+  asyncImage.src = highResUrl;
 }
 
 function revealName() {
   fetch("/reveal")
     .then(response => response.json())
     .then(data => {
-      const birdNameElem = document.getElementById("birdName");
-      if (birdNameElem) birdNameElem.innerText = data.name;
+      document.getElementById("birdName").innerText = data.name;
       const wikiLinkElem = document.getElementById("wikiLink");
       if (wikiLinkElem && data.wiki_url) {
         wikiLinkElem.href = data.wiki_url;
-        // Afficher le lien info après révélation du nom
         wikiLinkElem.style.display = 'inline-block';
       }
-      // Actualisation des images et sons (inchangée)
-      const imageContainer = document.getElementById("imageContainer");
-      if (imageContainer && imageContainer.style.display === "none") {
-        imageContainer.style.display = "block";
-      }
-      const imgElement = document.getElementById("birdImage");
-      if (data.image_url && imgElement.src !== data.image_url) {
-        imgElement.src = data.image_url;
-      }
-      const audioContainer = document.getElementById("audioContainer");
-      if (audioContainer && audioContainer.style.display === "none") {
-        audioContainer.style.display = "block";
-      }
-      const audioElem = audioContainer ? audioContainer.querySelector("audio source") : null;
-      if (audioElem && data.sound_url && audioElem.src !== data.sound_url) {
-        audioElem.src = data.sound_url;
-        audioContainer.querySelector("audio").load();
-      }
-      const revealButton = document.getElementById("revealButton");
-      if (revealButton) {
-        revealButton.style.display = "none";
-      }
+      toggleMediaDisplay(data);
+      document.getElementById("revealButton").style.display = "none";
       document.body.classList.add("revealed");
     })
     .catch(error => console.error("Error revealing data:", error));
+}
+
+function toggleMediaDisplay(data) {
+  const imgElement = document.getElementById("birdImage");
+  if (data.image_url && imgElement.src !== data.image_url) {
+    imgElement.src = data.image_url;
+  }
+  const audioContainer = document.getElementById("audioContainer");
+  if (audioContainer) {
+    const audioElem = audioContainer.querySelector("audio source");
+    if (audioElem && data.sound_url && audioElem.src !== data.sound_url) {
+      audioElem.src = data.sound_url;
+      audioContainer.querySelector("audio").load();
+    }
+    audioContainer.style.display = "block";
+  }
 }
 
 function toggleMenu() {
@@ -200,18 +201,12 @@ function toggleMenu() {
   const menuToggle = document.getElementById("menuToggle");
   if (sidebar) {
     sidebar.classList.toggle("active");
-    // Masquer le bouton burger quand le menu est ouvert, et le réafficher quand il est fermé
-    if (sidebar.classList.contains("active")) {
-      menuToggle.style.display = "none";
-    } else {
-      menuToggle.style.display = "block";
-    }
+    menuToggle.style.display = sidebar.classList.contains("active") ? "none" : "block";
   }
 }
 
-function updateButtonLabels() {
+function refreshButtonLabels() {
   const currentLang = document.getElementById("currentLanguage")?.value || "EN";
-  // Récupérer les boutons par leur id
   const wrongButton = document.getElementById("wrongButton");
   const inbetweenButton = document.getElementById("inbetweenButton");
   const rightButton = document.getElementById("rightButton");
@@ -247,9 +242,7 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
     const inputs = filterForm.querySelectorAll('input[type="checkbox"], input[type="radio"]');
-    inputs.forEach(input => {
-      input.addEventListener("change", updateFilters);
-    });
+    inputs.forEach(input => input.addEventListener("change", updateFilters));
   }
 });
 
