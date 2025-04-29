@@ -54,7 +54,7 @@ function setTheme(theme) {
 function updateThemeButton() {
   const btn = document.getElementById("themeToggle");
   const currentTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-  const currentLang = document.getElementById("currentLanguage").value || "EN";
+  const currentLang = document.getElementById("currentLanguage")?.value || "EN";
   if (btn) {
     btn.textContent = currentTheme === "dark" ? translations[currentLang]["lightTheme"] : translations[currentLang]["darkTheme"];
   }
@@ -210,7 +210,7 @@ function toggleMenu() {
 }
 
 function updateButtonLabels() {
-  const currentLang = document.getElementById("currentLanguage").value || "EN";
+  const currentLang = document.getElementById("currentLanguage")?.value || "EN";
   // Récupérer les boutons par leur id
   const wrongButton = document.getElementById("wrongButton");
   const inbetweenButton = document.getElementById("inbetweenButton");
@@ -226,4 +226,30 @@ function updateButtonLabels() {
     if (rightButton) rightButton.textContent = translations[currentLang]["right"];
   }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const filterForm = document.getElementById("filterForm");
+  if (filterForm) {
+    const updateFilters = () => {
+      const diffInputs = filterForm.querySelectorAll("input[name='diff']:checked");
+      const mediaInputs = filterForm.querySelectorAll("input[name='media']:checked");
+      const diff = Array.from(diffInputs).map(input => input.value);
+      const media = Array.from(mediaInputs).map(input => input.value);
+      const noRep = document.getElementById("noRep") && document.getElementById("noRep").checked ? "on" : "off";
+      fetch("/update_filters", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ diff: diff, media: media, noRep: noRep })
+      })
+      .then(response => response.json())
+      .then(data => console.log("Filters updated:", data))
+      .catch(error => console.error("Error updating filters:", error));
+    };
+
+    const inputs = filterForm.querySelectorAll('input[type="checkbox"], input[type="radio"]');
+    inputs.forEach(input => {
+      input.addEventListener("change", updateFilters);
+    });
+  }
+});
 

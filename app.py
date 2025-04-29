@@ -3,6 +3,7 @@ import csv, random, math, requests
 from abc import ABC, abstractmethod
 from flask_session import Session  # Import de Flask-Session
 import urllib.parse  # Ajoutez ceci en haut du fichier
+import json
 
 app = Flask(__name__)
 app.secret_key = "supersecretkey"  # Nécessaire pour la sécurité des sessions
@@ -105,29 +106,35 @@ def init_user_scores():
 # Sélection aléatoire pondérée d'un oiseau dans la liste filtrée.
 # En mode sans répétition, la liste des oiseaux restants est stockée dans la session.
 def weighted_random_bird(birds_list):
-    init_user_scores()
+    # Appliquer les filtres à la liste des oiseaux
+    filtered_birds = get_filtered_birds(birds_list)
+    # Si aucun filtre n'est défini ou aucun oiseau ne correspond, on retourne l'ensemble
+    if not filtered_birds:
+        filtered_birds = birds_list
+    # Pour le mode sans répétition :
     if session.get("no_repetition", False):
-        # Construire la liste des noms d'oiseaux correspondant aux filtres
-        filtered_names = [bird["Bird Name"] for bird in birds_list]
-        # Vérifier si les filtres ont changé
-        stored_filter = session.get("filtered_names")
-        if stored_filter is None or set(stored_filter) != set(filtered_names):
-            # Réinitialiser la liste et stocker les filtres actuels
-            remaining = filtered_names.copy()
+        # Stocke ou récupère la liste filtrée déjà en session
+        filtered_names = session.get("filtered_names")
+        # Si elle n'existe pas ou a changé, la recalculer
+        new_filtered_names = [bird["Bird Name"] for bird in filtered_birds]
+        if not filtered_names or set(filtered_names) != set(new_filtered_names):
+            filtered_names = new_filtered_names
             session["filtered_names"] = filtered_names
+            session["remaining_birds"] = filtered_names.copy()
         else:
-            remaining = session.get("remaining_birds", [])
-            if not remaining:
-                remaining = filtered_names.copy()
-        chosen_name = random.choice(remaining)
-        remaining.remove(chosen_name)
-        session["remaining_birds"] = remaining
-        bird = next(b for b in birds_list if b["Bird Name"] == chosen_name)
+            filtered_names = session.get("remaining_birds", new_filtered_names.copy())
+            if not filtered_names:
+                filtered_names = new_filtered_names.copy()
+        chosen_name = random.choice(filtered_names)
+        filtered_names.remove(chosen_name)
+        session["remaining_birds"] = filtered_names
+        bird = next(b for b in filtered_birds if b["Bird Name"] == chosen_name)
         return bird
     else:
-        scores = session["scores"]
-        weights = [math.exp(-ALPHA * scores.get(bird["Bird Name"], 0)) for bird in birds_list]
-        return random.choices(birds_list, weights=weights, k=1)[0]
+        # Par exemple, ici on applique un poids selon une logique de score
+        scores = session.get("scores", {})
+        weights = [math.exp(-ALPHA * scores.get(bird["Bird Name"], 0)) for bird in filtered_birds]
+        return random.choices(filtered_birds, weights=weights, k=1)[0]
 
 
 @app.route("/")
@@ -310,6 +317,42 @@ def update():
     media = request.form.getlist("media")
     noRep = "on" if session.get("no_repetition", False) else "off"
     return redirect(url_for("index", diff=diff, media=media, noRep=noRep))
+
+@app.route("/update_filters", methods=["POST"])
+def update_filters():
+    data = request.get_json()
+    if data is not None:
+        # On sauvegarde les options dans la session
+        session["selected_diff"] = data.get("diff", [])
+        session["selected_media"] = data.get("media", [])
+        session["no_repetition"] = (data.get("noRep", "off") == "on")
+        # Optionnel : Vous pouvez aussi recalculer la liste filtrée des oiseaux
+        filtered_names = [bird["Bird Name"] for bird in birds if is_valid(bird)]
+        session["filtered_names"] = filtered_names
+        # Si la liste des oiseaux restants est vide, on la réinitialise
+        if not session.get("remaining_birds"):
+            session["remaining_birds"] = filtered_names.copy()
+    return jsonify({"status": "ok"})
+
+def is_valid(bird):
+    """
+    Vérifie si un oiseau est valide selon les filtres enregistrés dans la session.
+    Adaptez cette fonction à la structure de vos données.
+    """
+
+    selected_diff = session.get("selected_diff", [])
+    selected_media = session.get("selected_media", [])
+    valid = True
+
+    if selected_diff and str(bird.get("Difficulty")) not in selected_diff:
+        valid = False
+
+    if selected_media and bird.get("Media Type") not in selected_media:
+        valid = False
+    return valid
+
+def get_filtered_birds(birds_list):
+    return [bird for bird in birds_list if is_valid(bird)]
 
 if __name__ == "__main__":
     app.run(debug=True)#, host="0.0.0.0", port=8080)

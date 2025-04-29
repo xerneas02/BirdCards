@@ -3,20 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bird Learning App</title>
+  <script>
+    (function() {
+      // Récupérer le thème stocké ou utiliser la préférence système
+      var theme = localStorage.getItem('theme') ||
+                  (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <title>Bird Learning App</title>
 </head>
 <body>
-  <!-- Bouton burger visible sur mobile -->
+  <!-- Exemple de bouton burger pour mobile -->
   <button id="menuToggle" onclick="toggleMenu()">☰</button>
-
+  
+  <!-- Sidebar -->
   <div class="sidebar" id="sidebar">
-    <!-- Bouton de fermeture du menu -->
     <button id="menuClose" onclick="toggleMenu()">✖</button>
     <h2>Options</h2>
     <!-- Bouton Reset -->
-    <a href="{{ url_for('reset', diff=selected_diff, media=selected_media, noRep=('on' if session.get('no_repetition') else 'off')) }}" class="reset-button" id="resetButton">
+    <a href="{{ url_for('reset', diff=selected_diff, media=selected_media, noRep=('on' if session.get('no_repetition') else 'off')) }}"
+       class="reset-button" id="resetButton">
       {% if language == "EN" %}
         Reset Data
       {% else %}
@@ -25,8 +34,8 @@
     </a>
     <!-- Bouton Toggle Theme -->
     <button id="themeToggle" onclick="toggleTheme()">Toggle Theme</button>
-    <!-- Formulaire de filtrage -->
-    <form method="GET" action="{{ url_for('index') }}">
+    <!-- Formulaire de filtres (attention : sans onchange automatique) -->
+    <form method="GET" action="{{ url_for('index') }}" id="filterForm">
       <label id="diffLabel">
         {% if language == "EN" %}
           Select difficulty:
@@ -75,7 +84,6 @@
           Son
         {% endif %}
       </label><br><br>
-      <!-- Nouvelle case pour le mode sans répétition -->
       <label id="noRepLabel">
         {% if language == "EN" %}
           No Repetition Mode
@@ -84,8 +92,8 @@
         {% endif %}
       </label><br>
       <input type="checkbox" name="noRep" id="noRep" value="on" {% if session.get('no_repetition') %} checked {% endif %}>
-      <br><br>
-      <input type="submit" id="filterButton" value="{% if language == 'EN' %}Filter{% else %}Filtrer{% endif %}">
+      <!-- Bouton Filtrer conservé en fallback -->
+      <input type="submit" id="filterButton" value="{% if language == 'EN' %}Apply{% else %}Appliquer{% endif %}">
     </form>
     <!-- Bouton pour changer de langue -->
     <button id="langButton" onclick="toggleLanguage()">
