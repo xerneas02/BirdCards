@@ -1,282 +1,91 @@
-/* Variables et thèmes */
+/* ==========================================================================
+   Variables & Themes
+   ========================================================================== */
 :root {
-    --bg-color: #f5f5f5;
-    --text-color: #333;
-    --link-color: #2F8894;
-    --button-default-bg: #2F8894;
-    --button-default-text: #fff;
-    --button-default-hover: #246d7a;
-    --reset-bg: #e74c3c;
-    --reset-hover: #c0392b;
-    --sidebar-width: 250px;
-  }
-  
-  [data-theme="dark"] {
-    --bg-color: #121212;
-    --text-color: #eee;
-    --link-color: #0099ff;
-    --button-default-bg: #007acc;
-    --button-default-text: #fff;
-    --button-default-hover: #005fa3;
-  }
-  
-  /* Mise en page générale */
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    position: relative;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  /* Sidebar - comportement par défaut desktop */
-  .sidebar {
-    width: var(--sidebar-width);
-    background-color: var(--bg-color);
-    border-right: 1px solid #ccc;
-    padding: 20px;
-    height: 100vh;
-    overflow-y: auto;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1000;
-    transform: translateX(0);
-    visibility: visible;
-    transition: transform 0.3s ease, visibility 0.3s ease;
-  }
-  
-  /* Boutons et liens dans la sidebar */
-  .sidebar a,
-  .sidebar button,
-  .sidebar input[type="submit"] {
-    display: block;
-    width: 100%;
-    padding: 10px 15px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--button-default-bg);
-    color: var(--button-default-text);
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 16px;
-  }
-  
-  .sidebar a:hover,
-  .sidebar button:hover,
-  .sidebar input[type="submit"]:hover {
-    background-color: var(--button-default-hover);
-  }
-  
-  /* Bouton Reset uniformisé */
-  .reset-button {
-    background-color: var(--reset-bg) !important;
-    width: 88% !important;
-    padding: 10px 15px !important;
-    font-size: 16px !important;
-  }
-  
-  /* Bouton burger : masqué par défaut sur desktop */
-  #menuToggle {
-    display: none;
-  }
-  
-  /* Bouton de fermeture dans la sidebar */
-  #menuClose {
-    padding: 0px 0px;
-    display: none;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: var(--button-default-bg);
-    color: var(--button-default-text);
-    border: none;
-    border-radius: 5px;
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  #menuClose:hover {
-    background-color: var(--button-default-hover);
-  }
-  
-  /* Contenu principal */
-  .main-content {
-    margin: 0 auto;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 800px;
-    text-align: center;
-    transition: margin-left 0.3s ease;
-  }
-  
-  /* Styles divers pour le contenu */
-  #imageContainer {
-    position: relative;
-    margin: 20px auto;
-  }
-  #imageContainer.loading {
-    background-color: #d0e7f9;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  img {
-    max-width: 100%;
-    max-height: 65vh;
-    border: 5px solid var(--button-default-bg);
-    border-radius: 10px;
-  }
-  audio {
-    margin-top: 10px;
-  }
-  .score-buttons form {
-    display: inline-block;
-    margin: 5px;
-  }
-  
-  /* Boutons arrondis pour actions */
-  .btn-wrong, .btn-inbetween, .btn-right, #revealButton {
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-  .btn-wrong {
-    background-color: #e74c3c;
-    color: #fff;
-  }
-  .btn-wrong:hover {
-    background-color: #c0392b;
-  }
-  .btn-inbetween {
-    background-color: #f1c40f;
-    color: #fff;
-  }
-  .btn-inbetween:hover {
-    background-color: #f39c12;
-  }
-  .btn-right {
-    background-color: #27ae60;
-    color: #fff;
-  }
-  .btn-right:hover {
-    background-color: #1e8449;
-  }
-  
-  /* Boutons de difficulté */
-  .difficulty-buttons button {
-    width: 100%;
-    border-radius: 20px;
-    padding: 8px 16px;
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-  .btn-diff1 {
-    background-color: #2ecc71;
-  }
-  .btn-diff2 {
-    background-color: #f1c40f;
-    color: #000;
-  }
-  .btn-diff3 {
-    background-color: #e67e22;
-  }
-  
-  /* Responsive : en dessous de 1400px, le menu passe en mode burger */
-  @media (max-width: 1400px) {
-    /* Afficher le bouton burger sur mobile */
-    #menuToggle {
-      display: block;
-      position: fixed;
-      top: 15px;
-      left: 15px;
-      z-index: 1100;
-      width: 40px;
-      height: 40px;
-      background-color: var(--button-default-bg);
-      color: var(--button-default-text);
-      border: none;
-      border-radius: 10px;
-      font-size: 20px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    #menuToggle:hover {
-      background-color: var(--button-default-hover);
-    }
-    /* Sidebar masquée par défaut en mobile */
-    .sidebar {
-      transform: translateX(-100%);
-      visibility: hidden;
-    }
-    /* Sidebar active s'affiche en overlay */
-    .sidebar.active {
-      transform: translateX(0);
-      visibility: visible;
-    }
-    /* Afficher le bouton de fermeture quand la sidebar est active */
-    .sidebar.active #menuClose {
-      display: block;
-    }
-  
-  }
-  
-  /* Responsive : en dessous de 768px, le menu passe en mode burger */
-  @media (max-width: 768px) {
-    /* Afficher le bouton burger sur mobile */
-    #menuToggle {
-      display: block;
-      position: fixed;
-      top: 15px;
-      left: 15px;
-      z-index: 1100;
-      width: 40px;
-      height: 40px;
-      background-color: var(--button-default-bg);
-      color: var(--button-default-text);
-      border: none;
-      border-radius: 10px;
-      font-size: 20px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    #menuToggle:hover {
-      background-color: var(--button-default-hover);
-    }
-    /* Sidebar masquée par défaut en mobile */
-    .sidebar {
-      transform: translateX(-100%);
-      visibility: hidden;
-    }
-    /* Sidebar active s'affiche en overlay */
-    .sidebar.active {
-      transform: translateX(0);
-      visibility: visible;
-    }
-    /* Afficher le bouton de fermeture quand la sidebar est active */
-    .sidebar.active #menuClose {
-      display: block;
-    }
+  --bg-color: #f5f5f5;
+  --text-color: #333;
+  --link-color: #2F8894;
+  --button-default-bg: #2F8894;
+  --button-default-text: #fff;
+  --button-default-hover: #246d7a;
+  --reset-bg: #e74c3c;
+  --reset-hover: #c0392b;
+  --sidebar-width: 250px;
+}
 
-  }
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #eee;
+  --link-color: #0099ff;
+  --button-default-bg: #007acc;
+  --button-default-text: #fff;
+  --button-default-hover: #005fa3;
+}
 
-  @media (max-width: 600px) {
-    .score-buttons button {
-      padding: 8px 12px;
-      font-size: 14px;
-      flex: 1 1 auto; /* Permet aux boutons de s’ajuster en largeur */
-    }
-  }
-  
-/* Section de contact en bas de la sidebar */
+/* ==========================================================================
+   Global Layout & Typography
+   ========================================================================== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* ==========================================================================
+   Sidebar Styles
+   ========================================================================== */
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: var(--bg-color);
+  border-right: 1px solid #ccc;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transform: translateX(0);
+  visibility: visible;
+  transition: transform 0.3s ease, visibility 0.3s ease;
+}
+
+.sidebar a,
+.sidebar button,
+.sidebar input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-default-bg);
+  color: var(--button-default-text);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.sidebar a:hover,
+.sidebar button:hover,
+.sidebar input[type="submit"]:hover {
+  background-color: var(--button-default-hover);
+}
+
+/* Reset Button (override default button styles) */
+.reset-button {
+  background-color: var(--reset-bg) !important;
+  width: 88% !important;
+  padding: 10px 15px !important;
+  font-size: 16px !important;
+}
+
+/* Sidebar Footer */
 .sidebar-footer {
   position: absolute;
   bottom: 20px;
@@ -290,25 +99,167 @@
 .sidebar-footer a {
   text-decoration: none;
   width: 88% !important;
-  margin-bottom: 0px;
 }
 
 .sidebar-footer a:hover {
   text-decoration: underline;
 }
 
+/* ==========================================================================
+   Mobile Menu & Responsive Sidebar
+   ========================================================================== */
+/* Burger Menu Button (Hidden by default on desktop) */
+#menuToggle {
+  display: none;
+}
+
+/* Sidebar close button (hidden by default) */
+#menuClose {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-default-bg);
+  color: var(--button-default-text);
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#menuClose:hover {
+  background-color: var(--button-default-hover);
+}
+
+/* Media Query for screens below 1400px & 768px (burger layout) */
+@media (max-width: 1400px), (max-width: 768px) {
+  #menuToggle {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1100;
+    width: 40px;
+    height: 40px;
+    background-color: var(--button-default-bg);
+    color: var(--button-default-text);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  #menuToggle:hover {
+    background-color: var(--button-default-hover);
+  }
+  .sidebar {
+    transform: translateX(-100%);
+    visibility: hidden;
+  }
+  .sidebar.active {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  .sidebar.active #menuClose {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Main Content Layout
+   ========================================================================== */
+.main-content {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px;
+  text-align: center;
+  transition: margin-left 0.3s ease;
+}
+
+/* ==========================================================================
+   Image & Audio Display
+   ========================================================================== */
+#imageContainer {
+  position: relative;
+  margin: 20px auto;
+}
+#imageContainer.loading {
+  background-color: #d0e7f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+img {
+  max-width: 100%;
+  max-height: 65vh;
+  border: 5px solid var(--button-default-bg);
+  border-radius: 10px;
+}
+audio {
+  margin-top: 10px;
+}
+
+/* ==========================================================================
+   Feedback & Difficulty Buttons
+   ========================================================================== */
+.score-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.score-buttons form {
+  display: inline-block;
+  margin: 5px;
+}
+
+.btn-wrong, .btn-inbetween, .btn-right, #revealButton {
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.btn-wrong {
+  background-color: #e74c3c;
+  color: #fff;
+}
+.btn-wrong:hover {
+  background-color: #c0392b;
+}
+
+.btn-inbetween {
+  background-color: #f1c40f;
+  color: #fff;
+}
+.btn-inbetween:hover {
+  background-color: #f39c12;
+}
+
+.btn-right {
+  background-color: #27ae60;
+  color: #fff;
+}
+.btn-right:hover {
+  background-color: #1e8449;
+}
+
+/* ==========================================================================
+   Additional Content Styles
+   ========================================================================== */
 #birdName {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 #birdInfo {
-  margin-top: 20px;
-  margin-bottom: 0px;
+  margin: 20px 0 0;
 }
 
-/* Nouveau style pour le lien info (ℹ) */
+/* Info Link (ℹ) */
 #wikiLink {
-  display: none;  /* Caché par défaut jusqu'à la révélation du nom */
+  display: none;  /* Shown only after reveal */
   width: 24px;
   height: 24px;
   line-height: 24px;
@@ -320,17 +271,18 @@
   font-size: 16px;
   margin-left: 8px;
 }
-
-/* Afficher le lien info lorsqu'on a révélé le nom */
 .revealed #wikiLink {
   display: inline-block;
 }
 
-/* Ajoutez ou modifiez ceci dans style.css */
-.score-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+/* ==========================================================================
+   Responsive Adjustments
+   ========================================================================== */
+@media (max-width: 600px) {
+  .score-buttons button {
+    padding: 8px 12px;
+    font-size: 14px;
+    flex: 1 1 auto;
+  }
 }
 

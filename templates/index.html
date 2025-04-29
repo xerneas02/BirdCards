@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>
     (function() {
-      // Récupérer le thème stocké ou utiliser la préférence système
       var theme = localStorage.getItem('theme') ||
                   (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light');
       document.documentElement.setAttribute('data-theme', theme);
@@ -23,7 +22,7 @@
   <div class="sidebar" id="sidebar">
     <button id="menuClose" onclick="toggleMenu()">✖</button>
     <h2>Options</h2>
-    <!-- Reset Button: note the label remains (Reset Data) if in EN -->
+    <!-- Reset Link: Reshuffles the bird order while keeping the current bird at the front -->
     <a href="{{ url_for('reset', diff=selected_diff, media=selected_media, noRep=('on' if session.get('no_repetition') else 'off')) }}"
        class="reset-button" id="resetButton">
       {% if language == "EN" %}
@@ -34,7 +33,7 @@
     </a>
     <!-- Toggle Theme Button -->
     <button id="themeToggle" onclick="toggleTheme()">Toggle Theme</button>
-    <!-- Filter form (no onchange auto-submit) -->
+    <!-- Filter Form -->
     <form method="GET" action="{{ url_for('index') }}" id="filterForm">
       <label id="diffLabel">
         {% if language == "EN" %}
@@ -98,9 +97,9 @@
     <!-- Language Toggle Button -->
     <button id="langButton" onclick="toggleLanguage()">
       {% if language == "EN" %}
-         Switch to French
+        Switch to French
       {% else %}
-         Passer en anglais
+        Passer en anglais
       {% endif %}
     </button>
     <input type="hidden" id="currentLanguage" value="{{ language }}">
@@ -113,19 +112,20 @@
     </div>
   </div>
 
+  <!-- Main Content Area -->
   <div class="main-content">
     {% if 'image' in selected_media %}
-    <div id="imageContainer">
-      <img id="birdImage" src="{{ bird['Image URL'] }}" data-src="{{ bird['High Image URL'] }}" alt="Bird Image">
-    </div>    
+      <div id="imageContainer">
+        <img id="birdImage" src="{{ bird['Image URL'] }}" data-src="{{ bird['High Image URL'] }}" alt="Bird Image">
+      </div>
     {% endif %}
     {% if 'sound' in selected_media and bird['Sound URL']|trim != "" %}
-    <div id="audioContainer">
-      <audio controls>
-        <source src="{{ bird['Sound URL'] }}" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
+      <div id="audioContainer">
+        <audio controls>
+          <source src="{{ bird['Sound URL'] }}" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
     {% endif %}
     <div id="birdInfo">
       <p id="birdName" style="font-size:20px; font-weight:bold; display:inline;"></p>
@@ -140,33 +140,33 @@
     </button>
     <br><br>
     <div class="score-buttons">
-      <!-- Feedback forms now point to the new process_feedback route -->
+      <!-- Feedback Forms using /process_feedback -->
       <form action="{{ url_for('process_feedback', diff=selected_diff, media=selected_media) }}" method="post" style="display:inline;">
-          <button id="wrongButton" type="submit" name="change" value="-1" class="btn-wrong">
-            {% if language == "EN" %}
-              Got it Wrong
-            {% else %}
-              Mauvaise réponse
-            {% endif %}
-          </button>
+        <button id="wrongButton" type="submit" name="change" value="-1" class="btn-wrong">
+          {% if language == "EN" %}
+            Got it Wrong
+          {% else %}
+            Mauvaise réponse
+          {% endif %}
+        </button>
       </form>
       <form action="{{ url_for('process_feedback', diff=selected_diff, media=selected_media) }}" method="post" style="display:inline;">
-          <button id="inbetweenButton" type="submit" name="change" value="0" class="btn-inbetween">
-            {% if language == "EN" %}
-              In Between
-            {% else %}
-              Réponse partielle
-            {% endif %}
-          </button>
+        <button id="inbetweenButton" type="submit" name="change" value="0" class="btn-inbetween">
+          {% if language == "EN" %}
+            In Between
+          {% else %}
+            Réponse partielle
+          {% endif %}
+        </button>
       </form>
       <form action="{{ url_for('process_feedback', diff=selected_diff, media=selected_media) }}" method="post" style="display:inline;">
-          <button id="rightButton" type="submit" name="change" value="1" class="btn-right">
-            {% if language == "EN" %}
-              Got it Right
-            {% else %}
-              Bonne réponse
-            {% endif %}
-          </button>
+        <button id="rightButton" type="submit" name="change" value="1" class="btn-right">
+          {% if language == "EN" %}
+            Got it Right
+          {% else %}
+            Bonne réponse
+          {% endif %}
+        </button>
       </form>
     </div>
   </div>
