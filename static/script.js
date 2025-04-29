@@ -4,8 +4,11 @@ const translations = {
       "title": "Bird Learning App",
       "reveal": "Reveal Name",
       "wrong": "Got it Wrong",
+      "wrongShort": "Wrong",            // Nouveau : version courte
       "inbetween": "In Between",
+      "inbetweenShort": "Neutral",      // Nouveau : version courte
       "right": "Got it Right",
+      "rightShort": "Right",            // Nouveau : version courte (identique à Right)
       "switch": "Switch to French",
       "diffLabel": "Select difficulty:",
       "diff1Label": "Easy",
@@ -23,8 +26,11 @@ const translations = {
       "title": "Appli d'apprentissage des oiseaux",
       "reveal": "Révéler le nom",
       "wrong": "Mauvaise réponse",
+      "wrongShort": "Faux",              // Nouveau : version courte
       "inbetween": "Réponse partielle",
+      "inbetweenShort": "Neutre",         // Nouveau : version courte
       "right": "Bonne réponse",
+      "rightShort": "Correct",            // Nouveau : version courte
       "switch": "Passer en anglais",
       "diffLabel": "Sélectionnez la difficulté :",
       "diff1Label": "Facile",
@@ -83,7 +89,12 @@ window.onload = function() {
     }
     asyncImage.src = highResUrl;
   }
+  
+  // Mettre à jour les boutons au chargement
+  updateButtonLabels();
 };
+
+window.addEventListener("resize", updateButtonLabels);
 
 function toggleTheme() {
   const currentTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
@@ -195,6 +206,24 @@ function toggleMenu() {
     } else {
       menuToggle.style.display = "block";
     }
+  }
+}
+
+function updateButtonLabels() {
+  const currentLang = document.getElementById("currentLanguage").value || "EN";
+  // Récupérer les boutons par leur id
+  const wrongButton = document.getElementById("wrongButton");
+  const inbetweenButton = document.getElementById("inbetweenButton");
+  const rightButton = document.getElementById("rightButton");
+  
+  if (window.innerWidth < 490) {
+    if (wrongButton) wrongButton.textContent = translations[currentLang]["wrongShort"];
+    if (inbetweenButton) inbetweenButton.textContent = translations[currentLang]["inbetweenShort"];
+    if (rightButton) rightButton.textContent = translations[currentLang]["rightShort"];
+  } else {
+    if (wrongButton) wrongButton.textContent = translations[currentLang]["wrong"];
+    if (inbetweenButton) inbetweenButton.textContent = translations[currentLang]["inbetween"];
+    if (rightButton) rightButton.textContent = translations[currentLang]["right"];
   }
 }
 
