@@ -16,25 +16,25 @@
   <title>Bird Learning App</title>
 </head>
 <body>
-  <!-- Exemple de bouton burger pour mobile -->
+  <!-- Mobile menu button -->
   <button id="menuToggle" onclick="toggleMenu()">☰</button>
   
   <!-- Sidebar -->
   <div class="sidebar" id="sidebar">
     <button id="menuClose" onclick="toggleMenu()">✖</button>
     <h2>Options</h2>
-    <!-- Bouton Reset -->
+    <!-- Reset Button: note the label remains (Reset Data) if in EN -->
     <a href="{{ url_for('reset', diff=selected_diff, media=selected_media, noRep=('on' if session.get('no_repetition') else 'off')) }}"
        class="reset-button" id="resetButton">
       {% if language == "EN" %}
         Reset Data
       {% else %}
-        Réinitialiser les scores
+        Réinitialiser les données
       {% endif %}
     </a>
-    <!-- Bouton Toggle Theme -->
+    <!-- Toggle Theme Button -->
     <button id="themeToggle" onclick="toggleTheme()">Toggle Theme</button>
-    <!-- Formulaire de filtres (attention : sans onchange automatique) -->
+    <!-- Filter form (no onchange auto-submit) -->
     <form method="GET" action="{{ url_for('index') }}" id="filterForm">
       <label id="diffLabel">
         {% if language == "EN" %}
@@ -92,10 +92,10 @@
         {% endif %}
       </label><br>
       <input type="checkbox" name="noRep" id="noRep" value="on" {% if session.get('no_repetition') %} checked {% endif %}>
-      <!-- Bouton Filtrer conservé en fallback -->
+      <!-- Fallback filter button -->
       <input type="submit" id="filterButton" value="{% if language == 'EN' %}Apply{% else %}Appliquer{% endif %}">
     </form>
-    <!-- Bouton pour changer de langue -->
+    <!-- Language Toggle Button -->
     <button id="langButton" onclick="toggleLanguage()">
       {% if language == "EN" %}
          Switch to French
@@ -116,7 +116,7 @@
   <div class="main-content">
     {% if 'image' in selected_media %}
     <div id="imageContainer">
-      <img id="birdImage" src="{{ bird['Image URL'] }}" data-src="{{ bird['High Image URL'] }}" alt="Image de l'oiseau">
+      <img id="birdImage" src="{{ bird['Image URL'] }}" data-src="{{ bird['High Image URL'] }}" alt="Bird Image">
     </div>    
     {% endif %}
     {% if 'sound' in selected_media and bird['Sound URL']|trim != "" %}
@@ -140,7 +140,8 @@
     </button>
     <br><br>
     <div class="score-buttons">
-      <form action="{{ url_for('update_score', diff=selected_diff, media=selected_media) }}" method="post" style="display:inline;">
+      <!-- Feedback forms now point to the new process_feedback route -->
+      <form action="{{ url_for('process_feedback', diff=selected_diff, media=selected_media) }}" method="post" style="display:inline;">
           <button id="wrongButton" type="submit" name="change" value="-1" class="btn-wrong">
             {% if language == "EN" %}
               Got it Wrong
@@ -149,7 +150,7 @@
             {% endif %}
           </button>
       </form>
-      <form action="{{ url_for('update_score', diff=selected_diff, media=selected_media) }}" method="post" style="display:inline;">
+      <form action="{{ url_for('process_feedback', diff=selected_diff, media=selected_media) }}" method="post" style="display:inline;">
           <button id="inbetweenButton" type="submit" name="change" value="0" class="btn-inbetween">
             {% if language == "EN" %}
               In Between
@@ -158,7 +159,7 @@
             {% endif %}
           </button>
       </form>
-      <form action="{{ url_for('update_score', diff=selected_diff, media=selected_media) }}" method="post" style="display:inline;">
+      <form action="{{ url_for('process_feedback', diff=selected_diff, media=selected_media) }}" method="post" style="display:inline;">
           <button id="rightButton" type="submit" name="change" value="1" class="btn-right">
             {% if language == "EN" %}
               Got it Right
