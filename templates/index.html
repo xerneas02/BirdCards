@@ -122,7 +122,7 @@
     {% if 'sound' in selected_media and bird['Sound URL']|trim != "" %}
       <div id="audioContainer">
         <audio controls>
-          <source src="{{ bird['Sound URL'] }}" type="audio/mpeg">
+          <source src="/audio_proxy?url={{ bird['Sound URL'] }}" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </div>

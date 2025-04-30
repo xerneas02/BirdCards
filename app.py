@@ -1,7 +1,9 @@
-from flask import Flask, render_template, request, redirect, url_for, session, jsonify
-import csv, random, requests
+from flask import Flask, render_template, request, redirect, url_for, session, jsonify, send_file
+import csv, random, requests, os
 from abc import ABC, abstractmethod
 from flask_session import Session
+from my_module.convert import convert_wav_to_mp3
+import io
 
 app = Flask(__name__)
 app.secret_key = "supersecretkey"
@@ -249,6 +251,66 @@ def update_filters():
         if not session.get("remaining_birds"):
             session["remaining_birds"] = filtered_names.copy()
     return jsonify({"status": "ok"})
+
+@app.route("/audio/<filename>")
+def get_audio(filename):
+    audio_path = os.path.join("path/to/audio_files", filename)
+    if filename.lower().endswith(".wav"):
+        mp3_io = convert_wav_to_mp3(audio_path)
+        if mp3_io:
+            return send_file(mp3_io, mimetype="audio/mpeg")
+        else:
+            return "Erreur de conversion audio", 500
+    else:
+        return send_file(audio_path, mimetype="audio/mpeg")
+
+@app.route("/audio_proxy")
+def audio_proxy():
+    # L'URL de l'audio est passée en paramètre "url"
+    audio_url = request.args.get("url")
+    if not audio_url:
+        return "No audio URL provided", 400
+
+    try:
+        # Effectuer une requête HEAD pour récupérer le type MIME
+        try:
+            head_response = requests.head(audio_url, timeout=60)
+        except Exception as e:
+            app.logger.error(f"HEAD request failed: {e}, falling back to GET for headers.")
+            try:
+                head_response = requests.get(audio_url, stream=True, timeout=20)
+            except Exception as e2:
+                app.logger.error(f"GET request fallback also failed: {e2}")
+                return "Erreur lors de la vérification du type audio", 500
+        content_type = head_response.headers.get("Content-Type", "").lower()
+        app.logger.info(f"Audio URL: {audio_url} - Content-Type: {content_type}")
+    except Exception as e:
+        app.logger.error(f"Erreur lors de la requête HEAD: {e}")
+        return "Erreur lors de la vérification du type audio", 500
+
+    if "wav" in content_type:
+        # Si le fichier est en WAV, le convertir en MP3
+        try:
+            audio_response = requests.get(audio_url, timeout=20)
+            if audio_response.status_code != 200:
+                app.logger.error(f"Erreur lors de la récupération du fichier WAV: Status {audio_response.status_code}")
+                return "Erreur lors de la récupération du fichier audio", 500
+
+            # Convertir le contenu du WAV (en bytes) en flux MP3.
+            wav_io = io.BytesIO(audio_response.content)
+            mp3_io = convert_wav_to_mp3(wav_io)
+            if mp3_io:
+                return send_file(mp3_io, mimetype="audio/mpeg")
+            else:
+                app.logger.error("Conversion WAV vers MP3 a échoué, envoi du fichier d'origine.")
+                # Envoi du fichier d'origine (même au format WAV)
+                return send_file(io.BytesIO(audio_response.content), mimetype=content_type)
+        except Exception as e:
+            app.logger.error(f"Erreur lors de la conversion audio: {e}")
+            return "Erreur lors de la conversion de l'audio", 500
+    else:
+        # Si le fichier n'est pas un WAV, redirigez simplement vers l'URL d'origine.
+        return redirect(audio_url)
 
 def is_valid(bird):
     selected_diff = session.get("selected_diff", [])
