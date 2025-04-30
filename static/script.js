@@ -61,6 +61,7 @@ function refreshThemeButton() {
 }
 
 window.onload = function() {
+  refreshButtonLabels();
   const storedTheme = localStorage.getItem('theme');
   if (storedTheme) {
     setTheme(storedTheme);
@@ -91,6 +92,8 @@ function toggleLanguage() {
   const newLang = currentLang === "EN" ? "FR" : "EN";
   currentLangElem.value = newLang;
   updateInterfaceLanguage(newLang);
+  // Ensure that button labels are updated according to the viewport width
+  refreshButtonLabels();
   fetch("/set_language?lang=" + newLang)
     .then(() => {
       refreshThemeButton();
