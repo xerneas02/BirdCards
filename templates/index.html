@@ -140,32 +140,33 @@
     </button>
     <br><br>
     <div class="score-buttons">
-      <!-- Feedback Forms using /process_feedback -->
+      <!-- Bouton "Wrong" -->
       <form action="{{ url_for('process_feedback', diff=selected_diff, media=selected_media) }}" method="post" style="display:inline;">
-        <button id="wrongButton" type="submit" name="change" value="-1" class="btn-wrong">
-          {% if language == "EN" %}
-            Got it Wrong
-          {% else %}
-            Mauvaise réponse
-          {% endif %}
+        <button id="wrongButtonLarge" type="submit" name="change" value="-1" class="btn-wrong btn-large">
+          {% if language == 'EN' %}Got it Wrong{% else %}Mauvaise réponse{% endif %}
+        </button>
+        <button id="wrongButtonSmall" type="submit" name="change" value="-1" class="btn-wrong btn-small" style="display:none;">
+          {% if language == 'EN' %}Wrong{% else %}Faux{% endif %}
         </button>
       </form>
+      
+      <!-- Bouton "Neutral" -->
       <form action="{{ url_for('process_feedback', diff=selected_diff, media=selected_media) }}" method="post" style="display:inline;">
-        <button id="inbetweenButton" type="submit" name="change" value="0" class="btn-inbetween">
-          {% if language == "EN" %}
-            In Between
-          {% else %}
-            Réponse partielle
-          {% endif %}
+        <button id="inbetweenButtonLarge" type="submit" name="change" value="0" class="btn-inbetween btn-large">
+          {% if language == 'EN' %}In Between{% else %}Réponse partielle{% endif %}
+        </button>
+        <button id="inbetweenButtonSmall" type="submit" name="change" value="0" class="btn-inbetween btn-small" style="display:none;">
+          {% if language == 'EN' %}Neutral{% else %}Neutre{% endif %}
         </button>
       </form>
+      
+      <!-- Bouton "Right" -->
       <form action="{{ url_for('process_feedback', diff=selected_diff, media=selected_media) }}" method="post" style="display:inline;">
-        <button id="rightButton" type="submit" name="change" value="1" class="btn-right">
-          {% if language == "EN" %}
-            Got it Right
-          {% else %}
-            Bonne réponse
-          {% endif %}
+        <button id="rightButtonLarge" type="submit" name="change" value="1" class="btn-right btn-large">
+          {% if language == 'EN' %}Got it Right{% else %}Bonne réponse{% endif %}
+        </button>
+        <button id="rightButtonSmall" type="submit" name="change" value="1" class="btn-right btn-small" style="display:none;">
+          {% if language == 'EN' %}Right{% else %}Correct{% endif %}
         </button>
       </form>
     </div>

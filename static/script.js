@@ -61,7 +61,6 @@ function refreshThemeButton() {
 }
 
 window.onload = function() {
-  refreshButtonLabels();
   const storedTheme = localStorage.getItem('theme');
   if (storedTheme) {
     setTheme(storedTheme);
@@ -75,10 +74,7 @@ window.onload = function() {
   }
   
   loadHighResImage();
-  refreshButtonLabels();
 };
-
-window.addEventListener("resize", refreshButtonLabels);
 
 function toggleTheme() {
   const currentTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
@@ -92,8 +88,7 @@ function toggleLanguage() {
   const newLang = currentLang === "EN" ? "FR" : "EN";
   currentLangElem.value = newLang;
   updateInterfaceLanguage(newLang);
-  // Ensure that button labels are updated according to the viewport width
-  refreshButtonLabels();
+  // On garde le rafraîchissement visuel via le fetch
   fetch("/set_language?lang=" + newLang)
     .then(() => {
       refreshThemeButton();
@@ -107,9 +102,12 @@ function updateInterfaceLanguage(lang) {
     { id: "resetButton", key: "reset" },
     { selector: "h1", key: "title" },
     { id: "revealButton", key: "reveal" },
-    { id: "wrongButton", key: "wrong" },
-    { id: "inbetweenButton", key: "inbetween" },
-    { id: "rightButton", key: "right" },
+    { id: "wrongButtonLarge", key: "wrong" },
+    { id: "wrongButtonSmall", key: "wrongShort" },
+    { id: "inbetweenButtonLarge", key: "inbetween" },
+    { id: "inbetweenButtonSmall", key: "inbetweenShort" },
+    { id: "rightButtonLarge", key: "right" },
+    { id: "rightButtonSmall", key: "rightShort" },
     { id: "langButton", key: "switch" },
     { id: "diffLabel", key: "diffLabel" },
     { id: "diff1Label", key: "diff1Label" },
@@ -120,9 +118,11 @@ function updateInterfaceLanguage(lang) {
     { id: "filterButton", key: "filter" },
     { id: "noRepLabel", key: "noRepetition" }
   ];
+  
   elementsToUpdate.forEach(item => {
     let elem = item.id ? document.getElementById(item.id) : document.querySelector(item.selector);
     if (elem) {
+      // Pour les boutons de feedback, on distingue large (texte complet) et small (texte court)
       if (elem.tagName === "INPUT" && elem.type === "submit") {
         elem.value = translations[lang][item.key];
       } else {
@@ -195,27 +195,28 @@ function toggleMediaDisplay(data) {
     console.log("Updating image source to:", data.image_url);
     imgElement.src = data.image_url;
   }
+  
   const audioContainer = document.getElementById("audioContainer");
   if (audioContainer) {
     const audioElem = audioContainer.querySelector("audio");
     if (audioElem && data.sound_url) {
       const sourceElem = audioContainer.querySelector("audio source");
-      console.log("Updating audio source to:", data.sound_url);
+      console.log("Current audio source:", sourceElem.src);
+      console.log("New audio source:", data.sound_url);
+      
       if (sourceElem.src !== data.sound_url) {
         sourceElem.src = data.sound_url;
-      }
-      // Ajout des logs pour tester le chargement audio
-      audioElem.oncanplaythrough = function() {
-        console.log("Audio loaded successfully and ready to play.");
-      };
-      audioElem.onerror = function(e) {
-        console.error("Error loading audio from URL:", data.sound_url, e);
-      };
-      try {
-        audioElem.load();
-        console.log("Audio load() called.");
-      } catch(error) {
-        console.error("Error calling audio.load():", error);
+        // On différencie le chargement de l'audio pour laisser le temps aux boutons de s'actualiser
+        setTimeout(() => {
+          try {
+            audioElem.load();
+            console.log("Audio source updated, load() called.");
+          } catch (error) {
+            console.error("Error calling audio.load():", error);
+          }
+        }, 50);
+      } else {
+        console.log("Audio source unchanged, not reloading.");
       }
     }
     audioContainer.style.display = "block";
@@ -228,23 +229,6 @@ function toggleMenu() {
   if (sidebar) {
     sidebar.classList.toggle("active");
     menuToggle.style.display = sidebar.classList.contains("active") ? "none" : "block";
-  }
-}
-
-function refreshButtonLabels() {
-  const currentLang = document.getElementById("currentLanguage")?.value || "EN";
-  const wrongButton = document.getElementById("wrongButton");
-  const inbetweenButton = document.getElementById("inbetweenButton");
-  const rightButton = document.getElementById("rightButton");
-  
-  if (window.innerWidth < 490) {
-    if (wrongButton) wrongButton.textContent = translations[currentLang]["wrongShort"];
-    if (inbetweenButton) inbetweenButton.textContent = translations[currentLang]["inbetweenShort"];
-    if (rightButton) rightButton.textContent = translations[currentLang]["rightShort"];
-  } else {
-    if (wrongButton) wrongButton.textContent = translations[currentLang]["wrong"];
-    if (inbetweenButton) inbetweenButton.textContent = translations[currentLang]["inbetween"];
-    if (rightButton) rightButton.textContent = translations[currentLang]["right"];
   }
 }
 
