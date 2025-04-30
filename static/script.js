@@ -150,16 +150,22 @@ function updateBirdName() {
 
 function loadHighResImage() {
   const container = document.getElementById("imageContainer");
-  if (!container) return;
+  if (!container) {
+    console.error("loadHighResImage: container not found");
+    return;
+  }
   container.classList.add("loading");
   const imgElement = document.getElementById("birdImage");
   const highResUrl = imgElement.getAttribute("data-src");
+  console.log("Loading high resolution image from URL:", highResUrl);
   const asyncImage = new Image();
   asyncImage.onload = function() {
     imgElement.src = asyncImage.src;
     container.classList.remove("loading");
+    console.log("High resolution image loaded successfully.");
   };
-  asyncImage.onerror = function() {
+  asyncImage.onerror = function(e) {
+    console.error("Error loading high resolution image from URL:", highResUrl, e);
     imgElement.alt = "Failed to load high resolution image";
     container.classList.remove("loading");
   };
@@ -186,14 +192,31 @@ function revealName() {
 function toggleMediaDisplay(data) {
   const imgElement = document.getElementById("birdImage");
   if (data.image_url && imgElement.src !== data.image_url) {
+    console.log("Updating image source to:", data.image_url);
     imgElement.src = data.image_url;
   }
   const audioContainer = document.getElementById("audioContainer");
   if (audioContainer) {
-    const audioElem = audioContainer.querySelector("audio source");
-    if (audioElem && data.sound_url && audioElem.src !== data.sound_url) {
-      audioElem.src = data.sound_url;
-      audioContainer.querySelector("audio").load();
+    const audioElem = audioContainer.querySelector("audio");
+    if (audioElem && data.sound_url) {
+      const sourceElem = audioContainer.querySelector("audio source");
+      console.log("Updating audio source to:", data.sound_url);
+      if (sourceElem.src !== data.sound_url) {
+        sourceElem.src = data.sound_url;
+      }
+      // Ajout des logs pour tester le chargement audio
+      audioElem.oncanplaythrough = function() {
+        console.log("Audio loaded successfully and ready to play.");
+      };
+      audioElem.onerror = function(e) {
+        console.error("Error loading audio from URL:", data.sound_url, e);
+      };
+      try {
+        audioElem.load();
+        console.log("Audio load() called.");
+      } catch(error) {
+        console.error("Error calling audio.load():", error);
+      }
     }
     audioContainer.style.display = "block";
   }
