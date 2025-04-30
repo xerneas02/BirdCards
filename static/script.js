@@ -256,3 +256,19 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+// Ajout d'un écouteur pour fermer la sidebar lorsque l'on clique en dehors (pour mobile)
+document.addEventListener("click", function(event) {
+  const sidebar = document.getElementById("sidebar");
+  const menuToggle = document.getElementById("menuToggle");
+  
+  // Ne rien faire si le menu n'est pas actif ou sur desktop
+  if (!sidebar.classList.contains("active") || window.innerWidth >= 768) return;
+  
+  // Si le clic se fait à l'intérieur de la sidebar ou sur le bouton de menu, on ne ferme pas la sidebar
+  if (sidebar.contains(event.target) || menuToggle.contains(event.target)) return;
+  
+  // Fermer la sidebar
+  sidebar.classList.remove("active");
+  menuToggle.style.display = "block";
+});
+
