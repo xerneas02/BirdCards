@@ -206,8 +206,7 @@ body {
   }
 }
 
-@media (min-width: 768px) {
-  #menuToggle,
+@media (min-width: 1400px) {
   #menuClose {
     display: none !important;
   }
