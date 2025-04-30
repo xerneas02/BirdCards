@@ -189,6 +189,10 @@ function revealName() {
     .catch(error => console.error("Error revealing data:", error));
 }
 
+// Déclarez un flag global pour suivre le chargement de l'audio
+let isLoading = false;
+let sidebarOpenedManually = false;
+
 function toggleMediaDisplay(data) {
   const imgElement = document.getElementById("birdImage");
   if (data.image_url && imgElement.src !== data.image_url) {
@@ -206,7 +210,9 @@ function toggleMediaDisplay(data) {
       
       if (sourceElem.src !== data.sound_url) {
         sourceElem.src = data.sound_url;
-        // On différencie le chargement de l'audio pour laisser le temps aux boutons de s'actualiser
+        // Indique que le chargement de l'audio débute
+        isLoading = true;
+        // Différer le chargement pour laisser le temps aux boutons de s'actualiser
         setTimeout(() => {
           try {
             audioElem.load();
@@ -214,6 +220,8 @@ function toggleMediaDisplay(data) {
           } catch (error) {
             console.error("Error calling audio.load():", error);
           }
+          // Le chargement est terminé
+          isLoading = false;
         }, 50);
       } else {
         console.log("Audio source unchanged, not reloading.");
@@ -225,10 +233,10 @@ function toggleMediaDisplay(data) {
 
 function toggleMenu() {
   const sidebar = document.getElementById("sidebar");
-  const menuToggle = document.getElementById("menuToggle");
   if (sidebar) {
     sidebar.classList.toggle("active");
-    menuToggle.style.display = sidebar.classList.contains("active") ? "none" : "block";
+    // On garde un flag pour savoir si l'utilisateur a ouvert le menu manuellement
+    sidebarOpenedManually = sidebar.classList.contains("active");
   }
 }
 
@@ -258,17 +266,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Ajout d'un écouteur pour fermer la sidebar lorsque l'on clique en dehors (pour mobile)
 document.addEventListener("click", function(event) {
+  // Ne pas faire fermer si un chargement d'audio est en cours
+  if (isLoading) return;
+
   const sidebar = document.getElementById("sidebar");
   const menuToggle = document.getElementById("menuToggle");
   
-  // Ne rien faire si le menu n'est pas actif ou sur desktop
-  if (!sidebar.classList.contains("active") || window.innerWidth >= 768) return;
+  // Ne rien faire si le menu n'est pas actif, sur desktop ou si le menu n'a pas été ouvert manuellement
+  if (!sidebar.classList.contains("active") || window.innerWidth >= 768 || !sidebarOpenedManually) return;
   
-  // Si le clic se fait à l'intérieur de la sidebar ou sur le bouton de menu, on ne ferme pas la sidebar
+  // Si le clic se fait à l'intérieur de la sidebar ou sur le bouton burger, ne rien faire
   if (sidebar.contains(event.target) || menuToggle.contains(event.target)) return;
   
-  // Fermer la sidebar
+  // Fermer la sidebar et réafficher le bouton burger
   sidebar.classList.remove("active");
+  sidebarOpenedManually = false;
   menuToggle.style.display = "block";
 });
 

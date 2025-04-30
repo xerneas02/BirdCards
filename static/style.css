@@ -47,7 +47,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 1100;
   transform: translateX(0);
   visibility: visible;
   transition: transform 0.3s ease, visibility 0.3s ease;
@@ -108,14 +108,29 @@ body {
 /* ==========================================================================
    Mobile Menu & Responsive Sidebar
    ========================================================================== */
-/* Burger Menu Button (Hidden by default on desktop) */
+/* Toujours afficher le bouton burger */
 #menuToggle {
-  display: none;
+  display: flex;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1000; /* inférieur à la sidebar */
+  width: 40px;
+  height: 40px;
+  background-color: var(--button-default-bg);
+  color: var(--button-default-text);
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Sidebar close button (hidden by default) */
 #menuClose {
-  display: none;
+  display: flex;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -125,11 +140,14 @@ body {
   border-radius: 5px;
   background-color: var(--button-default-bg);
   color: var(--button-default-text);
-  font-size: 18px;
+  font-size: 24px;  /* Augmentation de la taille de l'icône */
   cursor: pointer;
   transition: background-color 0.3s;
+  align-items: center;
+  justify-content: center;
 }
 
+#menuToggle:hover,
 #menuClose:hover {
   background-color: var(--button-default-hover);
 }
@@ -185,6 +203,13 @@ body {
   }
   .sidebar.active #menuClose:hover {
     background-color: var(--button-default-hover);
+  }
+}
+
+@media (min-width: 768px) {
+  #menuToggle,
+  #menuClose {
+    display: none !important;
   }
 }
 
