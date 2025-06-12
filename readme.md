@@ -113,8 +113,9 @@ This project is a personal endeavor, but contributions and feedback are welcome.
 
 ## Contact
 
-For questions or further discussion, you can reach me on Discord: **xerneas02**
-
+For questions or further discussion, you can reach me on 
+  - Discord: **xerneas02**
+  - email : **xerneas1702@gmail.com**
 ---
 
 BirdCards is a simple, personal project designed to combine multiple online data sources into a unified bird learning platform. Enjoy learning about birds and feel free to enhance the project to suit your own needs!
